@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y9r-Ai-hJn">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,61 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shayal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="OoI-kS-6hU">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="W6p-W7-FeH">
+                                <rect key="frame" x="126" y="411" width="176" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="CkR-Tw-d7y"/>
+                                    <constraint firstAttribute="width" constant="176" id="u2x-46-DUJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OoI-kS-6hU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2U1-GK-ewE"/>
+                            <constraint firstItem="W6p-W7-FeH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C4g-ff-j3z"/>
+                            <constraint firstItem="OoI-kS-6hU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Lv2-dL-Xuj"/>
+                            <constraint firstItem="OoI-kS-6hU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aGQ-W3-Cvd"/>
+                            <constraint firstItem="W6p-W7-FeH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="izy-dv-AjO"/>
+                            <constraint firstAttribute="bottom" secondItem="OoI-kS-6hU" secondAttribute="bottom" id="rpo-dc-ysF"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fXG-xa-O1W"/>
+                    <connections>
+                        <outlet property="shayalLogo" destination="W6p-W7-FeH" id="fIv-Ek-3JF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33.644859813084111" y="97.840172786177106"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XX1-uN-aWL">
+            <objects>
+                <navigationController id="y9r-Ai-hJn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DSc-oW-mNU">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kR3-jU-R0o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHb-7r-MDm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-725" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BackGround" width="424" height="932"/>
+        <image name="MainLogo" width="179.66667175292969" height="103"/>
+    </resources>
 </document>

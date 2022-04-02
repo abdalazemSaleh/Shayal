@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F7E8DEB27F1BE4000FACB7C /* Intro1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DE927F1BE4000FACB7C /* Intro1.swift */; };
+		7F7E8DEC27F1BE4000FACB7C /* Intro1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */; };
+		7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEE27F1C61900FACB7C /* Intro2.swift */; };
+		7F7E8DF127F1C61900FACB7C /* Intro2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEF27F1C61900FACB7C /* Intro2.xib */; };
+		7F7E8DF527F1E7F000FACB7C /* Intro3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DF327F1E7F000FACB7C /* Intro3.swift */; };
+		7F7E8DF627F1E7F000FACB7C /* Intro3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8DF427F1E7F000FACB7C /* Intro3.xib */; };
+		7F7E8DFA27F1ECC300FACB7C /* Intro4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DF827F1ECC300FACB7C /* Intro4.swift */; };
+		7F7E8DFB27F1ECC300FACB7C /* Intro4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8DF927F1ECC300FACB7C /* Intro4.xib */; };
+		7F7E8E0227F1FC3200FACB7C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8E0027F1FC3200FACB7C /* Login.swift */; };
+		7F7E8E0327F1FC3200FACB7C /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8E0127F1FC3200FACB7C /* Login.xib */; };
 		7FAB713D27F0CAB700477373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB713C27F0CAB700477373 /* AppDelegate.swift */; };
 		7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB713E27F0CAB700477373 /* SceneDelegate.swift */; };
 		7FAB714127F0CAB700477373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB714027F0CAB700477373 /* ViewController.swift */; };
@@ -16,6 +26,21 @@
 		7FAB715427F0CAB800477373 /* ShayalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB715327F0CAB800477373 /* ShayalTests.swift */; };
 		7FAB715E27F0CAB800477373 /* ShayalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB715D27F0CAB800477373 /* ShayalUITests.swift */; };
 		7FAB716027F0CAB800477373 /* ShayalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB715F27F0CAB800477373 /* ShayalUITestsLaunchTests.swift */; };
+		7FE0E7F527F7537B003FB8BF /* loginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E7F427F7537B003FB8BF /* loginPresenter.swift */; };
+		7FE0E7F727F7675A003FB8BF /* LoginVC+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E7F627F7675A003FB8BF /* LoginVC+Protocol.swift */; };
+		7FE0E7FB27F77C0A003FB8BF /* ForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E7F927F77C0A003FB8BF /* ForgetPassword.swift */; };
+		7FE0E7FC27F77C0A003FB8BF /* ForgetPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE0E7FA27F77C0A003FB8BF /* ForgetPassword.xib */; };
+		7FE0E80127F78299003FB8BF /* ForgetPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E80027F78299003FB8BF /* ForgetPasswordPresenter.swift */; };
+		7FE0E80327F783C5003FB8BF /* ForgetPassword+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E80227F783C5003FB8BF /* ForgetPassword+Delegate.swift */; };
+		7FE0E80827F85B51003FB8BF /* VerificationSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E80627F85B51003FB8BF /* VerificationSuccess.swift */; };
+		7FE0E80927F85B51003FB8BF /* VerificationSuccess.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE0E80727F85B51003FB8BF /* VerificationSuccess.xib */; };
+		7FE0E81027F87C4D003FB8BF /* EnterCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E80F27F87C4D003FB8BF /* EnterCodePresenter.swift */; };
+		7FE0E81427F87C79003FB8BF /* EnterCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E81227F87C79003FB8BF /* EnterCode.swift */; };
+		7FE0E81527F87C79003FB8BF /* EnterCode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE0E81327F87C79003FB8BF /* EnterCode.xib */; };
+		7FE0E81727F8CBC8003FB8BF /* EnterCode+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E81627F8CBC8003FB8BF /* EnterCode+UITextField.swift */; };
+		7FE79E5327F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FE79E5027F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf */; };
+		7FE79E5427F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FE79E5127F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf */; };
+		7FE79E5527F0EFD0003D0F3B /* Almarai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FE79E5227F0EFD0003D0F3B /* Almarai-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +61,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F7E8DE927F1BE4000FACB7C /* Intro1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro1.swift; sourceTree = "<group>"; };
+		7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro1.xib; sourceTree = "<group>"; };
+		7F7E8DEE27F1C61900FACB7C /* Intro2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro2.swift; sourceTree = "<group>"; };
+		7F7E8DEF27F1C61900FACB7C /* Intro2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro2.xib; sourceTree = "<group>"; };
+		7F7E8DF327F1E7F000FACB7C /* Intro3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro3.swift; sourceTree = "<group>"; };
+		7F7E8DF427F1E7F000FACB7C /* Intro3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro3.xib; sourceTree = "<group>"; };
+		7F7E8DF827F1ECC300FACB7C /* Intro4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro4.swift; sourceTree = "<group>"; };
+		7F7E8DF927F1ECC300FACB7C /* Intro4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro4.xib; sourceTree = "<group>"; };
+		7F7E8E0027F1FC3200FACB7C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		7F7E8E0127F1FC3200FACB7C /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
 		7FAB713927F0CAB700477373 /* Shayal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shayal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAB713C27F0CAB700477373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAB713E27F0CAB700477373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +84,21 @@
 		7FAB715927F0CAB800477373 /* ShayalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShayalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAB715D27F0CAB800477373 /* ShayalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShayalUITests.swift; sourceTree = "<group>"; };
 		7FAB715F27F0CAB800477373 /* ShayalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShayalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7FE0E7F427F7537B003FB8BF /* loginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPresenter.swift; sourceTree = "<group>"; };
+		7FE0E7F627F7675A003FB8BF /* LoginVC+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Protocol.swift"; sourceTree = "<group>"; };
+		7FE0E7F927F77C0A003FB8BF /* ForgetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassword.swift; sourceTree = "<group>"; };
+		7FE0E7FA27F77C0A003FB8BF /* ForgetPassword.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPassword.xib; sourceTree = "<group>"; };
+		7FE0E80027F78299003FB8BF /* ForgetPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordPresenter.swift; sourceTree = "<group>"; };
+		7FE0E80227F783C5003FB8BF /* ForgetPassword+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgetPassword+Delegate.swift"; sourceTree = "<group>"; };
+		7FE0E80627F85B51003FB8BF /* VerificationSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationSuccess.swift; sourceTree = "<group>"; };
+		7FE0E80727F85B51003FB8BF /* VerificationSuccess.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationSuccess.xib; sourceTree = "<group>"; };
+		7FE0E80F27F87C4D003FB8BF /* EnterCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodePresenter.swift; sourceTree = "<group>"; };
+		7FE0E81227F87C79003FB8BF /* EnterCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCode.swift; sourceTree = "<group>"; };
+		7FE0E81327F87C79003FB8BF /* EnterCode.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterCode.xib; sourceTree = "<group>"; };
+		7FE0E81627F8CBC8003FB8BF /* EnterCode+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnterCode+UITextField.swift"; sourceTree = "<group>"; };
+		7FE79E5027F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Almarai-Light.ttf"; sourceTree = "<group>"; };
+		7FE79E5127F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Almarai-Bold.ttf"; sourceTree = "<group>"; };
+		7FE79E5227F0EFD0003D0F3B /* Almarai-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +126,120 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F7E8DE327F1AA7D00FACB7C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7FAB713C27F0CAB700477373 /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7F7E8DE427F1AAA200FACB7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FAB714527F0CAB800477373 /* Assets.xcassets */,
+				7FAB714727F0CAB800477373 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F7E8DE527F1AAB700FACB7C /* Configration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configration;
+			sourceTree = "<group>";
+		};
+		7F7E8DE627F1BD6400FACB7C /* IntroScreens */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E8DE827F1BE1E00FACB7C /* Intro1 */,
+				7F7E8DED27F1C60800FACB7C /* Intro2 */,
+				7F7E8DF227F1E7BD00FACB7C /* Intro3 */,
+				7F7E8DF727F1EC7B00FACB7C /* Intro4 */,
+			);
+			path = IntroScreens;
+			sourceTree = "<group>";
+		};
+		7F7E8DE827F1BE1E00FACB7C /* Intro1 */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E8DE927F1BE4000FACB7C /* Intro1.swift */,
+				7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */,
+			);
+			path = Intro1;
+			sourceTree = "<group>";
+		};
+		7F7E8DED27F1C60800FACB7C /* Intro2 */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E8DEE27F1C61900FACB7C /* Intro2.swift */,
+				7F7E8DEF27F1C61900FACB7C /* Intro2.xib */,
+			);
+			path = Intro2;
+			sourceTree = "<group>";
+		};
+		7F7E8DF227F1E7BD00FACB7C /* Intro3 */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E8DF327F1E7F000FACB7C /* Intro3.swift */,
+				7F7E8DF427F1E7F000FACB7C /* Intro3.xib */,
+			);
+			path = Intro3;
+			sourceTree = "<group>";
+		};
+		7F7E8DF727F1EC7B00FACB7C /* Intro4 */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E8DF827F1ECC300FACB7C /* Intro4.swift */,
+				7F7E8DF927F1ECC300FACB7C /* Intro4.xib */,
+			);
+			path = Intro4;
+			sourceTree = "<group>";
+		};
+		7F7E8DFC27F1FC0900FACB7C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E8DFF27F1FC1900FACB7C /* Model */,
+				7F7E8DFE27F1FC1500FACB7C /* View */,
+				7F7E8DFD27F1FC1200FACB7C /* Presenter */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7F7E8DFD27F1FC1200FACB7C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7FE0E7F427F7537B003FB8BF /* loginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F7E8DFE27F1FC1500FACB7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E8E0027F1FC3200FACB7C /* Login.swift */,
+				7FE0E7F627F7675A003FB8BF /* LoginVC+Protocol.swift */,
+				7F7E8E0127F1FC3200FACB7C /* Login.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F7E8DFF27F1FC1900FACB7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7FAB713027F0CAB700477373 = {
 			isa = PBXGroup;
 			children = (
+				7F7E8DE527F1AAB700FACB7C /* Configration */,
+				7F7E8DE427F1AAA200FACB7C /* Resources */,
+				7F7E8DE327F1AA7D00FACB7C /* Core */,
+				7FE79E4727F0EE9E003D0F3B /* Font */,
+				7FE79E3F27F0DE37003D0F3B /* MVP */,
 				7FAB713B27F0CAB700477373 /* Shayal */,
 				7FAB715227F0CAB800477373 /* ShayalTests */,
 				7FAB715C27F0CAB800477373 /* ShayalUITests */,
@@ -99,13 +260,10 @@
 		7FAB713B27F0CAB700477373 /* Shayal */ = {
 			isa = PBXGroup;
 			children = (
-				7FAB713C27F0CAB700477373 /* AppDelegate.swift */,
-				7FAB713E27F0CAB700477373 /* SceneDelegate.swift */,
-				7FAB714027F0CAB700477373 /* ViewController.swift */,
-				7FAB714227F0CAB700477373 /* Main.storyboard */,
-				7FAB714527F0CAB800477373 /* Assets.xcassets */,
-				7FAB714727F0CAB800477373 /* LaunchScreen.storyboard */,
 				7FAB714A27F0CAB800477373 /* Info.plist */,
+				7FAB714227F0CAB700477373 /* Main.storyboard */,
+				7FAB714027F0CAB700477373 /* ViewController.swift */,
+				7FAB713E27F0CAB700477373 /* SceneDelegate.swift */,
 			);
 			path = Shayal;
 			sourceTree = "<group>";
@@ -125,6 +283,107 @@
 				7FAB715F27F0CAB800477373 /* ShayalUITestsLaunchTests.swift */,
 			);
 			path = ShayalUITests;
+			sourceTree = "<group>";
+		};
+		7FE0E7F827F77BEA003FB8BF /* Forget Password */ = {
+			isa = PBXGroup;
+			children = (
+				7FE0E7FF27F77C25003FB8BF /* Model */,
+				7FE0E7FE27F77C1C003FB8BF /* View */,
+				7FE0E7FD27F77C12003FB8BF /* Presenter */,
+			);
+			path = "Forget Password";
+			sourceTree = "<group>";
+		};
+		7FE0E7FD27F77C12003FB8BF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7FE0E80D27F87C1B003FB8BF /* EnterNumber */,
+				7FE0E80E27F87C2A003FB8BF /* EnterCode */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7FE0E7FE27F77C1C003FB8BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FE0E80427F85ADD003FB8BF /* EnterNumber */,
+				7FE0E80527F85B12003FB8BF /* VerficationSuccess */,
+				7FE0E81127F87C5A003FB8BF /* EnterCode */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FE0E7FF27F77C25003FB8BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FE0E80427F85ADD003FB8BF /* EnterNumber */ = {
+			isa = PBXGroup;
+			children = (
+				7FE0E7F927F77C0A003FB8BF /* ForgetPassword.swift */,
+				7FE0E80227F783C5003FB8BF /* ForgetPassword+Delegate.swift */,
+				7FE0E7FA27F77C0A003FB8BF /* ForgetPassword.xib */,
+			);
+			path = EnterNumber;
+			sourceTree = "<group>";
+		};
+		7FE0E80527F85B12003FB8BF /* VerficationSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				7FE0E80627F85B51003FB8BF /* VerificationSuccess.swift */,
+				7FE0E80727F85B51003FB8BF /* VerificationSuccess.xib */,
+			);
+			path = VerficationSuccess;
+			sourceTree = "<group>";
+		};
+		7FE0E80D27F87C1B003FB8BF /* EnterNumber */ = {
+			isa = PBXGroup;
+			children = (
+				7FE0E80027F78299003FB8BF /* ForgetPasswordPresenter.swift */,
+			);
+			path = EnterNumber;
+			sourceTree = "<group>";
+		};
+		7FE0E80E27F87C2A003FB8BF /* EnterCode */ = {
+			isa = PBXGroup;
+			children = (
+				7FE0E80F27F87C4D003FB8BF /* EnterCodePresenter.swift */,
+			);
+			path = EnterCode;
+			sourceTree = "<group>";
+		};
+		7FE0E81127F87C5A003FB8BF /* EnterCode */ = {
+			isa = PBXGroup;
+			children = (
+				7FE0E81227F87C79003FB8BF /* EnterCode.swift */,
+				7FE0E81627F8CBC8003FB8BF /* EnterCode+UITextField.swift */,
+				7FE0E81327F87C79003FB8BF /* EnterCode.xib */,
+			);
+			path = EnterCode;
+			sourceTree = "<group>";
+		};
+		7FE79E3F27F0DE37003D0F3B /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E8DE627F1BD6400FACB7C /* IntroScreens */,
+				7FE0E7F827F77BEA003FB8BF /* Forget Password */,
+				7F7E8DFC27F1FC0900FACB7C /* Login */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		7FE79E4727F0EE9E003D0F3B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7FE79E5227F0EFD0003D0F3B /* Almarai-Regular.ttf */,
+				7FE79E5127F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf */,
+				7FE79E5027F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +490,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7E8DEC27F1BE4000FACB7C /* Intro1.xib in Resources */,
+				7FE0E80927F85B51003FB8BF /* VerificationSuccess.xib in Resources */,
+				7F7E8DF627F1E7F000FACB7C /* Intro3.xib in Resources */,
+				7FE0E81527F87C79003FB8BF /* EnterCode.xib in Resources */,
+				7F7E8DF127F1C61900FACB7C /* Intro2.xib in Resources */,
+				7F7E8E0327F1FC3200FACB7C /* Login.xib in Resources */,
 				7FAB714927F0CAB800477373 /* LaunchScreen.storyboard in Resources */,
+				7FE79E5327F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf in Resources */,
+				7FE79E5527F0EFD0003D0F3B /* Almarai-Regular.ttf in Resources */,
 				7FAB714627F0CAB800477373 /* Assets.xcassets in Resources */,
+				7F7E8DFB27F1ECC300FACB7C /* Intro4.xib in Resources */,
+				7FE0E7FC27F77C0A003FB8BF /* ForgetPassword.xib in Resources */,
+				7FE79E5427F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf in Resources */,
 				7FAB714427F0CAB700477373 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +528,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */,
 				7FAB714127F0CAB700477373 /* ViewController.swift in Sources */,
+				7FE0E7FB27F77C0A003FB8BF /* ForgetPassword.swift in Sources */,
+				7FE0E81427F87C79003FB8BF /* EnterCode.swift in Sources */,
 				7FAB713D27F0CAB700477373 /* AppDelegate.swift in Sources */,
+				7FE0E7F527F7537B003FB8BF /* loginPresenter.swift in Sources */,
+				7F7E8DEB27F1BE4000FACB7C /* Intro1.swift in Sources */,
+				7FE0E80827F85B51003FB8BF /* VerificationSuccess.swift in Sources */,
+				7FE0E81027F87C4D003FB8BF /* EnterCodePresenter.swift in Sources */,
+				7FE0E80327F783C5003FB8BF /* ForgetPassword+Delegate.swift in Sources */,
+				7FE0E81727F8CBC8003FB8BF /* EnterCode+UITextField.swift in Sources */,
+				7FE0E80127F78299003FB8BF /* ForgetPasswordPresenter.swift in Sources */,
+				7F7E8DF527F1E7F000FACB7C /* Intro3.swift in Sources */,
+				7F7E8DFA27F1ECC300FACB7C /* Intro4.swift in Sources */,
 				7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */,
+				7FE0E7F727F7675A003FB8BF /* LoginVC+Protocol.swift in Sources */,
+				7F7E8E0227F1FC3200FACB7C /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
