@@ -8,8 +8,9 @@
 import Foundation
 import Alamofire
 
-class APICall {
-    static func APICall<T: Codable>(model: T.Type, url: String, Parms: [String: Any]?, method: HTTPMethod, completion: @escaping ( _ error: Error?, _ success: Bool)->Void){
+class APICall: UIViewController {
+    static func APICall<T: Codable>(model: T.Type, url: String, Parms: [String: Any]?, method: HTTPMethod, view: UIView, completion: @escaping ( _ error: Error?, _ success: Bool)->Void){
+        Spiner.showSpiner(view: view)
         Alamofire.request(url, method: method, parameters: Parms, headers: nil).responseJSON { (response) in
             guard let data = response.data else { return }
             switch response.result {
@@ -17,6 +18,7 @@ class APICall {
             case .failure(let error):
                 print(error)
                 completion(error, false)
+                Spiner.removeSpiner()
             // case success
             case .success(let value):
                 print("my Value: - \(value)")
@@ -24,9 +26,11 @@ class APICall {
                     let info = try JSONDecoder().decode(model, from: data)
                     print(info)
                     completion(nil, true)
+                    Spiner.removeSpiner()
                 } catch {
                     print("error")
                     completion(error, false)
+                    Spiner.removeSpiner()
                 }
             }
         }

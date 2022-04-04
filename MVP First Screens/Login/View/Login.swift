@@ -46,15 +46,30 @@ class Login: UIViewController {
     
     // MARK: - IBAction
     @IBAction func Login(_ sender: UIButton) {
-        presnter.login(phone: phoneNumber.text ?? "", password: password.text ?? "")
-        let VC = ForgetPassword()
-        navigationController?.pushViewController(VC, animated: true)
+            self.presnter.login(phone: self.phoneNumber.text ?? "", password: self.password.text ?? "")
+        let storyBoard = UIStoryboard.init(name: "Home", bundle: Bundle.main)
+        let moreVC = storyBoard.instantiateViewController(identifier: "tabBarScreen")
+        moreVC.modalPresentationStyle = .overFullScreen
+        moreVC.modalTransitionStyle = .crossDissolve
+        self.present(moreVC, animated: true, completion: nil)
+
     }
     @IBAction func sginUp(_ sender: UIButton) {
         let VC = SginUP()
         navigationController?.pushViewController(VC, animated: true)
     }
+    @IBAction func forgetPassword(_ sender: UIButton) {
+        let VC = ForgetPassword()
+        self.navigationController?.pushViewController(VC, animated: true)
+    }
 }
+
+
+
+
+
+
+
 extension Login: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.backgroundColor = UIColor.red

@@ -107,6 +107,9 @@
                                         <fontDescription key="titleFontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="forgetPassword:" destination="-1" eventType="touchUpInside" id="Xez-fA-hCD"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4w-3K-Kxs">
                                     <rect key="frame" x="74.5" y="317" width="265" height="48"/>

@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3AFD9CDE1E9A09B806BF3CA3 /* Pods_Shayal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088FBD273291CC3AFECDBA3E /* Pods_Shayal.framework */; };
+		7F04375B27FB75BB00CB5976 /* Spiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04375A27FB75BB00CB5976 /* Spiner.swift */; };
+		7F04376727FB837200CB5976 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F04376627FB837200CB5976 /* Home.storyboard */; };
+		7F04377027FB901A00CB5976 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04376F27FB901A00CB5976 /* Home.swift */; };
+		7F04377327FB92B000CB5976 /* HandelShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04377227FB92B000CB5976 /* HandelShadow.swift */; };
+		7F04377927FB976300CB5976 /* More.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04377827FB976300CB5976 /* More.swift */; };
+		7F04377B27FB979900CB5976 /* More+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04377A27FB979900CB5976 /* More+TableView.swift */; };
+		7F04377D27FB989200CB5976 /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04377C27FB989200CB5976 /* MoreCell.swift */; };
+		7F04377F27FB9D4D00CB5976 /* MorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04377E27FB9D4D00CB5976 /* MorePresenter.swift */; };
+		7F04378127FBA24D00CB5976 /* More+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04378027FBA24D00CB5976 /* More+Protocol.swift */; };
 		7F7E8DEB27F1BE4000FACB7C /* Intro1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DE927F1BE4000FACB7C /* Intro1.swift */; };
 		7F7E8DEC27F1BE4000FACB7C /* Intro1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */; };
 		7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEE27F1C61900FACB7C /* Intro2.swift */; };
@@ -75,6 +84,15 @@
 		088FBD273291CC3AFECDBA3E /* Pods_Shayal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shayal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42104522DA31D0062F2441CF /* Pods-Shayal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayal.release.xcconfig"; path = "Target Support Files/Pods-Shayal/Pods-Shayal.release.xcconfig"; sourceTree = "<group>"; };
 		4ADB3ED171A52EDAE1495000 /* Pods-Shayal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayal.debug.xcconfig"; path = "Target Support Files/Pods-Shayal/Pods-Shayal.debug.xcconfig"; sourceTree = "<group>"; };
+		7F04375A27FB75BB00CB5976 /* Spiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiner.swift; sourceTree = "<group>"; };
+		7F04376627FB837200CB5976 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		7F04376F27FB901A00CB5976 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7F04377227FB92B000CB5976 /* HandelShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandelShadow.swift; sourceTree = "<group>"; };
+		7F04377827FB976300CB5976 /* More.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = More.swift; sourceTree = "<group>"; };
+		7F04377A27FB979900CB5976 /* More+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "More+TableView.swift"; sourceTree = "<group>"; };
+		7F04377C27FB989200CB5976 /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
+		7F04377E27FB9D4D00CB5976 /* MorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorePresenter.swift; sourceTree = "<group>"; };
+		7F04378027FBA24D00CB5976 /* More+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "More+Protocol.swift"; sourceTree = "<group>"; };
 		7F7E8DE927F1BE4000FACB7C /* Intro1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro1.swift; sourceTree = "<group>"; };
 		7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro1.xib; sourceTree = "<group>"; };
 		7F7E8DEE27F1C61900FACB7C /* Intro2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro2.swift; sourceTree = "<group>"; };
@@ -166,6 +184,99 @@
 				42104522DA31D0062F2441CF /* Pods-Shayal.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F04375927FB759600CB5976 /* Handel Spiner */ = {
+			isa = PBXGroup;
+			children = (
+				7F04375A27FB75BB00CB5976 /* Spiner.swift */,
+			);
+			path = "Handel Spiner";
+			sourceTree = "<group>";
+		};
+		7F04376827FB8FB200CB5976 /* MVP Home */ = {
+			isa = PBXGroup;
+			children = (
+				7F04376927FB8FBD00CB5976 /* Home */,
+				7F04377427FB973200CB5976 /* More */,
+			);
+			path = "MVP Home";
+			sourceTree = "<group>";
+		};
+		7F04376927FB8FBD00CB5976 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7F04376C27FB8FCC00CB5976 /* Model */,
+				7F04376B27FB8FCA00CB5976 /* View */,
+				7F04376A27FB8FC700CB5976 /* Presenter */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7F04376A27FB8FC700CB5976 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F04376B27FB8FCA00CB5976 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F04376F27FB901A00CB5976 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F04376C27FB8FCC00CB5976 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F04377127FB928700CB5976 /* Handel Shaow */ = {
+			isa = PBXGroup;
+			children = (
+				7F04377227FB92B000CB5976 /* HandelShadow.swift */,
+			);
+			path = "Handel Shaow";
+			sourceTree = "<group>";
+		};
+		7F04377427FB973200CB5976 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				7F04377727FB973F00CB5976 /* Model */,
+				7F04377627FB973D00CB5976 /* View */,
+				7F04377527FB973A00CB5976 /* Presenter */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		7F04377527FB973A00CB5976 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7F04377E27FB9D4D00CB5976 /* MorePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F04377627FB973D00CB5976 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F04377827FB976300CB5976 /* More.swift */,
+				7F04377A27FB979900CB5976 /* More+TableView.swift */,
+				7F04378027FBA24D00CB5976 /* More+Protocol.swift */,
+				7F04377C27FB989200CB5976 /* MoreCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F04377727FB973F00CB5976 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7F7E8DE327F1AA7D00FACB7C /* Core */ = {
@@ -315,6 +426,8 @@
 		7F826D3427FA608000B2D50E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7F04377127FB928700CB5976 /* Handel Shaow */,
+				7F04375927FB759600CB5976 /* Handel Spiner */,
 				7F826D3527FA608700B2D50E /* Handel Button */,
 			);
 			path = Helper;
@@ -368,7 +481,8 @@
 			isa = PBXGroup;
 			children = (
 				7F826D3B27FA66EC00B2D50E /* Main */,
-				7FE79E3F27F0DE37003D0F3B /* MVP */,
+				7FE79E3F27F0DE37003D0F3B /* MVP First Screens */,
+				7F04376827FB8FB200CB5976 /* MVP Home */,
 				7FAB713B27F0CAB700477373 /* Shayal */,
 				7FAB715227F0CAB800477373 /* ShayalTests */,
 				7FAB715C27F0CAB800477373 /* ShayalUITests */,
@@ -392,6 +506,7 @@
 			isa = PBXGroup;
 			children = (
 				7FAB714A27F0CAB800477373 /* Info.plist */,
+				7F04376627FB837200CB5976 /* Home.storyboard */,
 				7FAB714227F0CAB700477373 /* Main.storyboard */,
 				7FAB714027F0CAB700477373 /* ViewController.swift */,
 				7FAB713E27F0CAB700477373 /* SceneDelegate.swift */,
@@ -499,7 +614,7 @@
 			path = EnterCode;
 			sourceTree = "<group>";
 		};
-		7FE79E3F27F0DE37003D0F3B /* MVP */ = {
+		7FE79E3F27F0DE37003D0F3B /* MVP First Screens */ = {
 			isa = PBXGroup;
 			children = (
 				7F7E8DE627F1BD6400FACB7C /* IntroScreens */,
@@ -507,7 +622,7 @@
 				7F7E8DFC27F1FC0900FACB7C /* Login */,
 				7F826D2B27FA5A8600B2D50E /* SignUP */,
 			);
-			path = MVP;
+			path = "MVP First Screens";
 			sourceTree = "<group>";
 		};
 		7FE79E4727F0EE9E003D0F3B /* Font */ = {
@@ -630,6 +745,7 @@
 				7F826D4227FA67D900B2D50E /* SginUP.xib in Resources */,
 				7FE0E80927F85B51003FB8BF /* VerificationSuccess.xib in Resources */,
 				7F7E8DF627F1E7F000FACB7C /* Intro3.xib in Resources */,
+				7F04376727FB837200CB5976 /* Home.storyboard in Resources */,
 				7FE0E81527F87C79003FB8BF /* EnterCode.xib in Resources */,
 				7F7E8DF127F1C61900FACB7C /* Intro2.xib in Resources */,
 				7F7E8E0327F1FC3200FACB7C /* Login.xib in Resources */,
@@ -724,13 +840,21 @@
 				7F826D4127FA67D900B2D50E /* SginUP.swift in Sources */,
 				7FE0E80127F78299003FB8BF /* ForgetPasswordPresenter.swift in Sources */,
 				7F826D2F27FA5C4500B2D50E /* EnterNewPassword.swift in Sources */,
+				7F04378127FBA24D00CB5976 /* More+Protocol.swift in Sources */,
+				7F04377927FB976300CB5976 /* More.swift in Sources */,
 				7F826D2827FA465B00B2D50E /* APICall.swift in Sources */,
 				7F7E8DF527F1E7F000FACB7C /* Intro3.swift in Sources */,
 				7F7E8DFA27F1ECC300FACB7C /* Intro4.swift in Sources */,
 				7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */,
+				7F04377D27FB989200CB5976 /* MoreCell.swift in Sources */,
 				7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */,
 				7FE0E7F727F7675A003FB8BF /* LoginVC+Protocol.swift in Sources */,
+				7F04377027FB901A00CB5976 /* Home.swift in Sources */,
+				7F04377F27FB9D4D00CB5976 /* MorePresenter.swift in Sources */,
+				7F04377327FB92B000CB5976 /* HandelShadow.swift in Sources */,
 				7F826D2A27FA49BD00B2D50E /* File.swift in Sources */,
+				7F04377B27FB979900CB5976 /* More+TableView.swift in Sources */,
+				7F04375B27FB75BB00CB5976 /* Spiner.swift in Sources */,
 				7F7E8E0227F1FC3200FACB7C /* Login.swift in Sources */,
 				7F826D3327FA5C6E00B2D50E /* EnterNewPasswordPresenter.swift in Sources */,
 			);
