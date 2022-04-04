@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AFD9CDE1E9A09B806BF3CA3 /* Pods_Shayal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088FBD273291CC3AFECDBA3E /* Pods_Shayal.framework */; };
 		7F7E8DEB27F1BE4000FACB7C /* Intro1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DE927F1BE4000FACB7C /* Intro1.swift */; };
 		7F7E8DEC27F1BE4000FACB7C /* Intro1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */; };
 		7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEE27F1C61900FACB7C /* Intro2.swift */; };
@@ -17,6 +18,16 @@
 		7F7E8DFB27F1ECC300FACB7C /* Intro4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8DF927F1ECC300FACB7C /* Intro4.xib */; };
 		7F7E8E0227F1FC3200FACB7C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8E0027F1FC3200FACB7C /* Login.swift */; };
 		7F7E8E0327F1FC3200FACB7C /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8E0127F1FC3200FACB7C /* Login.xib */; };
+		7F826D2827FA465B00B2D50E /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D2727FA465B00B2D50E /* APICall.swift */; };
+		7F826D2A27FA49BD00B2D50E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D2927FA49BD00B2D50E /* File.swift */; };
+		7F826D2F27FA5C4500B2D50E /* EnterNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D2D27FA5C4500B2D50E /* EnterNewPassword.swift */; };
+		7F826D3027FA5C4500B2D50E /* EnterNewPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F826D2E27FA5C4500B2D50E /* EnterNewPassword.xib */; };
+		7F826D3327FA5C6E00B2D50E /* EnterNewPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D3227FA5C6E00B2D50E /* EnterNewPasswordPresenter.swift */; };
+		7F826D3727FA609900B2D50E /* HandelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D3627FA609900B2D50E /* HandelButton.swift */; };
+		7F826D3927FA63AE00B2D50E /* EnterNewPassword+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D3827FA63AE00B2D50E /* EnterNewPassword+Extention.swift */; };
+		7F826D4127FA67D900B2D50E /* SginUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D3F27FA67D900B2D50E /* SginUP.swift */; };
+		7F826D4227FA67D900B2D50E /* SginUP.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F826D4027FA67D900B2D50E /* SginUP.xib */; };
+		7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D4327FA773600B2D50E /* SginUP+Extention.swift */; };
 		7FAB713D27F0CAB700477373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB713C27F0CAB700477373 /* AppDelegate.swift */; };
 		7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB713E27F0CAB700477373 /* SceneDelegate.swift */; };
 		7FAB714127F0CAB700477373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB714027F0CAB700477373 /* ViewController.swift */; };
@@ -61,6 +72,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		088FBD273291CC3AFECDBA3E /* Pods_Shayal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shayal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42104522DA31D0062F2441CF /* Pods-Shayal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayal.release.xcconfig"; path = "Target Support Files/Pods-Shayal/Pods-Shayal.release.xcconfig"; sourceTree = "<group>"; };
+		4ADB3ED171A52EDAE1495000 /* Pods-Shayal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayal.debug.xcconfig"; path = "Target Support Files/Pods-Shayal/Pods-Shayal.debug.xcconfig"; sourceTree = "<group>"; };
 		7F7E8DE927F1BE4000FACB7C /* Intro1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro1.swift; sourceTree = "<group>"; };
 		7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro1.xib; sourceTree = "<group>"; };
 		7F7E8DEE27F1C61900FACB7C /* Intro2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro2.swift; sourceTree = "<group>"; };
@@ -71,6 +85,16 @@
 		7F7E8DF927F1ECC300FACB7C /* Intro4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro4.xib; sourceTree = "<group>"; };
 		7F7E8E0027F1FC3200FACB7C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		7F7E8E0127F1FC3200FACB7C /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		7F826D2727FA465B00B2D50E /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		7F826D2927FA49BD00B2D50E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		7F826D2D27FA5C4500B2D50E /* EnterNewPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNewPassword.swift; sourceTree = "<group>"; };
+		7F826D2E27FA5C4500B2D50E /* EnterNewPassword.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterNewPassword.xib; sourceTree = "<group>"; };
+		7F826D3227FA5C6E00B2D50E /* EnterNewPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNewPasswordPresenter.swift; sourceTree = "<group>"; };
+		7F826D3627FA609900B2D50E /* HandelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandelButton.swift; sourceTree = "<group>"; };
+		7F826D3827FA63AE00B2D50E /* EnterNewPassword+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnterNewPassword+Extention.swift"; sourceTree = "<group>"; };
+		7F826D3F27FA67D900B2D50E /* SginUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginUP.swift; sourceTree = "<group>"; };
+		7F826D4027FA67D900B2D50E /* SginUP.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SginUP.xib; sourceTree = "<group>"; };
+		7F826D4327FA773600B2D50E /* SginUP+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SginUP+Extention.swift"; sourceTree = "<group>"; };
 		7FAB713927F0CAB700477373 /* Shayal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shayal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAB713C27F0CAB700477373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAB713E27F0CAB700477373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AFD9CDE1E9A09B806BF3CA3 /* Pods_Shayal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +151,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A3F16882213703A0A9DDAAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				088FBD273291CC3AFECDBA3E /* Pods_Shayal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67EA549F46E19A93A6CD5660 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ADB3ED171A52EDAE1495000 /* Pods-Shayal.debug.xcconfig */,
+				42104522DA31D0062F2441CF /* Pods-Shayal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7F7E8DE327F1AA7D00FACB7C /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,13 +183,6 @@
 				7FAB714727F0CAB800477373 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		7F7E8DE527F1AAB700FACB7C /* Configration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Configration;
 			sourceTree = "<group>";
 		};
 		7F7E8DE627F1BD6400FACB7C /* IntroScreens */ = {
@@ -232,18 +267,114 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7F826D2327FA431200B2D50E /* API Call */ = {
+			isa = PBXGroup;
+			children = (
+				7F826D2627FA463B00B2D50E /* Base */,
+			);
+			path = "API Call";
+			sourceTree = "<group>";
+		};
+		7F826D2627FA463B00B2D50E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7F826D2927FA49BD00B2D50E /* File.swift */,
+				7F826D2727FA465B00B2D50E /* APICall.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7F826D2B27FA5A8600B2D50E /* SignUP */ = {
+			isa = PBXGroup;
+			children = (
+				7F826D3E27FA67B400B2D50E /* Model */,
+				7F826D3D27FA67B100B2D50E /* View */,
+				7F826D3C27FA67A900B2D50E /* Presenter */,
+			);
+			path = SignUP;
+			sourceTree = "<group>";
+		};
+		7F826D2C27FA5C1F00B2D50E /* EnterNewPasssword */ = {
+			isa = PBXGroup;
+			children = (
+				7F826D2D27FA5C4500B2D50E /* EnterNewPassword.swift */,
+				7F826D3827FA63AE00B2D50E /* EnterNewPassword+Extention.swift */,
+				7F826D2E27FA5C4500B2D50E /* EnterNewPassword.xib */,
+			);
+			path = EnterNewPasssword;
+			sourceTree = "<group>";
+		};
+		7F826D3127FA5C5000B2D50E /* EnterNewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				7F826D3227FA5C6E00B2D50E /* EnterNewPasswordPresenter.swift */,
+			);
+			path = EnterNewPassword;
+			sourceTree = "<group>";
+		};
+		7F826D3427FA608000B2D50E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7F826D3527FA608700B2D50E /* Handel Button */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7F826D3527FA608700B2D50E /* Handel Button */ = {
+			isa = PBXGroup;
+			children = (
+				7F826D3627FA609900B2D50E /* HandelButton.swift */,
+			);
+			path = "Handel Button";
+			sourceTree = "<group>";
+		};
+		7F826D3B27FA66EC00B2D50E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E8DE427F1AAA200FACB7C /* Resources */,
+				7F826D2327FA431200B2D50E /* API Call */,
+				7F826D3427FA608000B2D50E /* Helper */,
+				7F7E8DE327F1AA7D00FACB7C /* Core */,
+				7FE79E4727F0EE9E003D0F3B /* Font */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7F826D3C27FA67A900B2D50E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F826D3D27FA67B100B2D50E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F826D3F27FA67D900B2D50E /* SginUP.swift */,
+				7F826D4327FA773600B2D50E /* SginUP+Extention.swift */,
+				7F826D4027FA67D900B2D50E /* SginUP.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F826D3E27FA67B400B2D50E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7FAB713027F0CAB700477373 = {
 			isa = PBXGroup;
 			children = (
-				7F7E8DE527F1AAB700FACB7C /* Configration */,
-				7F7E8DE427F1AAA200FACB7C /* Resources */,
-				7F7E8DE327F1AA7D00FACB7C /* Core */,
-				7FE79E4727F0EE9E003D0F3B /* Font */,
+				7F826D3B27FA66EC00B2D50E /* Main */,
 				7FE79E3F27F0DE37003D0F3B /* MVP */,
 				7FAB713B27F0CAB700477373 /* Shayal */,
 				7FAB715227F0CAB800477373 /* ShayalTests */,
 				7FAB715C27F0CAB800477373 /* ShayalUITests */,
 				7FAB713A27F0CAB700477373 /* Products */,
+				5A3F16882213703A0A9DDAAB /* Frameworks */,
+				67EA549F46E19A93A6CD5660 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,6 +431,7 @@
 			children = (
 				7FE0E80D27F87C1B003FB8BF /* EnterNumber */,
 				7FE0E80E27F87C2A003FB8BF /* EnterCode */,
+				7F826D3127FA5C5000B2D50E /* EnterNewPassword */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -310,6 +442,7 @@
 				7FE0E80427F85ADD003FB8BF /* EnterNumber */,
 				7FE0E80527F85B12003FB8BF /* VerficationSuccess */,
 				7FE0E81127F87C5A003FB8BF /* EnterCode */,
+				7F826D2C27FA5C1F00B2D50E /* EnterNewPasssword */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,6 +505,7 @@
 				7F7E8DE627F1BD6400FACB7C /* IntroScreens */,
 				7FE0E7F827F77BEA003FB8BF /* Forget Password */,
 				7F7E8DFC27F1FC0900FACB7C /* Login */,
+				7F826D2B27FA5A8600B2D50E /* SignUP */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -393,9 +527,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FAB716327F0CAB800477373 /* Build configuration list for PBXNativeTarget "Shayal" */;
 			buildPhases = (
+				45922AA9AF7B2C4B5CF77EE5 /* [CP] Check Pods Manifest.lock */,
 				7FAB713527F0CAB700477373 /* Sources */,
 				7FAB713627F0CAB700477373 /* Frameworks */,
 				7FAB713727F0CAB700477373 /* Resources */,
+				19B23418901BF4B3BF8A4D80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -491,12 +627,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F7E8DEC27F1BE4000FACB7C /* Intro1.xib in Resources */,
+				7F826D4227FA67D900B2D50E /* SginUP.xib in Resources */,
 				7FE0E80927F85B51003FB8BF /* VerificationSuccess.xib in Resources */,
 				7F7E8DF627F1E7F000FACB7C /* Intro3.xib in Resources */,
 				7FE0E81527F87C79003FB8BF /* EnterCode.xib in Resources */,
 				7F7E8DF127F1C61900FACB7C /* Intro2.xib in Resources */,
 				7F7E8E0327F1FC3200FACB7C /* Login.xib in Resources */,
 				7FAB714927F0CAB800477373 /* LaunchScreen.storyboard in Resources */,
+				7F826D3027FA5C4500B2D50E /* EnterNewPassword.xib in Resources */,
 				7FE79E5327F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf in Resources */,
 				7FE79E5527F0EFD0003D0F3B /* Almarai-Regular.ttf in Resources */,
 				7FAB714627F0CAB800477373 /* Assets.xcassets in Resources */,
@@ -523,6 +661,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19B23418901BF4B3BF8A4D80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shayal/Pods-Shayal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shayal/Pods-Shayal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shayal/Pods-Shayal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45922AA9AF7B2C4B5CF77EE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shayal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FAB713527F0CAB700477373 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -532,19 +712,27 @@
 				7FAB714127F0CAB700477373 /* ViewController.swift in Sources */,
 				7FE0E7FB27F77C0A003FB8BF /* ForgetPassword.swift in Sources */,
 				7FE0E81427F87C79003FB8BF /* EnterCode.swift in Sources */,
+				7F826D3927FA63AE00B2D50E /* EnterNewPassword+Extention.swift in Sources */,
 				7FAB713D27F0CAB700477373 /* AppDelegate.swift in Sources */,
 				7FE0E7F527F7537B003FB8BF /* loginPresenter.swift in Sources */,
 				7F7E8DEB27F1BE4000FACB7C /* Intro1.swift in Sources */,
 				7FE0E80827F85B51003FB8BF /* VerificationSuccess.swift in Sources */,
 				7FE0E81027F87C4D003FB8BF /* EnterCodePresenter.swift in Sources */,
+				7F826D3727FA609900B2D50E /* HandelButton.swift in Sources */,
 				7FE0E80327F783C5003FB8BF /* ForgetPassword+Delegate.swift in Sources */,
 				7FE0E81727F8CBC8003FB8BF /* EnterCode+UITextField.swift in Sources */,
+				7F826D4127FA67D900B2D50E /* SginUP.swift in Sources */,
 				7FE0E80127F78299003FB8BF /* ForgetPasswordPresenter.swift in Sources */,
+				7F826D2F27FA5C4500B2D50E /* EnterNewPassword.swift in Sources */,
+				7F826D2827FA465B00B2D50E /* APICall.swift in Sources */,
 				7F7E8DF527F1E7F000FACB7C /* Intro3.swift in Sources */,
 				7F7E8DFA27F1ECC300FACB7C /* Intro4.swift in Sources */,
+				7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */,
 				7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */,
 				7FE0E7F727F7675A003FB8BF /* LoginVC+Protocol.swift in Sources */,
+				7F826D2A27FA49BD00B2D50E /* File.swift in Sources */,
 				7F7E8E0227F1FC3200FACB7C /* Login.swift in Sources */,
+				7F826D3327FA5C6E00B2D50E /* EnterNewPasswordPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +906,7 @@
 		};
 		7FAB716427F0CAB800477373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ADB3ED171A52EDAE1495000 /* Pods-Shayal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -746,6 +935,7 @@
 		};
 		7FAB716527F0CAB800477373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42104522DA31D0062F2441CF /* Pods-Shayal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

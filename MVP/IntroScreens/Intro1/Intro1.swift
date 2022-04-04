@@ -13,7 +13,19 @@ class Intro1: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("hello world")
-        navigationController?.isNavigationBarHidden = true
+        handelNavigationItem()
+    }
+    // MARK: - Hnadel navigatio item
+    func handelNavigationItem() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Skip",
+                                                           style: .done,
+                                                           target: self,
+                                                           action: #selector(addAction))
+    }
+    // Skip Button Action
+    @objc func addAction(){
+        let VC = Login()
+        navigationController?.pushViewController(VC, animated: true)
     }
     // MARK: - IBAction
     @IBAction func nextButton(_ sender: UIButton) {

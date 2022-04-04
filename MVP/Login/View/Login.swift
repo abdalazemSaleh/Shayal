@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class Login: UIViewController {
     
@@ -27,22 +28,14 @@ class Login: UIViewController {
         phoneNumberLabel.isHidden = true
         passwordLabel.isHidden = true
         // handel login button gradient
+        login.layer.masksToBounds = true
         login.layer.cornerRadius = 24
-        let first = UIColor(named: "First")
-        let secound = UIColor(named: "Secound")
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = login.bounds
-        gradientLayer.colors = [secound!.cgColor, first!.cgColor]
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
-        gradientLayer.locations = [0.0, 1.0]
-        login.layer.insertSublayer(gradientLayer, at: 0)
+        HandelGradient.HandelButtonGradient(button: login)
     }
     // MARK: - Set Up Navigation
     func setUPNavigation() {
         navigationController?.isNavigationBarHidden = false
-        navigationItem.title = "Login"
-        title = "Forget Password"
+        title = "Login"
     }
     // MARK: - IBOutlet
     @IBOutlet var phoneNumber: UITextField!
@@ -57,9 +50,11 @@ class Login: UIViewController {
         let VC = ForgetPassword()
         navigationController?.pushViewController(VC, animated: true)
     }
+    @IBAction func sginUp(_ sender: UIButton) {
+        let VC = SginUP()
+        navigationController?.pushViewController(VC, animated: true)
+    }
 }
-
-
 extension Login: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.backgroundColor = UIColor.red

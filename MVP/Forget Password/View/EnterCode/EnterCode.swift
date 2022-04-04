@@ -15,6 +15,13 @@ class EnterCode: UIViewController {
     @IBOutlet var fourthTF: UITextField!
     @IBOutlet var fivethTF: UITextField!
     @IBOutlet var sixthTF: UITextField!
+    // MARK: - IBOutlet
+    @IBOutlet var nextButton: UIButton!
+    // MARK: - IBAction
+    @IBAction func next(_ sender: UIButton) {
+        let VC = EnterNewPassword()
+        navigationController?.pushViewController(VC, animated: true)
+    }
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,22 +42,8 @@ class EnterCode: UIViewController {
     // MARK: - Handel View
     func handelView() {
         // handel next button
+        nextButton.layer.masksToBounds = true
         nextButton.layer.cornerRadius = 24
-        let first = UIColor(named: "First")
-        let secound = UIColor(named: "Secound")
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = nextButton.bounds
-        gradientLayer.colors = [secound!.cgColor, first!.cgColor]
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
-        gradientLayer.locations = [0.0, 1.0]
-        nextButton.layer.insertSublayer(gradientLayer, at: 0)
+        HandelGradient.HandelButtonGradient(button: nextButton)
     }
-    
-    // MARK: - IBOutlet
-    @IBOutlet var nextButton: UIButton!
-    // MARK: - IBAction
-    @IBAction func next(_ sender: UIButton) {
-    }
-
 }

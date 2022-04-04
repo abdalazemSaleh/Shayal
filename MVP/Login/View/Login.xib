@@ -38,9 +38,9 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUP-ih-YSX">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="629"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Sign in to save your research results, requests, and of course for more fun !" translatesAutoresizingMaskIntoConstraints="NO" id="J5V-He-2yz">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Sign in to save your research results, requests, and of course for more fun !" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5V-He-2yz">
                                     <rect key="frame" x="16" y="16" width="334" height="43"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -164,12 +164,32 @@
                                         </button>
                                     </subviews>
                                 </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAQ-Ix-jZ3">
+                                    <rect key="frame" x="101" y="629" width="212" height="31"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQf-tP-Hxe">
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="31"/>
+                                            <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrc-0w-jCG">
+                                            <rect key="frame" x="144" y="0.0" width="68" height="31"/>
+                                            <color key="tintColor" red="0.98431372549999996" green="0.67450980390000004" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Sgin in"/>
+                                            <connections>
+                                                <action selector="sginUp:" destination="-1" eventType="touchUpInside" id="RR8-gE-d0o"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="J5V-He-2yz" firstAttribute="leading" secondItem="oUP-ih-YSX" secondAttribute="leading" constant="16" id="4vf-95-81m"/>
                                 <constraint firstItem="K4w-3K-Kxs" firstAttribute="top" secondItem="2fu-bX-GoE" secondAttribute="bottom" constant="64" id="CQ2-8p-MKa"/>
-                                <constraint firstAttribute="bottom" secondItem="41g-mQ-vhD" secondAttribute="bottom" constant="64" id="Dbg-xe-8F6"/>
+                                <constraint firstItem="NAQ-Ix-jZ3" firstAttribute="centerX" secondItem="41g-mQ-vhD" secondAttribute="centerX" id="CTV-Lq-kPf"/>
                                 <constraint firstAttribute="trailing" secondItem="VbN-oT-8bh" secondAttribute="trailing" constant="16" id="E2l-ie-0OM"/>
                                 <constraint firstItem="41g-mQ-vhD" firstAttribute="centerX" secondItem="rxL-kY-vs0" secondAttribute="centerX" id="GRy-5Q-PRl"/>
                                 <constraint firstItem="J5V-He-2yz" firstAttribute="top" secondItem="oUP-ih-YSX" secondAttribute="top" constant="16" id="Jy3-jD-ach"/>
@@ -180,8 +200,10 @@
                                 <constraint firstItem="rxL-kY-vs0" firstAttribute="top" secondItem="K4w-3K-Kxs" secondAttribute="bottom" constant="112" id="fXg-bf-VwJ"/>
                                 <constraint firstItem="rxL-kY-vs0" firstAttribute="centerX" secondItem="K4w-3K-Kxs" secondAttribute="centerX" id="gxm-WC-OeO"/>
                                 <constraint firstAttribute="trailing" secondItem="2fu-bX-GoE" secondAttribute="trailing" constant="16" id="mQN-F3-9Dt"/>
+                                <constraint firstAttribute="bottom" secondItem="NAQ-Ix-jZ3" secondAttribute="bottom" constant="32" id="q3m-7D-Bg0"/>
                                 <constraint firstItem="K4w-3K-Kxs" firstAttribute="centerX" secondItem="oUP-ih-YSX" secondAttribute="centerX" id="qcO-4b-IT0"/>
                                 <constraint firstItem="2fu-bX-GoE" firstAttribute="top" secondItem="VbN-oT-8bh" secondAttribute="bottom" constant="8" id="qyr-tx-0Lr"/>
+                                <constraint firstItem="NAQ-Ix-jZ3" firstAttribute="top" secondItem="41g-mQ-vhD" secondAttribute="bottom" constant="64" id="vcH-cT-sza"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -217,7 +239,7 @@
         <image name="Group 23" width="51" height="51"/>
         <image name="Group 530" width="51" height="51"/>
         <namedColor name="First">
-            <color red="0.18823529411764706" green="0.83529411764705885" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18799999356269836" green="0.83499997854232788" blue="0.7839999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Main">
             <color red="0.086000002920627594" green="0.14100000262260437" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
