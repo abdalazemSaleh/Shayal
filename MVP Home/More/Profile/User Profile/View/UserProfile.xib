@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+        <array key="ArbFONTS-Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserProfile" customModule="Shayal" customModuleProvider="target">
+            <connections>
+                <outlet property="countryTF" destination="fnS-fi-dTT" id="zcM-71-BGu"/>
+                <outlet property="countryView" destination="jVM-Hj-Jgn" id="1Pi-NR-Fv6"/>
+                <outlet property="creadit" destination="QCD-Y2-Uuk" id="vGV-yX-pZt"/>
+                <outlet property="creaditView" destination="M6r-O5-rIx" id="xnr-tH-hrI"/>
+                <outlet property="orderdView" destination="XY4-Sf-YCM" id="pqn-5r-IuU"/>
+                <outlet property="orders" destination="lnG-zC-BB7" id="I0R-zF-EwU"/>
+                <outlet property="phoneTF" destination="UpR-F1-H9c" id="qxB-cl-pcU"/>
+                <outlet property="phoneView" destination="R8t-0g-E6k" id="spS-t6-vED"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="vwb-2b-tMv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 513" translatesAutoresizingMaskIntoConstraints="NO" id="AMD-P2-j2b">
+                    <rect key="frame" x="151" y="52" width="112" height="112"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="112" id="M62-BH-iNN"/>
+                        <constraint firstAttribute="width" constant="112" id="ocd-Le-gSo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abdalazem Saleh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNN-mU-FAk">
+                    <rect key="frame" x="143" y="188" width="128.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="u4y-b1-W4j">
+                    <rect key="frame" x="127" y="270" width="160" height="72"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6r-O5-rIx">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="145" translatesAutoresizingMaskIntoConstraints="NO" id="TPl-kh-O7p">
+                                    <rect key="frame" x="24" y="20" width="24" height="16"/>
+                                    <color key="tintColor" name="TabBar"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="fIA-5O-wD8"/>
+                                        <constraint firstAttribute="height" constant="16" id="hjK-Vj-IRI"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCD-Y2-Uuk">
+                                    <rect key="frame" x="27.5" y="44" width="17" height="13.5"/>
+                                    <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
+                                    <color key="textColor" name="label"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="TPl-kh-O7p" firstAttribute="centerX" secondItem="M6r-O5-rIx" secondAttribute="centerX" id="HHn-gq-FNn"/>
+                                <constraint firstItem="TPl-kh-O7p" firstAttribute="top" secondItem="M6r-O5-rIx" secondAttribute="top" constant="20" id="ImI-AQ-d13"/>
+                                <constraint firstItem="QCD-Y2-Uuk" firstAttribute="top" secondItem="TPl-kh-O7p" secondAttribute="bottom" constant="8" id="Vdr-IQ-mMy"/>
+                                <constraint firstAttribute="width" constant="72" id="gAB-0k-7ii"/>
+                                <constraint firstItem="QCD-Y2-Uuk" firstAttribute="centerX" secondItem="TPl-kh-O7p" secondAttribute="centerX" id="jq6-NT-3xn"/>
+                                <constraint firstAttribute="height" constant="72" id="xEd-Hv-asw"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XY4-Sf-YCM">
+                            <rect key="frame" x="88" y="0.0" width="72" height="72"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="sBS-8L-c8u">
+                                    <rect key="frame" x="24" y="20" width="24" height="16"/>
+                                    <color key="tintColor" name="TabBar"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="RbU-17-gn8"/>
+                                        <constraint firstAttribute="height" constant="16" id="WjV-Ks-r3P"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnG-zC-BB7">
+                                    <rect key="frame" x="30.5" y="44" width="11.5" height="13.5"/>
+                                    <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
+                                    <color key="textColor" name="label"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="lnG-zC-BB7" firstAttribute="centerX" secondItem="sBS-8L-c8u" secondAttribute="centerX" id="0QB-hF-trN"/>
+                                <constraint firstAttribute="height" constant="72" id="F5z-j4-ZQ1"/>
+                                <constraint firstItem="lnG-zC-BB7" firstAttribute="top" secondItem="sBS-8L-c8u" secondAttribute="bottom" constant="8" id="Flr-et-Roy"/>
+                                <constraint firstAttribute="width" constant="72" id="PO0-N7-LLL"/>
+                                <constraint firstItem="sBS-8L-c8u" firstAttribute="centerX" secondItem="XY4-Sf-YCM" secondAttribute="centerX" id="WvV-Qj-J7x"/>
+                                <constraint firstItem="sBS-8L-c8u" firstAttribute="top" secondItem="XY4-Sf-YCM" secondAttribute="top" constant="20" id="pke-b5-9t1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1QM-x8-x6y">
+                    <rect key="frame" x="16" y="406" width="382" height="112"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8t-0g-E6k" userLabel="phoneNumberView">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2s-vF-Czp">
+                                    <rect key="frame" x="16" y="8" width="52.5" height="9"/>
+                                    <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="01062690294" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UpR-F1-H9c">
+                                    <rect key="frame" x="16" y="17" width="366" height="23"/>
+                                    <color key="backgroundColor" name="TF"/>
+                                    <color key="tintColor" name="TF"/>
+                                    <color key="textColor" name="TabBar"/>
+                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" name="TF"/>
+                            <constraints>
+                                <constraint firstItem="Z2s-vF-Czp" firstAttribute="top" secondItem="R8t-0g-E6k" secondAttribute="top" constant="8" id="8qm-3g-ofV"/>
+                                <constraint firstItem="Z2s-vF-Czp" firstAttribute="leading" secondItem="R8t-0g-E6k" secondAttribute="leading" constant="16" id="EDY-xJ-9XZ"/>
+                                <constraint firstAttribute="height" constant="48" id="Iv9-i3-BBO"/>
+                                <constraint firstAttribute="bottom" secondItem="UpR-F1-H9c" secondAttribute="bottom" constant="8" id="VG3-dU-H1D"/>
+                                <constraint firstItem="UpR-F1-H9c" firstAttribute="top" secondItem="Z2s-vF-Czp" secondAttribute="bottom" id="e47-3i-lgZ"/>
+                                <constraint firstAttribute="trailing" secondItem="UpR-F1-H9c" secondAttribute="trailing" id="ghB-5X-vqP"/>
+                                <constraint firstItem="UpR-F1-H9c" firstAttribute="leading" secondItem="R8t-0g-E6k" secondAttribute="leading" constant="16" id="pvk-Cs-zfk"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVM-Hj-Jgn" userLabel="CounryView">
+                            <rect key="frame" x="0.0" y="64" width="382" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tox-tU-jbx">
+                                    <rect key="frame" x="16" y="8" width="28" height="9"/>
+                                    <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Egypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fnS-fi-dTT">
+                                    <rect key="frame" x="16" y="17" width="366" height="23"/>
+                                    <color key="backgroundColor" name="TF"/>
+                                    <color key="tintColor" name="TF"/>
+                                    <color key="textColor" name="TabBar"/>
+                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" name="TF"/>
+                            <constraints>
+                                <constraint firstItem="Tox-tU-jbx" firstAttribute="leading" secondItem="jVM-Hj-Jgn" secondAttribute="leading" constant="16" id="81t-Ew-NQ1"/>
+                                <constraint firstAttribute="bottom" secondItem="fnS-fi-dTT" secondAttribute="bottom" constant="8" id="IWs-a7-Ecd"/>
+                                <constraint firstAttribute="trailing" secondItem="fnS-fi-dTT" secondAttribute="trailing" id="LJA-ZI-llP"/>
+                                <constraint firstItem="fnS-fi-dTT" firstAttribute="leading" secondItem="jVM-Hj-Jgn" secondAttribute="leading" constant="16" id="Weo-Q2-fdL"/>
+                                <constraint firstItem="fnS-fi-dTT" firstAttribute="top" secondItem="Tox-tU-jbx" secondAttribute="bottom" id="bRf-Fe-KIR"/>
+                                <constraint firstAttribute="height" constant="48" id="cWr-q7-Kn5"/>
+                                <constraint firstItem="Tox-tU-jbx" firstAttribute="top" secondItem="jVM-Hj-Jgn" secondAttribute="top" constant="8" id="tDk-4d-KfO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="AMD-P2-j2b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="09b-2u-Ebh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1QM-x8-x6y" secondAttribute="trailing" constant="16" id="7Wh-Mr-fYm"/>
+                <constraint firstItem="vwb-2b-tMv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="88E-Ec-s84"/>
+                <constraint firstItem="u4y-b1-W4j" firstAttribute="centerX" secondItem="fNN-mU-FAk" secondAttribute="centerX" id="CQq-Mx-yTx"/>
+                <constraint firstItem="u4y-b1-W4j" firstAttribute="top" secondItem="fNN-mU-FAk" secondAttribute="bottom" constant="64" id="Ps5-am-sAI"/>
+                <constraint firstAttribute="bottom" secondItem="vwb-2b-tMv" secondAttribute="bottom" id="TVA-5n-J5v"/>
+                <constraint firstItem="vwb-2b-tMv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VGn-6C-ByJ"/>
+                <constraint firstItem="AMD-P2-j2b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XyK-n7-88r"/>
+                <constraint firstItem="1QM-x8-x6y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aev-q8-IN9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vwb-2b-tMv" secondAttribute="trailing" id="bJ1-VJ-rzk"/>
+                <constraint firstItem="1QM-x8-x6y" firstAttribute="top" secondItem="u4y-b1-W4j" secondAttribute="bottom" constant="64" id="kCs-wB-X5S"/>
+                <constraint firstItem="fNN-mU-FAk" firstAttribute="centerX" secondItem="AMD-P2-j2b" secondAttribute="centerX" id="kdW-kN-9tx"/>
+                <constraint firstItem="fNN-mU-FAk" firstAttribute="top" secondItem="AMD-P2-j2b" secondAttribute="bottom" constant="24" id="mWI-gb-lxE"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="12" width="50" height="40.5"/>
+        <image name="145" width="18.5" height="18.5"/>
+        <image name="BackGround" width="424" height="932"/>
+        <image name="Group 513" width="118" height="118"/>
+        <namedColor name="TF">
+            <color red="0.19599999487400055" green="0.23499999940395355" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TabBar">
+            <color red="0.10196078431372549" green="0.76862745098039209" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label">
+            <color red="0.80800002813339233" green="0.80800002813339233" blue="0.80800002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

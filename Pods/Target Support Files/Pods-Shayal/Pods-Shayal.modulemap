@@ -1,4 +1,4 @@
-framework module Pods_Shayal {
+module Pods_Shayal {
   umbrella header "Pods-Shayal-umbrella.h"
 
   export *

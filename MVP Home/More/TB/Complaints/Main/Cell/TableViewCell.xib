@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArbFONTS-Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ComplaintsCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ComplaintsCell" rowHeight="77" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="Shayal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRd-4T-zUU">
+                        <rect key="frame" x="0.0" y="4" width="415" height="69"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay in receiving orders ....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKM-c8-0QC">
+                                <rect key="frame" x="16" y="25.5" width="208" height="18"/>
+                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gKM-c8-0QC" firstAttribute="centerY" secondItem="QRd-4T-zUU" secondAttribute="centerY" id="FLX-dx-AOY"/>
+                            <constraint firstItem="gKM-c8-0QC" firstAttribute="leading" secondItem="QRd-4T-zUU" secondAttribute="leading" constant="16" id="qlh-rA-Yfl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QRd-4T-zUU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Lsy-0J-lsD"/>
+                    <constraint firstAttribute="trailing" secondItem="QRd-4T-zUU" secondAttribute="trailing" id="Zz2-UG-jBc"/>
+                    <constraint firstItem="QRd-4T-zUU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="y18-S8-COi"/>
+                    <constraint firstAttribute="bottom" secondItem="QRd-4T-zUU" secondAttribute="bottom" constant="4" id="zKZ-nW-676"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="complaintsLable" destination="gKM-c8-0QC" id="BNB-wt-PaF"/>
+                <outlet property="complaintsView" destination="QRd-4T-zUU" id="h9m-rP-LFY"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="124.88839285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

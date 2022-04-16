@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+        <array key="ArbFONTS-Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddComplaintsViewController" customModule="Shayal" customModuleProvider="target">
+            <connections>
+                <outlet property="close" destination="GZu-rS-pZj" id="noM-cP-rJy"/>
+                <outlet property="complaintTV" destination="XLt-1T-t3U" id="y6Q-dD-e0O"/>
+                <outlet property="mainView" destination="OPl-zq-cGy" id="2Oj-vM-esG"/>
+                <outlet property="nameTF" destination="50p-Ug-TGm" id="sak-nk-FJf"/>
+                <outlet property="nameView" destination="SXE-cs-QT9" id="ddQ-oI-fZN"/>
+                <outlet property="send" destination="Vhs-Qh-tG0" id="qJo-Bf-Dqm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYH-mN-EFo">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mCI-G8-a6N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPl-zq-cGy">
+                                <rect key="frame" x="0.0" y="532" width="414" height="364"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXE-cs-QT9">
+                                        <rect key="frame" x="16" y="32" width="382" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwc-Ka-V2p">
+                                                <rect key="frame" x="16" y="8" width="21" height="16"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
+                                                <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Abdalazem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50p-Ug-TGm">
+                                                <rect key="frame" x="16" y="24" width="350" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="FXS-qy-pDR"/>
+                                                </constraints>
+                                                <color key="textColor" name="TabBar"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="50p-Ug-TGm" secondAttribute="trailing" constant="16" id="0Zr-tj-gGu"/>
+                                            <constraint firstAttribute="bottom" secondItem="50p-Ug-TGm" secondAttribute="bottom" constant="4" id="UkT-Ft-BFP"/>
+                                            <constraint firstItem="Wwc-Ka-V2p" firstAttribute="leading" secondItem="SXE-cs-QT9" secondAttribute="leading" constant="16" id="V8t-TD-fqO"/>
+                                            <constraint firstItem="50p-Ug-TGm" firstAttribute="top" secondItem="Wwc-Ka-V2p" secondAttribute="bottom" id="XKi-p6-OSz"/>
+                                            <constraint firstItem="Wwc-Ka-V2p" firstAttribute="top" secondItem="SXE-cs-QT9" secondAttribute="top" constant="8" id="ozS-76-bwi"/>
+                                            <constraint firstItem="50p-Ug-TGm" firstAttribute="leading" secondItem="SXE-cs-QT9" secondAttribute="leading" constant="16" id="wg2-Wa-kpZ"/>
+                                            <constraint firstAttribute="height" constant="48" id="ycF-zK-z7b"/>
+                                        </constraints>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your Complaint" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XLt-1T-t3U">
+                                        <rect key="frame" x="16" y="88" width="382" height="132"/>
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhs-Qh-tG0">
+                                        <rect key="frame" x="74.5" y="252" width="265" height="48"/>
+                                        <color key="backgroundColor" name="First"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="AGb-tT-k7x"/>
+                                            <constraint firstAttribute="width" constant="265" id="k45-q6-ltL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Send">
+                                            <fontDescription key="titleFontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="send:" destination="-1" eventType="touchUpInside" id="GeJ-12-GZW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="SXE-cs-QT9" firstAttribute="top" secondItem="OPl-zq-cGy" secondAttribute="top" constant="32" id="49m-kn-WFV"/>
+                                    <constraint firstItem="Vhs-Qh-tG0" firstAttribute="centerX" secondItem="XLt-1T-t3U" secondAttribute="centerX" id="4bt-Fn-Acv"/>
+                                    <constraint firstItem="Vhs-Qh-tG0" firstAttribute="top" secondItem="XLt-1T-t3U" secondAttribute="bottom" constant="32" id="6Q3-aK-7he"/>
+                                    <constraint firstItem="SXE-cs-QT9" firstAttribute="leading" secondItem="OPl-zq-cGy" secondAttribute="leading" constant="16" id="6q0-Ma-fKx"/>
+                                    <constraint firstItem="XLt-1T-t3U" firstAttribute="leading" secondItem="OPl-zq-cGy" secondAttribute="leading" constant="16" id="GuT-KK-wLo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vhs-Qh-tG0" secondAttribute="bottom" constant="64" id="LjD-Bk-mgc"/>
+                                    <constraint firstAttribute="height" constant="364" id="MxH-P2-Uv4"/>
+                                    <constraint firstAttribute="trailing" secondItem="SXE-cs-QT9" secondAttribute="trailing" constant="16" id="fBA-TQ-7ye"/>
+                                    <constraint firstItem="XLt-1T-t3U" firstAttribute="top" secondItem="SXE-cs-QT9" secondAttribute="bottom" constant="8" id="pUP-VZ-HqO"/>
+                                    <constraint firstAttribute="trailing" secondItem="XLt-1T-t3U" secondAttribute="trailing" constant="16" id="qcy-er-prJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZu-rS-pZj">
+                                <rect key="frame" x="366" y="64" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Bwg-ex-4Nq"/>
+                                    <constraint firstAttribute="width" constant="32" id="S3X-AL-dJp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Group 534" title=" "/>
+                                <connections>
+                                    <action selector="close:" destination="-1" eventType="touchUpInside" id="Kgf-99-7a7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a complaint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwz-5f-Wn5">
+                                <rect key="frame" x="147" y="71" width="120.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OPl-zq-cGy" secondAttribute="trailing" id="3Ii-Uz-gfh"/>
+                            <constraint firstAttribute="trailing" secondItem="GZu-rS-pZj" secondAttribute="trailing" constant="16" id="BzS-bO-DgK"/>
+                            <constraint firstItem="Zwz-5f-Wn5" firstAttribute="centerY" secondItem="GZu-rS-pZj" secondAttribute="centerY" id="Lmw-Dr-dXY"/>
+                            <constraint firstItem="GZu-rS-pZj" firstAttribute="top" secondItem="mCI-G8-a6N" secondAttribute="top" constant="64" id="VMq-Qt-rQy"/>
+                            <constraint firstItem="Zwz-5f-Wn5" firstAttribute="centerX" secondItem="mCI-G8-a6N" secondAttribute="centerX" id="cxL-Dq-03h"/>
+                            <constraint firstItem="OPl-zq-cGy" firstAttribute="leading" secondItem="mCI-G8-a6N" secondAttribute="leading" id="guP-qo-hVc"/>
+                            <constraint firstAttribute="bottom" secondItem="OPl-zq-cGy" secondAttribute="bottom" id="lTR-Pb-z1p"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eYH-mN-EFo" secondAttribute="bottom" id="5jx-du-EZE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eYH-mN-EFo" secondAttribute="trailing" id="6EG-MK-UE5"/>
+                <constraint firstItem="eYH-mN-EFo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hdY-dD-hyK"/>
+                <constraint firstItem="eYH-mN-EFo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vPw-YY-KH6"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 534" width="34" height="34"/>
+        <namedColor name="First">
+            <color red="0.18799999356269836" green="0.83499997854232788" blue="0.7839999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TabBar">
+            <color red="0.10196078431372549" green="0.76862745098039209" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

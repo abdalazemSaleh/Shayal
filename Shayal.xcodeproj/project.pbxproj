@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AFD9CDE1E9A09B806BF3CA3 /* Pods_Shayal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088FBD273291CC3AFECDBA3E /* Pods_Shayal.framework */; };
+		18F4A6749DDB6D8AC8CCAAD8 /* libPods-Shayal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4BA1975F408CC73B3F4BBE /* libPods-Shayal.a */; };
 		7F04375B27FB75BB00CB5976 /* Spiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04375A27FB75BB00CB5976 /* Spiner.swift */; };
 		7F04376727FB837200CB5976 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F04376627FB837200CB5976 /* Home.storyboard */; };
 		7F04377027FB901A00CB5976 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04376F27FB901A00CB5976 /* Home.swift */; };
@@ -37,6 +37,43 @@
 		7F826D4127FA67D900B2D50E /* SginUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D3F27FA67D900B2D50E /* SginUP.swift */; };
 		7F826D4227FA67D900B2D50E /* SginUP.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F826D4027FA67D900B2D50E /* SginUP.xib */; };
 		7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D4327FA773600B2D50E /* SginUP+Extention.swift */; };
+		7F99CE47280A0DE0003BD226 /* Complaints+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE44280A0DE0003BD226 /* Complaints+TableView.swift */; };
+		7F99CE48280A0DE0003BD226 /* Complaints.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE45280A0DE0003BD226 /* Complaints.xib */; };
+		7F99CE49280A0DE0003BD226 /* Complaints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE46280A0DE0003BD226 /* Complaints.swift */; };
+		7F99CE4D280A0E1D003BD226 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE4B280A0E1D003BD226 /* TableViewCell.xib */; };
+		7F99CE4E280A0E1D003BD226 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE4C280A0E1D003BD226 /* TableViewCell.swift */; };
+		7F99CE51280A0E43003BD226 /* AddComplaintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE4F280A0E43003BD226 /* AddComplaintsViewController.swift */; };
+		7F99CE52280A0E43003BD226 /* AddComplaintsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE50280A0E43003BD226 /* AddComplaintsViewController.xib */; };
+		7F99CE55280A0E9F003BD226 /* ContactWithUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE53280A0E9F003BD226 /* ContactWithUs.swift */; };
+		7F99CE56280A0E9F003BD226 /* ContactWithUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE54280A0E9F003BD226 /* ContactWithUs.xib */; };
+		7F99CE59280A0EAB003BD226 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE57280A0EAB003BD226 /* Language.swift */; };
+		7F99CE5A280A0EAB003BD226 /* Language.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE58280A0EAB003BD226 /* Language.xib */; };
+		7F99CE5D280A0EB6003BD226 /* TermsAndConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE5B280A0EB6003BD226 /* TermsAndConditions.swift */; };
+		7F99CE5E280A0EB6003BD226 /* TermsAndConditions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE5C280A0EB6003BD226 /* TermsAndConditions.xib */; };
+		7F99CE61280A0EC9003BD226 /* WhoAreWe.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE5F280A0EC8003BD226 /* WhoAreWe.xib */; };
+		7F99CE62280A0EC9003BD226 /* WhoAreWe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE60280A0EC8003BD226 /* WhoAreWe.swift */; };
+		7F99CE6A280A0FAC003BD226 /* EditProfile+TF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE67280A0FAC003BD226 /* EditProfile+TF.swift */; };
+		7F99CE6B280A0FAC003BD226 /* EditUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE68280A0FAC003BD226 /* EditUserProfile.swift */; };
+		7F99CE6C280A0FAC003BD226 /* EditUserProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE69280A0FAC003BD226 /* EditUserProfile.xib */; };
+		7F99CE70280A0FC0003BD226 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE6E280A0FC0003BD226 /* UserProfile.swift */; };
+		7F99CE71280A0FC0003BD226 /* UserProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE6F280A0FC0003BD226 /* UserProfile.xib */; };
+		7F99CE7C280A11CB003BD226 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE79280A11CB003BD226 /* ChatCell.swift */; };
+		7F99CE7D280A11CB003BD226 /* Chat+TableExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE7A280A11CB003BD226 /* Chat+TableExtention.swift */; };
+		7F99CE7E280A11CB003BD226 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE7B280A11CB003BD226 /* Chat.swift */; };
+		7F99CE85280A1270003BD226 /* OrdersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE84280A1270003BD226 /* OrdersPresenter.swift */; };
+		7F99CE8B280A128D003BD226 /* Orders+TableExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE88280A128C003BD226 /* Orders+TableExtention.swift */; };
+		7F99CE8C280A128D003BD226 /* Orders+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE89280A128C003BD226 /* Orders+Protocol.swift */; };
+		7F99CE8D280A128D003BD226 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE8A280A128D003BD226 /* OrderViewController.swift */; };
+		7F99CE93280A12BE003BD226 /* ActiveOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE91280A12BE003BD226 /* ActiveOrders.swift */; };
+		7F99CE94280A12BE003BD226 /* ActiveOrders.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE92280A12BE003BD226 /* ActiveOrders.xib */; };
+		7F99CE97280A12C6003BD226 /* ExpiredOrders.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE95280A12C6003BD226 /* ExpiredOrders.xib */; };
+		7F99CE98280A12C6003BD226 /* ExpiredOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE96280A12C6003BD226 /* ExpiredOrders.swift */; };
+		7F99CE9B280A12CE003BD226 /* PendingOrders.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE99280A12CE003BD226 /* PendingOrders.xib */; };
+		7F99CE9C280A12CE003BD226 /* PendingOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE9A280A12CE003BD226 /* PendingOrders.swift */; };
+		7F99CEA4280AD795003BD226 /* AddNewOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CEA2280AD795003BD226 /* AddNewOrder.swift */; };
+		7F99CEA5280AD795003BD226 /* AddNewOrder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CEA3280AD795003BD226 /* AddNewOrder.xib */; };
+		7F99CEA7280AE802003BD226 /* AddNewOrder+TFExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CEA6280AE802003BD226 /* AddNewOrder+TFExtention.swift */; };
+		7F99CEAA280AF60D003BD226 /* HandelTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CEA9280AF60D003BD226 /* HandelTF.swift */; };
 		7FAB713D27F0CAB700477373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB713C27F0CAB700477373 /* AppDelegate.swift */; };
 		7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB713E27F0CAB700477373 /* SceneDelegate.swift */; };
 		7FAB714127F0CAB700477373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB714027F0CAB700477373 /* ViewController.swift */; };
@@ -81,7 +118,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		088FBD273291CC3AFECDBA3E /* Pods_Shayal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shayal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42104522DA31D0062F2441CF /* Pods-Shayal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayal.release.xcconfig"; path = "Target Support Files/Pods-Shayal/Pods-Shayal.release.xcconfig"; sourceTree = "<group>"; };
 		4ADB3ED171A52EDAE1495000 /* Pods-Shayal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayal.debug.xcconfig"; path = "Target Support Files/Pods-Shayal/Pods-Shayal.debug.xcconfig"; sourceTree = "<group>"; };
 		7F04375A27FB75BB00CB5976 /* Spiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiner.swift; sourceTree = "<group>"; };
@@ -113,6 +149,43 @@
 		7F826D3F27FA67D900B2D50E /* SginUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginUP.swift; sourceTree = "<group>"; };
 		7F826D4027FA67D900B2D50E /* SginUP.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SginUP.xib; sourceTree = "<group>"; };
 		7F826D4327FA773600B2D50E /* SginUP+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SginUP+Extention.swift"; sourceTree = "<group>"; };
+		7F99CE44280A0DE0003BD226 /* Complaints+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Complaints+TableView.swift"; sourceTree = "<group>"; };
+		7F99CE45280A0DE0003BD226 /* Complaints.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Complaints.xib; sourceTree = "<group>"; };
+		7F99CE46280A0DE0003BD226 /* Complaints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complaints.swift; sourceTree = "<group>"; };
+		7F99CE4B280A0E1D003BD226 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		7F99CE4C280A0E1D003BD226 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7F99CE4F280A0E43003BD226 /* AddComplaintsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddComplaintsViewController.swift; sourceTree = "<group>"; };
+		7F99CE50280A0E43003BD226 /* AddComplaintsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddComplaintsViewController.xib; sourceTree = "<group>"; };
+		7F99CE53280A0E9F003BD226 /* ContactWithUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactWithUs.swift; sourceTree = "<group>"; };
+		7F99CE54280A0E9F003BD226 /* ContactWithUs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactWithUs.xib; sourceTree = "<group>"; };
+		7F99CE57280A0EAB003BD226 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		7F99CE58280A0EAB003BD226 /* Language.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Language.xib; sourceTree = "<group>"; };
+		7F99CE5B280A0EB6003BD226 /* TermsAndConditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditions.swift; sourceTree = "<group>"; };
+		7F99CE5C280A0EB6003BD226 /* TermsAndConditions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermsAndConditions.xib; sourceTree = "<group>"; };
+		7F99CE5F280A0EC8003BD226 /* WhoAreWe.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhoAreWe.xib; sourceTree = "<group>"; };
+		7F99CE60280A0EC8003BD226 /* WhoAreWe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhoAreWe.swift; sourceTree = "<group>"; };
+		7F99CE67280A0FAC003BD226 /* EditProfile+TF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EditProfile+TF.swift"; sourceTree = "<group>"; };
+		7F99CE68280A0FAC003BD226 /* EditUserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserProfile.swift; sourceTree = "<group>"; };
+		7F99CE69280A0FAC003BD226 /* EditUserProfile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditUserProfile.xib; sourceTree = "<group>"; };
+		7F99CE6E280A0FC0003BD226 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		7F99CE6F280A0FC0003BD226 /* UserProfile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserProfile.xib; sourceTree = "<group>"; };
+		7F99CE79280A11CB003BD226 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		7F99CE7A280A11CB003BD226 /* Chat+TableExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Chat+TableExtention.swift"; sourceTree = "<group>"; };
+		7F99CE7B280A11CB003BD226 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		7F99CE84280A1270003BD226 /* OrdersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersPresenter.swift; sourceTree = "<group>"; };
+		7F99CE88280A128C003BD226 /* Orders+TableExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Orders+TableExtention.swift"; sourceTree = "<group>"; };
+		7F99CE89280A128C003BD226 /* Orders+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Orders+Protocol.swift"; sourceTree = "<group>"; };
+		7F99CE8A280A128D003BD226 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		7F99CE91280A12BE003BD226 /* ActiveOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveOrders.swift; sourceTree = "<group>"; };
+		7F99CE92280A12BE003BD226 /* ActiveOrders.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActiveOrders.xib; sourceTree = "<group>"; };
+		7F99CE95280A12C6003BD226 /* ExpiredOrders.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpiredOrders.xib; sourceTree = "<group>"; };
+		7F99CE96280A12C6003BD226 /* ExpiredOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpiredOrders.swift; sourceTree = "<group>"; };
+		7F99CE99280A12CE003BD226 /* PendingOrders.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingOrders.xib; sourceTree = "<group>"; };
+		7F99CE9A280A12CE003BD226 /* PendingOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingOrders.swift; sourceTree = "<group>"; };
+		7F99CEA2280AD795003BD226 /* AddNewOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewOrder.swift; sourceTree = "<group>"; };
+		7F99CEA3280AD795003BD226 /* AddNewOrder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewOrder.xib; sourceTree = "<group>"; };
+		7F99CEA6280AE802003BD226 /* AddNewOrder+TFExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddNewOrder+TFExtention.swift"; sourceTree = "<group>"; };
+		7F99CEA9280AF60D003BD226 /* HandelTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandelTF.swift; sourceTree = "<group>"; };
 		7FAB713927F0CAB700477373 /* Shayal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shayal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAB713C27F0CAB700477373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAB713E27F0CAB700477373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +214,7 @@
 		7FE79E5027F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Almarai-Light.ttf"; sourceTree = "<group>"; };
 		7FE79E5127F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Almarai-Bold.ttf"; sourceTree = "<group>"; };
 		7FE79E5227F0EFD0003D0F3B /* Almarai-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Regular.ttf"; sourceTree = "<group>"; };
+		CB4BA1975F408CC73B3F4BBE /* libPods-Shayal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shayal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AFD9CDE1E9A09B806BF3CA3 /* Pods_Shayal.framework in Frameworks */,
+				18F4A6749DDB6D8AC8CCAAD8 /* libPods-Shayal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +246,7 @@
 		5A3F16882213703A0A9DDAAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				088FBD273291CC3AFECDBA3E /* Pods_Shayal.framework */,
+				CB4BA1975F408CC73B3F4BBE /* libPods-Shayal.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,6 +271,8 @@
 		7F04376827FB8FB200CB5976 /* MVP Home */ = {
 			isa = PBXGroup;
 			children = (
+				7F99CE81280A121E003BD226 /* MyOrders */,
+				7F99CE75280A11B5003BD226 /* Chat */,
 				7F04376927FB8FBD00CB5976 /* Home */,
 				7F04377427FB973200CB5976 /* More */,
 			);
@@ -206,18 +282,10 @@
 		7F04376927FB8FBD00CB5976 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7F04376C27FB8FCC00CB5976 /* Model */,
-				7F04376B27FB8FCA00CB5976 /* View */,
-				7F04376A27FB8FC700CB5976 /* Presenter */,
+				7F99CE9D280AD728003BD226 /* Home */,
+				7F99CE9E280AD740003BD226 /* AddNewOrder */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		7F04376A27FB8FC700CB5976 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		7F04376B27FB8FCA00CB5976 /* View */ = {
@@ -226,13 +294,6 @@
 				7F04376F27FB901A00CB5976 /* Home.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7F04376C27FB8FCC00CB5976 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7F04377127FB928700CB5976 /* Handel Shaow */ = {
@@ -246,9 +307,9 @@
 		7F04377427FB973200CB5976 /* More */ = {
 			isa = PBXGroup;
 			children = (
-				7F04377727FB973F00CB5976 /* Model */,
-				7F04377627FB973D00CB5976 /* View */,
-				7F04377527FB973A00CB5976 /* Presenter */,
+				7F99CE63280A0F42003BD226 /* Profile */,
+				7F99CE3A280A0D27003BD226 /* TB */,
+				7F99CE39280A0C27003BD226 /* Main */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -270,13 +331,6 @@
 				7F04377C27FB989200CB5976 /* MoreCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7F04377727FB973F00CB5976 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7F7E8DE327F1AA7D00FACB7C /* Core */ = {
@@ -426,6 +480,7 @@
 		7F826D3427FA608000B2D50E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7F99CEA8280AF602003BD226 /* Handel TF */,
 				7F04377127FB928700CB5976 /* Handel Shaow */,
 				7F04375927FB759600CB5976 /* Handel Spiner */,
 				7F826D3527FA608700B2D50E /* Handel Button */,
@@ -475,6 +530,294 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7F99CE39280A0C27003BD226 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7F04377627FB973D00CB5976 /* View */,
+				7F04377527FB973A00CB5976 /* Presenter */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7F99CE3A280A0D27003BD226 /* TB */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE40280A0D39003BD226 /* Complaints */,
+				7F99CE3F280A0D37003BD226 /* Contact With Us */,
+				7F99CE3E280A0D35003BD226 /* Language */,
+				7F99CE3D280A0D33003BD226 /* Terms And Condetion */,
+				7F99CE3C280A0D31003BD226 /* Who Are We */,
+			);
+			path = TB;
+			sourceTree = "<group>";
+		};
+		7F99CE3C280A0D31003BD226 /* Who Are We */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE60280A0EC8003BD226 /* WhoAreWe.swift */,
+				7F99CE5F280A0EC8003BD226 /* WhoAreWe.xib */,
+			);
+			path = "Who Are We";
+			sourceTree = "<group>";
+		};
+		7F99CE3D280A0D33003BD226 /* Terms And Condetion */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE5B280A0EB6003BD226 /* TermsAndConditions.swift */,
+				7F99CE5C280A0EB6003BD226 /* TermsAndConditions.xib */,
+			);
+			path = "Terms And Condetion";
+			sourceTree = "<group>";
+		};
+		7F99CE3E280A0D35003BD226 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE57280A0EAB003BD226 /* Language.swift */,
+				7F99CE58280A0EAB003BD226 /* Language.xib */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		7F99CE3F280A0D37003BD226 /* Contact With Us */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE53280A0E9F003BD226 /* ContactWithUs.swift */,
+				7F99CE54280A0E9F003BD226 /* ContactWithUs.xib */,
+			);
+			path = "Contact With Us";
+			sourceTree = "<group>";
+		};
+		7F99CE40280A0D39003BD226 /* Complaints */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE42280A0DA4003BD226 /* Add Complaints */,
+				7F99CE41280A0DA0003BD226 /* Main */,
+			);
+			path = Complaints;
+			sourceTree = "<group>";
+		};
+		7F99CE41280A0DA0003BD226 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE4A280A0E13003BD226 /* Cell */,
+				7F99CE43280A0DCE003BD226 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7F99CE42280A0DA4003BD226 /* Add Complaints */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE4F280A0E43003BD226 /* AddComplaintsViewController.swift */,
+				7F99CE50280A0E43003BD226 /* AddComplaintsViewController.xib */,
+			);
+			path = "Add Complaints";
+			sourceTree = "<group>";
+		};
+		7F99CE43280A0DCE003BD226 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE46280A0DE0003BD226 /* Complaints.swift */,
+				7F99CE45280A0DE0003BD226 /* Complaints.xib */,
+				7F99CE44280A0DE0003BD226 /* Complaints+TableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F99CE4A280A0E13003BD226 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE4C280A0E1D003BD226 /* TableViewCell.swift */,
+				7F99CE4B280A0E1D003BD226 /* TableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7F99CE63280A0F42003BD226 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE65280A0F5A003BD226 /* Edit User Profile */,
+				7F99CE64280A0F57003BD226 /* User Profile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7F99CE64280A0F57003BD226 /* User Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE6D280A0FB9003BD226 /* View */,
+			);
+			path = "User Profile";
+			sourceTree = "<group>";
+		};
+		7F99CE65280A0F5A003BD226 /* Edit User Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE66280A0F9E003BD226 /* View */,
+			);
+			path = "Edit User Profile";
+			sourceTree = "<group>";
+		};
+		7F99CE66280A0F9E003BD226 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE67280A0FAC003BD226 /* EditProfile+TF.swift */,
+				7F99CE68280A0FAC003BD226 /* EditUserProfile.swift */,
+				7F99CE69280A0FAC003BD226 /* EditUserProfile.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F99CE6D280A0FB9003BD226 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE6E280A0FC0003BD226 /* UserProfile.swift */,
+				7F99CE6F280A0FC0003BD226 /* UserProfile.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F99CE75280A11B5003BD226 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE78280A11C2003BD226 /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		7F99CE78280A11C2003BD226 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE7B280A11CB003BD226 /* Chat.swift */,
+				7F99CE7A280A11CB003BD226 /* Chat+TableExtention.swift */,
+				7F99CE79280A11CB003BD226 /* ChatCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F99CE81280A121E003BD226 /* MyOrders */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE83280A1233003BD226 /* View */,
+				7F99CE82280A1231003BD226 /* Presenter */,
+			);
+			path = MyOrders;
+			sourceTree = "<group>";
+		};
+		7F99CE82280A1231003BD226 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE84280A1270003BD226 /* OrdersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F99CE83280A1233003BD226 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE87280A127E003BD226 /* ViewController */,
+				7F99CE86280A127B003BD226 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F99CE86280A127B003BD226 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE90280A1299003BD226 /* ActiveCell */,
+				7F99CE8F280A1297003BD226 /* ExpiredCell */,
+				7F99CE8E280A1295003BD226 /* PendingCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7F99CE87280A127E003BD226 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE89280A128C003BD226 /* Orders+Protocol.swift */,
+				7F99CE88280A128C003BD226 /* Orders+TableExtention.swift */,
+				7F99CE8A280A128D003BD226 /* OrderViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7F99CE8E280A1295003BD226 /* PendingCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE9A280A12CE003BD226 /* PendingOrders.swift */,
+				7F99CE99280A12CE003BD226 /* PendingOrders.xib */,
+			);
+			path = PendingCell;
+			sourceTree = "<group>";
+		};
+		7F99CE8F280A1297003BD226 /* ExpiredCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE96280A12C6003BD226 /* ExpiredOrders.swift */,
+				7F99CE95280A12C6003BD226 /* ExpiredOrders.xib */,
+			);
+			path = ExpiredCell;
+			sourceTree = "<group>";
+		};
+		7F99CE90280A1299003BD226 /* ActiveCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE91280A12BE003BD226 /* ActiveOrders.swift */,
+				7F99CE92280A12BE003BD226 /* ActiveOrders.xib */,
+			);
+			path = ActiveCell;
+			sourceTree = "<group>";
+		};
+		7F99CE9D280AD728003BD226 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7F04376B27FB8FCA00CB5976 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7F99CE9E280AD740003BD226 /* AddNewOrder */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CEA1280AD771003BD226 /* Model */,
+				7F99CEA0280AD76D003BD226 /* View */,
+				7F99CE9F280AD76B003BD226 /* Presenter */,
+			);
+			path = AddNewOrder;
+			sourceTree = "<group>";
+		};
+		7F99CE9F280AD76B003BD226 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F99CEA0280AD76D003BD226 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CEA2280AD795003BD226 /* AddNewOrder.swift */,
+				7F99CEA6280AE802003BD226 /* AddNewOrder+TFExtention.swift */,
+				7F99CEA3280AD795003BD226 /* AddNewOrder.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F99CEA1280AD771003BD226 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F99CEA8280AF602003BD226 /* Handel TF */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CEA9280AF60D003BD226 /* HandelTF.swift */,
+			);
+			path = "Handel TF";
 			sourceTree = "<group>";
 		};
 		7FAB713027F0CAB700477373 = {
@@ -646,7 +989,6 @@
 				7FAB713527F0CAB700477373 /* Sources */,
 				7FAB713627F0CAB700477373 /* Frameworks */,
 				7FAB713727F0CAB700477373 /* Resources */,
-				19B23418901BF4B3BF8A4D80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -741,10 +1083,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F99CE56280A0E9F003BD226 /* ContactWithUs.xib in Resources */,
+				7F99CE71280A0FC0003BD226 /* UserProfile.xib in Resources */,
 				7F7E8DEC27F1BE4000FACB7C /* Intro1.xib in Resources */,
+				7F99CE4D280A0E1D003BD226 /* TableViewCell.xib in Resources */,
+				7F99CE94280A12BE003BD226 /* ActiveOrders.xib in Resources */,
 				7F826D4227FA67D900B2D50E /* SginUP.xib in Resources */,
 				7FE0E80927F85B51003FB8BF /* VerificationSuccess.xib in Resources */,
 				7F7E8DF627F1E7F000FACB7C /* Intro3.xib in Resources */,
+				7F99CE6C280A0FAC003BD226 /* EditUserProfile.xib in Resources */,
+				7F99CE5A280A0EAB003BD226 /* Language.xib in Resources */,
+				7F99CE97280A12C6003BD226 /* ExpiredOrders.xib in Resources */,
+				7F99CEA5280AD795003BD226 /* AddNewOrder.xib in Resources */,
+				7F99CE5E280A0EB6003BD226 /* TermsAndConditions.xib in Resources */,
+				7F99CE61280A0EC9003BD226 /* WhoAreWe.xib in Resources */,
 				7F04376727FB837200CB5976 /* Home.storyboard in Resources */,
 				7FE0E81527F87C79003FB8BF /* EnterCode.xib in Resources */,
 				7F7E8DF127F1C61900FACB7C /* Intro2.xib in Resources */,
@@ -754,9 +1106,12 @@
 				7FE79E5327F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf in Resources */,
 				7FE79E5527F0EFD0003D0F3B /* Almarai-Regular.ttf in Resources */,
 				7FAB714627F0CAB800477373 /* Assets.xcassets in Resources */,
+				7F99CE48280A0DE0003BD226 /* Complaints.xib in Resources */,
 				7F7E8DFB27F1ECC300FACB7C /* Intro4.xib in Resources */,
 				7FE0E7FC27F77C0A003FB8BF /* ForgetPassword.xib in Resources */,
+				7F99CE9B280A12CE003BD226 /* PendingOrders.xib in Resources */,
 				7FE79E5427F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf in Resources */,
+				7F99CE52280A0E43003BD226 /* AddComplaintsViewController.xib in Resources */,
 				7FAB714427F0CAB700477373 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -778,23 +1133,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19B23418901BF4B3BF8A4D80 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Shayal/Pods-Shayal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Shayal/Pods-Shayal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shayal/Pods-Shayal-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		45922AA9AF7B2C4B5CF77EE5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -824,33 +1162,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F99CE8B280A128D003BD226 /* Orders+TableExtention.swift in Sources */,
+				7F99CE55280A0E9F003BD226 /* ContactWithUs.swift in Sources */,
 				7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */,
 				7FAB714127F0CAB700477373 /* ViewController.swift in Sources */,
+				7F99CE9C280A12CE003BD226 /* PendingOrders.swift in Sources */,
 				7FE0E7FB27F77C0A003FB8BF /* ForgetPassword.swift in Sources */,
 				7FE0E81427F87C79003FB8BF /* EnterCode.swift in Sources */,
 				7F826D3927FA63AE00B2D50E /* EnterNewPassword+Extention.swift in Sources */,
 				7FAB713D27F0CAB700477373 /* AppDelegate.swift in Sources */,
+				7F99CE8D280A128D003BD226 /* OrderViewController.swift in Sources */,
 				7FE0E7F527F7537B003FB8BF /* loginPresenter.swift in Sources */,
+				7F99CE49280A0DE0003BD226 /* Complaints.swift in Sources */,
 				7F7E8DEB27F1BE4000FACB7C /* Intro1.swift in Sources */,
+				7F99CE51280A0E43003BD226 /* AddComplaintsViewController.swift in Sources */,
+				7F99CE8C280A128D003BD226 /* Orders+Protocol.swift in Sources */,
+				7F99CE98280A12C6003BD226 /* ExpiredOrders.swift in Sources */,
+				7F99CE6A280A0FAC003BD226 /* EditProfile+TF.swift in Sources */,
+				7F99CE5D280A0EB6003BD226 /* TermsAndConditions.swift in Sources */,
+				7F99CEA7280AE802003BD226 /* AddNewOrder+TFExtention.swift in Sources */,
+				7F99CE93280A12BE003BD226 /* ActiveOrders.swift in Sources */,
+				7F99CEA4280AD795003BD226 /* AddNewOrder.swift in Sources */,
 				7FE0E80827F85B51003FB8BF /* VerificationSuccess.swift in Sources */,
 				7FE0E81027F87C4D003FB8BF /* EnterCodePresenter.swift in Sources */,
 				7F826D3727FA609900B2D50E /* HandelButton.swift in Sources */,
+				7F99CE70280A0FC0003BD226 /* UserProfile.swift in Sources */,
 				7FE0E80327F783C5003FB8BF /* ForgetPassword+Delegate.swift in Sources */,
+				7F99CEAA280AF60D003BD226 /* HandelTF.swift in Sources */,
 				7FE0E81727F8CBC8003FB8BF /* EnterCode+UITextField.swift in Sources */,
 				7F826D4127FA67D900B2D50E /* SginUP.swift in Sources */,
 				7FE0E80127F78299003FB8BF /* ForgetPasswordPresenter.swift in Sources */,
+				7F99CE47280A0DE0003BD226 /* Complaints+TableView.swift in Sources */,
 				7F826D2F27FA5C4500B2D50E /* EnterNewPassword.swift in Sources */,
+				7F99CE85280A1270003BD226 /* OrdersPresenter.swift in Sources */,
 				7F04378127FBA24D00CB5976 /* More+Protocol.swift in Sources */,
+				7F99CE59280A0EAB003BD226 /* Language.swift in Sources */,
 				7F04377927FB976300CB5976 /* More.swift in Sources */,
 				7F826D2827FA465B00B2D50E /* APICall.swift in Sources */,
+				7F99CE7D280A11CB003BD226 /* Chat+TableExtention.swift in Sources */,
+				7F99CE4E280A0E1D003BD226 /* TableViewCell.swift in Sources */,
 				7F7E8DF527F1E7F000FACB7C /* Intro3.swift in Sources */,
+				7F99CE7E280A11CB003BD226 /* Chat.swift in Sources */,
 				7F7E8DFA27F1ECC300FACB7C /* Intro4.swift in Sources */,
+				7F99CE6B280A0FAC003BD226 /* EditUserProfile.swift in Sources */,
 				7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */,
 				7F04377D27FB989200CB5976 /* MoreCell.swift in Sources */,
 				7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */,
 				7FE0E7F727F7675A003FB8BF /* LoginVC+Protocol.swift in Sources */,
 				7F04377027FB901A00CB5976 /* Home.swift in Sources */,
+				7F99CE62280A0EC9003BD226 /* WhoAreWe.swift in Sources */,
 				7F04377F27FB9D4D00CB5976 /* MorePresenter.swift in Sources */,
+				7F99CE7C280A11CB003BD226 /* ChatCell.swift in Sources */,
 				7F04377327FB92B000CB5976 /* HandelShadow.swift in Sources */,
 				7F826D2A27FA49BD00B2D50E /* File.swift in Sources */,
 				7F04377B27FB979900CB5976 /* More+TableView.swift in Sources */,

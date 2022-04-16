@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C95904900C4990ED28762011716F8E33"
-               BuildableName = "Pods_Shayal.framework"
+               BuildableName = "libPods-Shayal.a"
                BlueprintName = "Pods-Shayal"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

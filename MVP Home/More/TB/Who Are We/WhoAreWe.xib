@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WhoAreWe" customModule="Shayal" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="whoAreWeTV" destination="hGQ-sK-Egg" id="Sr2-UN-IRR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="USu-dP-MLL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5LL-9T-VJR">
+                    <rect key="frame" x="0.0" y="76" width="414" height="820"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGQ-sK-Egg">
+                            <rect key="frame" x="0.0" y="32" width="414" height="240"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="240" id="NqA-we-2lY"/>
+                            </constraints>
+                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                            <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hGQ-sK-Egg" secondAttribute="trailing" id="INi-mP-Zq6"/>
+                        <constraint firstItem="hGQ-sK-Egg" firstAttribute="top" secondItem="5LL-9T-VJR" secondAttribute="top" constant="32" id="gv7-fa-j1K"/>
+                        <constraint firstItem="hGQ-sK-Egg" firstAttribute="leading" secondItem="5LL-9T-VJR" secondAttribute="leading" id="wmK-d1-CE2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5LL-9T-VJR" secondAttribute="bottom" id="00A-Jm-CFU"/>
+                <constraint firstItem="USu-dP-MLL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="H1M-tq-NZm"/>
+                <constraint firstItem="USu-dP-MLL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KwX-xu-J6F"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="USu-dP-MLL" secondAttribute="trailing" id="LOZ-ZO-9xQ"/>
+                <constraint firstItem="5LL-9T-VJR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Sx3-Vp-k8a"/>
+                <constraint firstAttribute="bottom" secondItem="USu-dP-MLL" secondAttribute="bottom" id="ccC-OF-JNN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5LL-9T-VJR" secondAttribute="trailing" id="dnV-nz-o1J"/>
+                <constraint firstItem="5LL-9T-VJR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="w0Q-8I-HOi"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackGround" width="424" height="932"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
