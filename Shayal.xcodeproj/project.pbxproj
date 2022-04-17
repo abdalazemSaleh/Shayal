@@ -17,6 +17,9 @@
 		7F04377D27FB989200CB5976 /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04377C27FB989200CB5976 /* MoreCell.swift */; };
 		7F04377F27FB9D4D00CB5976 /* MorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04377E27FB9D4D00CB5976 /* MorePresenter.swift */; };
 		7F04378127FBA24D00CB5976 /* More+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04378027FBA24D00CB5976 /* More+Protocol.swift */; };
+		7F04BE5B280CC61A00B260E6 /* Bill+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04BE5A280CC61A00B260E6 /* Bill+Extention.swift */; };
+		7F04BE5D280CC67400B260E6 /* Payment+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04BE5C280CC67400B260E6 /* Payment+Extention.swift */; };
+		7F04BE5F280CC67F00B260E6 /* Rate+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04BE5E280CC67F00B260E6 /* Rate+Extention.swift */; };
 		7F7E8DEB27F1BE4000FACB7C /* Intro1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DE927F1BE4000FACB7C /* Intro1.swift */; };
 		7F7E8DEC27F1BE4000FACB7C /* Intro1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */; };
 		7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEE27F1C61900FACB7C /* Intro2.swift */; };
@@ -74,6 +77,10 @@
 		7F99CEA5280AD795003BD226 /* AddNewOrder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CEA3280AD795003BD226 /* AddNewOrder.xib */; };
 		7F99CEA7280AE802003BD226 /* AddNewOrder+TFExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CEA6280AE802003BD226 /* AddNewOrder+TFExtention.swift */; };
 		7F99CEAA280AF60D003BD226 /* HandelTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CEA9280AF60D003BD226 /* HandelTF.swift */; };
+		7F99CF67280B5135003BD226 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CF65280B5135003BD226 /* Bill.swift */; };
+		7F99CF68280B5135003BD226 /* Bill.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CF66280B5135003BD226 /* Bill.xib */; };
+		7F99CF6D280B5946003BD226 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CF6B280B5946003BD226 /* PaymentMethod.swift */; };
+		7F99CF6E280B5946003BD226 /* PaymentMethod.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CF6C280B5946003BD226 /* PaymentMethod.xib */; };
 		7FAB713D27F0CAB700477373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB713C27F0CAB700477373 /* AppDelegate.swift */; };
 		7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB713E27F0CAB700477373 /* SceneDelegate.swift */; };
 		7FAB714127F0CAB700477373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB714027F0CAB700477373 /* ViewController.swift */; };
@@ -83,6 +90,9 @@
 		7FAB715427F0CAB800477373 /* ShayalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB715327F0CAB800477373 /* ShayalTests.swift */; };
 		7FAB715E27F0CAB800477373 /* ShayalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB715D27F0CAB800477373 /* ShayalUITests.swift */; };
 		7FAB716027F0CAB800477373 /* ShayalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB715F27F0CAB800477373 /* ShayalUITestsLaunchTests.swift */; };
+		7FB096A6280B5EAB003DEB85 /* lf30_editor_gcptrbo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FB096A5280B5EAB003DEB85 /* lf30_editor_gcptrbo2.json */; };
+		7FB096AA280CA9E7003DEB85 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB096A8280CA9E7003DEB85 /* Rate.swift */; };
+		7FB096AB280CA9E7003DEB85 /* Rate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FB096A9280CA9E7003DEB85 /* Rate.xib */; };
 		7FE0E7F527F7537B003FB8BF /* loginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E7F427F7537B003FB8BF /* loginPresenter.swift */; };
 		7FE0E7F727F7675A003FB8BF /* LoginVC+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E7F627F7675A003FB8BF /* LoginVC+Protocol.swift */; };
 		7FE0E7FB27F77C0A003FB8BF /* ForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E7F927F77C0A003FB8BF /* ForgetPassword.swift */; };
@@ -129,6 +139,9 @@
 		7F04377C27FB989200CB5976 /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
 		7F04377E27FB9D4D00CB5976 /* MorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorePresenter.swift; sourceTree = "<group>"; };
 		7F04378027FBA24D00CB5976 /* More+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "More+Protocol.swift"; sourceTree = "<group>"; };
+		7F04BE5A280CC61A00B260E6 /* Bill+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bill+Extention.swift"; sourceTree = "<group>"; };
+		7F04BE5C280CC67400B260E6 /* Payment+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Payment+Extention.swift"; sourceTree = "<group>"; };
+		7F04BE5E280CC67F00B260E6 /* Rate+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rate+Extention.swift"; sourceTree = "<group>"; };
 		7F7E8DE927F1BE4000FACB7C /* Intro1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro1.swift; sourceTree = "<group>"; };
 		7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro1.xib; sourceTree = "<group>"; };
 		7F7E8DEE27F1C61900FACB7C /* Intro2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro2.swift; sourceTree = "<group>"; };
@@ -186,6 +199,10 @@
 		7F99CEA3280AD795003BD226 /* AddNewOrder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewOrder.xib; sourceTree = "<group>"; };
 		7F99CEA6280AE802003BD226 /* AddNewOrder+TFExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddNewOrder+TFExtention.swift"; sourceTree = "<group>"; };
 		7F99CEA9280AF60D003BD226 /* HandelTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandelTF.swift; sourceTree = "<group>"; };
+		7F99CF65280B5135003BD226 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		7F99CF66280B5135003BD226 /* Bill.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bill.xib; sourceTree = "<group>"; };
+		7F99CF6B280B5946003BD226 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		7F99CF6C280B5946003BD226 /* PaymentMethod.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethod.xib; sourceTree = "<group>"; };
 		7FAB713927F0CAB700477373 /* Shayal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shayal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAB713C27F0CAB700477373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAB713E27F0CAB700477373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +216,9 @@
 		7FAB715927F0CAB800477373 /* ShayalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShayalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAB715D27F0CAB800477373 /* ShayalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShayalUITests.swift; sourceTree = "<group>"; };
 		7FAB715F27F0CAB800477373 /* ShayalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShayalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7FB096A5280B5EAB003DEB85 /* lf30_editor_gcptrbo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_gcptrbo2.json; sourceTree = "<group>"; };
+		7FB096A8280CA9E7003DEB85 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		7FB096A9280CA9E7003DEB85 /* Rate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Rate.xib; sourceTree = "<group>"; };
 		7FE0E7F427F7537B003FB8BF /* loginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPresenter.swift; sourceTree = "<group>"; };
 		7FE0E7F627F7675A003FB8BF /* LoginVC+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Protocol.swift"; sourceTree = "<group>"; };
 		7FE0E7F927F77C0A003FB8BF /* ForgetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassword.swift; sourceTree = "<group>"; };
@@ -333,6 +353,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7F04BE60280CC98200B260E6 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		7F7E8DE327F1AA7D00FACB7C /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,9 +479,7 @@
 		7F826D2B27FA5A8600B2D50E /* SignUP */ = {
 			isa = PBXGroup;
 			children = (
-				7F826D3E27FA67B400B2D50E /* Model */,
 				7F826D3D27FA67B100B2D50E /* View */,
-				7F826D3C27FA67A900B2D50E /* Presenter */,
 			);
 			path = SignUP;
 			sourceTree = "<group>";
@@ -499,6 +524,7 @@
 		7F826D3B27FA66EC00B2D50E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7FB096A4280B5E71003DEB85 /* Lottie */,
 				7F7E8DE427F1AAA200FACB7C /* Resources */,
 				7F826D2327FA431200B2D50E /* API Call */,
 				7F826D3427FA608000B2D50E /* Helper */,
@@ -506,13 +532,6 @@
 				7FE79E4727F0EE9E003D0F3B /* Font */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		7F826D3C27FA67A900B2D50E /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		7F826D3D27FA67B100B2D50E /* View */ = {
@@ -523,13 +542,6 @@
 				7F826D4027FA67D900B2D50E /* SginUP.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7F826D3E27FA67B400B2D50E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7F99CE39280A0C27003BD226 /* Main */ = {
@@ -682,26 +694,27 @@
 		7F99CE75280A11B5003BD226 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				7F99CE78280A11C2003BD226 /* View */,
+				7F04BE60280CC98200B260E6 /* Chat */,
+				7F99CE78280A11C2003BD226 /* Main */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
 		};
-		7F99CE78280A11C2003BD226 /* View */ = {
+		7F99CE78280A11C2003BD226 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				7F99CE7B280A11CB003BD226 /* Chat.swift */,
 				7F99CE7A280A11CB003BD226 /* Chat+TableExtention.swift */,
 				7F99CE79280A11CB003BD226 /* ChatCell.swift */,
 			);
-			path = View;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		7F99CE81280A121E003BD226 /* MyOrders */ = {
 			isa = PBXGroup;
 			children = (
-				7F99CE83280A1233003BD226 /* View */,
-				7F99CE82280A1231003BD226 /* Presenter */,
+				7F99CF61280B5077003BD226 /* Bill */,
+				7F99CF60280B506A003BD226 /* MyOrders */,
 			);
 			path = MyOrders;
 			sourceTree = "<group>";
@@ -820,6 +833,69 @@
 			path = "Handel TF";
 			sourceTree = "<group>";
 		};
+		7F99CF60280B506A003BD226 /* MyOrders */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CE83280A1233003BD226 /* View */,
+				7F99CE82280A1231003BD226 /* Presenter */,
+			);
+			path = MyOrders;
+			sourceTree = "<group>";
+		};
+		7F99CF61280B5077003BD226 /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CF64280B508B003BD226 /* Model */,
+				7F99CF63280B5089003BD226 /* View */,
+				7F99CF62280B5086003BD226 /* Presenter */,
+			);
+			path = Bill;
+			sourceTree = "<group>";
+		};
+		7F99CF62280B5086003BD226 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F99CF63280B5089003BD226 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FB096A7280CA9AC003DEB85 /* Rate */,
+				7F99CF6A280B592E003BD226 /* Payment method */,
+				7F99CF69280B5921003BD226 /* Bill */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F99CF64280B508B003BD226 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F99CF69280B5921003BD226 /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CF65280B5135003BD226 /* Bill.swift */,
+				7F04BE5A280CC61A00B260E6 /* Bill+Extention.swift */,
+				7F99CF66280B5135003BD226 /* Bill.xib */,
+			);
+			path = Bill;
+			sourceTree = "<group>";
+		};
+		7F99CF6A280B592E003BD226 /* Payment method */ = {
+			isa = PBXGroup;
+			children = (
+				7F99CF6B280B5946003BD226 /* PaymentMethod.swift */,
+				7F04BE5C280CC67400B260E6 /* Payment+Extention.swift */,
+				7F99CF6C280B5946003BD226 /* PaymentMethod.xib */,
+			);
+			path = "Payment method";
+			sourceTree = "<group>";
+		};
 		7FAB713027F0CAB700477373 = {
 			isa = PBXGroup;
 			children = (
@@ -872,6 +948,24 @@
 				7FAB715F27F0CAB800477373 /* ShayalUITestsLaunchTests.swift */,
 			);
 			path = ShayalUITests;
+			sourceTree = "<group>";
+		};
+		7FB096A4280B5E71003DEB85 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				7FB096A5280B5EAB003DEB85 /* lf30_editor_gcptrbo2.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		7FB096A7280CA9AC003DEB85 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				7FB096A8280CA9E7003DEB85 /* Rate.swift */,
+				7F04BE5E280CC67F00B260E6 /* Rate+Extention.swift */,
+				7FB096A9280CA9E7003DEB85 /* Rate.xib */,
+			);
+			path = Rate;
 			sourceTree = "<group>";
 		};
 		7FE0E7F827F77BEA003FB8BF /* Forget Password */ = {
@@ -1084,10 +1178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F99CE56280A0E9F003BD226 /* ContactWithUs.xib in Resources */,
+				7F99CF6E280B5946003BD226 /* PaymentMethod.xib in Resources */,
 				7F99CE71280A0FC0003BD226 /* UserProfile.xib in Resources */,
 				7F7E8DEC27F1BE4000FACB7C /* Intro1.xib in Resources */,
 				7F99CE4D280A0E1D003BD226 /* TableViewCell.xib in Resources */,
 				7F99CE94280A12BE003BD226 /* ActiveOrders.xib in Resources */,
+				7FB096A6280B5EAB003DEB85 /* lf30_editor_gcptrbo2.json in Resources */,
 				7F826D4227FA67D900B2D50E /* SginUP.xib in Resources */,
 				7FE0E80927F85B51003FB8BF /* VerificationSuccess.xib in Resources */,
 				7F7E8DF627F1E7F000FACB7C /* Intro3.xib in Resources */,
@@ -1103,12 +1199,14 @@
 				7F7E8E0327F1FC3200FACB7C /* Login.xib in Resources */,
 				7FAB714927F0CAB800477373 /* LaunchScreen.storyboard in Resources */,
 				7F826D3027FA5C4500B2D50E /* EnterNewPassword.xib in Resources */,
+				7F99CF68280B5135003BD226 /* Bill.xib in Resources */,
 				7FE79E5327F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf in Resources */,
 				7FE79E5527F0EFD0003D0F3B /* Almarai-Regular.ttf in Resources */,
 				7FAB714627F0CAB800477373 /* Assets.xcassets in Resources */,
 				7F99CE48280A0DE0003BD226 /* Complaints.xib in Resources */,
 				7F7E8DFB27F1ECC300FACB7C /* Intro4.xib in Resources */,
 				7FE0E7FC27F77C0A003FB8BF /* ForgetPassword.xib in Resources */,
+				7FB096AB280CA9E7003DEB85 /* Rate.xib in Resources */,
 				7F99CE9B280A12CE003BD226 /* PendingOrders.xib in Resources */,
 				7FE79E5427F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf in Resources */,
 				7F99CE52280A0E43003BD226 /* AddComplaintsViewController.xib in Resources */,
@@ -1164,12 +1262,14 @@
 			files = (
 				7F99CE8B280A128D003BD226 /* Orders+TableExtention.swift in Sources */,
 				7F99CE55280A0E9F003BD226 /* ContactWithUs.swift in Sources */,
+				7F99CF6D280B5946003BD226 /* PaymentMethod.swift in Sources */,
 				7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */,
 				7FAB714127F0CAB700477373 /* ViewController.swift in Sources */,
 				7F99CE9C280A12CE003BD226 /* PendingOrders.swift in Sources */,
 				7FE0E7FB27F77C0A003FB8BF /* ForgetPassword.swift in Sources */,
 				7FE0E81427F87C79003FB8BF /* EnterCode.swift in Sources */,
 				7F826D3927FA63AE00B2D50E /* EnterNewPassword+Extention.swift in Sources */,
+				7F99CF67280B5135003BD226 /* Bill.swift in Sources */,
 				7FAB713D27F0CAB700477373 /* AppDelegate.swift in Sources */,
 				7F99CE8D280A128D003BD226 /* OrderViewController.swift in Sources */,
 				7FE0E7F527F7537B003FB8BF /* loginPresenter.swift in Sources */,
@@ -1191,8 +1291,10 @@
 				7F99CEAA280AF60D003BD226 /* HandelTF.swift in Sources */,
 				7FE0E81727F8CBC8003FB8BF /* EnterCode+UITextField.swift in Sources */,
 				7F826D4127FA67D900B2D50E /* SginUP.swift in Sources */,
+				7F04BE5D280CC67400B260E6 /* Payment+Extention.swift in Sources */,
 				7FE0E80127F78299003FB8BF /* ForgetPasswordPresenter.swift in Sources */,
 				7F99CE47280A0DE0003BD226 /* Complaints+TableView.swift in Sources */,
+				7FB096AA280CA9E7003DEB85 /* Rate.swift in Sources */,
 				7F826D2F27FA5C4500B2D50E /* EnterNewPassword.swift in Sources */,
 				7F99CE85280A1270003BD226 /* OrdersPresenter.swift in Sources */,
 				7F04378127FBA24D00CB5976 /* More+Protocol.swift in Sources */,
@@ -1208,6 +1310,7 @@
 				7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */,
 				7F04377D27FB989200CB5976 /* MoreCell.swift in Sources */,
 				7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */,
+				7F04BE5F280CC67F00B260E6 /* Rate+Extention.swift in Sources */,
 				7FE0E7F727F7675A003FB8BF /* LoginVC+Protocol.swift in Sources */,
 				7F04377027FB901A00CB5976 /* Home.swift in Sources */,
 				7F99CE62280A0EC9003BD226 /* WhoAreWe.swift in Sources */,
@@ -1219,6 +1322,7 @@
 				7F04375B27FB75BB00CB5976 /* Spiner.swift in Sources */,
 				7F7E8E0227F1FC3200FACB7C /* Login.swift in Sources */,
 				7F826D3327FA5C6E00B2D50E /* EnterNewPasswordPresenter.swift in Sources */,
+				7F04BE5B280CC61A00B260E6 /* Bill+Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

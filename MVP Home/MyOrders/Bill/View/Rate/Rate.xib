@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArbFONTS-Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Rate" customModule="Shayal" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="hpr-bV-wrK" id="a6C-jn-wkm"/>
+                <outlet property="rateButton" destination="zIm-va-4x9" id="tXC-ot-yoL"/>
+                <outlet property="rateTV" destination="93S-v1-hnb" id="n97-xw-jEb"/>
+                <outlet property="rateView" destination="hvQ-pl-YdU" id="S8i-TN-fFO"/>
+                <outlet property="userImage" destination="edz-Ix-mkc" id="hIS-CJ-u8g"/>
+                <outlet property="userName" destination="Xki-Pt-TnE" id="alo-pv-UHz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsP-Qj-ONY">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="B0j-Bp-xHw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tod-tm-tVx">
+                                <rect key="frame" x="366" y="64" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="01h-KG-nTY"/>
+                                    <constraint firstAttribute="height" constant="32" id="JXF-Nc-JLU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Group 534" title=" "/>
+                                <connections>
+                                    <action selector="canselButton:" destination="-1" eventType="touchUpInside" id="faS-Wz-2av"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping representative evaluation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1s-lt-Gh9">
+                                <rect key="frame" x="92.5" y="72" width="229" height="16"/>
+                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpr-bV-wrK">
+                                <rect key="frame" x="0.0" y="208" width="414" height="688"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abdalazem Mohamed Saleh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xki-Pt-TnE">
+                                        <rect key="frame" x="104.5" y="72" width="205.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                                        <color key="textColor" red="0.19607843137254902" green="0.23529411764705882" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvQ-pl-YdU" customClass="CosmosView" customModule="Cosmos">
+                                        <rect key="frame" x="64" y="154" width="286" height="42"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="XZ5-bi-HIN"/>
+                                            <constraint firstAttribute="width" constant="286" id="q8v-my-u1H"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                <real key="value" value="48"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                <color key="value" name="Color-2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your Rate" translatesAutoresizingMaskIntoConstraints="NO" id="93S-v1-hnb">
+                                        <rect key="frame" x="16" y="228" width="382" height="184"/>
+                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="184" id="5EM-r4-hzn"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.58039215686274503" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIm-va-4x9">
+                                        <rect key="frame" x="74.5" y="476" width="265" height="48"/>
+                                        <color key="backgroundColor" name="First"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="8Rp-uI-5Bu"/>
+                                            <constraint firstAttribute="width" constant="265" id="9Cn-E9-Q81"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Rate">
+                                            <fontDescription key="titleFontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rateButton:" destination="-1" eventType="touchUpInside" id="bXC-6u-DKH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="hvQ-pl-YdU" firstAttribute="top" secondItem="Xki-Pt-TnE" secondAttribute="bottom" constant="64" id="7uW-Ih-Lgb"/>
+                                    <constraint firstItem="93S-v1-hnb" firstAttribute="leading" secondItem="hpr-bV-wrK" secondAttribute="leading" constant="16" id="8Az-uv-MJy"/>
+                                    <constraint firstItem="Xki-Pt-TnE" firstAttribute="top" secondItem="hpr-bV-wrK" secondAttribute="top" constant="72" id="IO6-4x-93y"/>
+                                    <constraint firstItem="zIm-va-4x9" firstAttribute="centerX" secondItem="93S-v1-hnb" secondAttribute="centerX" id="Qdc-3K-7mR"/>
+                                    <constraint firstItem="93S-v1-hnb" firstAttribute="top" secondItem="hvQ-pl-YdU" secondAttribute="bottom" constant="32" id="RHN-TB-nPV"/>
+                                    <constraint firstItem="zIm-va-4x9" firstAttribute="top" secondItem="93S-v1-hnb" secondAttribute="bottom" constant="64" id="jSr-CN-zGs"/>
+                                    <constraint firstAttribute="trailing" secondItem="93S-v1-hnb" secondAttribute="trailing" constant="16" id="pb6-4s-mxU"/>
+                                    <constraint firstItem="hvQ-pl-YdU" firstAttribute="centerX" secondItem="Xki-Pt-TnE" secondAttribute="centerX" id="qTV-6U-sPd"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp Image 2022-04-15 at 11.34.55 PM" translatesAutoresizingMaskIntoConstraints="NO" id="edz-Ix-mkc">
+                                <rect key="frame" x="155" y="152" width="104" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="2N4-tp-tlW"/>
+                                    <constraint firstAttribute="width" constant="104" id="Hs9-G6-Bkf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="edz-Ix-mkc" firstAttribute="centerX" secondItem="g1s-lt-Gh9" secondAttribute="centerX" id="1iS-Yg-S5I"/>
+                            <constraint firstItem="tod-tm-tVx" firstAttribute="top" secondItem="B0j-Bp-xHw" secondAttribute="top" constant="64" id="3O1-ny-hjE"/>
+                            <constraint firstItem="hpr-bV-wrK" firstAttribute="top" secondItem="tod-tm-tVx" secondAttribute="bottom" constant="112" id="JTs-aD-4df"/>
+                            <constraint firstItem="hpr-bV-wrK" firstAttribute="leading" secondItem="B0j-Bp-xHw" secondAttribute="leading" id="PuF-EY-b9w"/>
+                            <constraint firstItem="edz-Ix-mkc" firstAttribute="top" secondItem="g1s-lt-Gh9" secondAttribute="bottom" constant="64" id="Rms-1b-ktJ"/>
+                            <constraint firstAttribute="trailing" secondItem="hpr-bV-wrK" secondAttribute="trailing" id="ceo-Fx-6Id"/>
+                            <constraint firstItem="g1s-lt-Gh9" firstAttribute="centerX" secondItem="B0j-Bp-xHw" secondAttribute="centerX" id="cls-hr-x81"/>
+                            <constraint firstItem="Xki-Pt-TnE" firstAttribute="centerX" secondItem="edz-Ix-mkc" secondAttribute="centerX" id="enN-Md-C4t"/>
+                            <constraint firstAttribute="trailing" secondItem="tod-tm-tVx" secondAttribute="trailing" constant="16" id="hLs-td-ez0"/>
+                            <constraint firstAttribute="bottom" secondItem="hpr-bV-wrK" secondAttribute="bottom" id="pun-wh-MfG"/>
+                            <constraint firstItem="g1s-lt-Gh9" firstAttribute="centerY" secondItem="tod-tm-tVx" secondAttribute="centerY" id="qN1-5d-AC9"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EsP-Qj-ONY" secondAttribute="bottom" id="A5g-W7-5om"/>
+                <constraint firstItem="EsP-Qj-ONY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mqL-Yc-UP6"/>
+                <constraint firstItem="EsP-Qj-ONY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pAH-bs-mGW"/>
+                <constraint firstItem="EsP-Qj-ONY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rO1-yO-6tz"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 534" width="34" height="34"/>
+        <image name="WhatsApp Image 2022-04-15 at 11.34.55 PM" width="1200" height="1600"/>
+        <namedColor name="Color-2">
+            <color red="0.012000000104308128" green="0.98799997568130493" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="First">
+            <color red="0.18799999356269836" green="0.83499997854232788" blue="0.7839999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

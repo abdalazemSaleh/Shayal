@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+        <array key="ArbFONTS-Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentMethod" customModule="Shayal" customModuleProvider="target">
+            <connections>
+                <outlet property="animationView" destination="cxl-af-rlJ" id="6sn-H4-Qm7"/>
+                <outlet property="cashPayment" destination="XEp-Bh-NPq" id="s1v-o3-PCr"/>
+                <outlet property="electronicPayment" destination="Bhj-MJ-SUR" id="0Yd-wv-5Ks"/>
+                <outlet property="mainView" destination="xx9-5P-Zln" id="j2P-0r-uc2"/>
+                <outlet property="nextButton" destination="zFt-QR-txK" id="X7e-Q6-6LB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYA-t8-ZbZ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RUp-te-JGr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xx9-5P-Zln">
+                                <rect key="frame" x="16" y="128" width="382" height="640"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flh-UP-kxR">
+                                        <rect key="frame" x="143" y="32" width="96" height="13.5"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                        <color key="textColor" name="TabBar"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxl-af-rlJ" customClass="AnimationView" customModule="Lottie">
+                                        <rect key="frame" x="24" y="77.5" width="334" height="160"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="Npm-bB-0GT"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="lf30_editor_gcptrbo2"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-MJ-SUR">
+                                        <rect key="frame" x="24" y="331.5" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="KsW-IR-1se"/>
+                                            <constraint firstAttribute="height" constant="24" id="fca-Og-tD1"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEp-Bh-NPq">
+                                        <rect key="frame" x="24" y="403.5" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="B8R-gi-oEZ"/>
+                                            <constraint firstAttribute="width" constant="24" id="FiQ-kb-zXX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3J-fD-cbw">
+                                        <rect key="frame" x="56" y="327.5" width="41" height="9"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="electronic payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlM-oB-hWQ">
+                                        <rect key="frame" x="56" y="340.5" width="108.5" height="14"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                        <color key="textColor" red="0.086274509803921567" green="0.14117647058823529" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cash payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJu-fJ-95E">
+                                        <rect key="frame" x="56" y="411.5" width="78.5" height="14"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.14117647059999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQP-55-Has">
+                                        <rect key="frame" x="56" y="398.5" width="41" height="9"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFt-QR-txK">
+                                        <rect key="frame" x="58.5" y="491.5" width="265" height="48"/>
+                                        <color key="backgroundColor" name="First"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="iWX-OE-PpK"/>
+                                            <constraint firstAttribute="width" constant="265" id="taw-h5-GOk"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Next">
+                                            <fontDescription key="titleFontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButton:" destination="-1" eventType="touchUpInside" id="ymx-BV-Oo7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="zFt-QR-txK" firstAttribute="centerX" secondItem="xx9-5P-Zln" secondAttribute="centerX" id="3sP-ob-TLG"/>
+                                    <constraint firstItem="cxl-af-rlJ" firstAttribute="leading" secondItem="xx9-5P-Zln" secondAttribute="leading" constant="24" id="6rA-aB-IhJ"/>
+                                    <constraint firstItem="XEp-Bh-NPq" firstAttribute="top" secondItem="Bhj-MJ-SUR" secondAttribute="bottom" constant="48" id="8Gs-2d-keG"/>
+                                    <constraint firstItem="cxl-af-rlJ" firstAttribute="top" secondItem="flh-UP-kxR" secondAttribute="bottom" constant="32" id="9OB-2Q-shY"/>
+                                    <constraint firstItem="LQP-55-Has" firstAttribute="top" secondItem="qlM-oB-hWQ" secondAttribute="bottom" constant="44" id="Dux-Ez-dwx"/>
+                                    <constraint firstItem="Q3J-fD-cbw" firstAttribute="top" secondItem="cxl-af-rlJ" secondAttribute="bottom" constant="90" id="Lww-o5-80k"/>
+                                    <constraint firstItem="XEp-Bh-NPq" firstAttribute="leading" secondItem="xx9-5P-Zln" secondAttribute="leading" constant="24" id="M4C-Lr-J0a"/>
+                                    <constraint firstItem="sJu-fJ-95E" firstAttribute="top" secondItem="LQP-55-Has" secondAttribute="bottom" constant="4" id="ORZ-uJ-Coq"/>
+                                    <constraint firstItem="flh-UP-kxR" firstAttribute="centerX" secondItem="xx9-5P-Zln" secondAttribute="centerX" id="Tq6-pA-dBZ"/>
+                                    <constraint firstItem="Q3J-fD-cbw" firstAttribute="leading" secondItem="Bhj-MJ-SUR" secondAttribute="trailing" constant="8" id="XqZ-l5-lRi"/>
+                                    <constraint firstItem="Bhj-MJ-SUR" firstAttribute="leading" secondItem="xx9-5P-Zln" secondAttribute="leading" constant="24" id="aGC-WE-3eG"/>
+                                    <constraint firstItem="Bhj-MJ-SUR" firstAttribute="top" secondItem="cxl-af-rlJ" secondAttribute="bottom" constant="94" id="anD-zG-pTG"/>
+                                    <constraint firstAttribute="trailing" secondItem="cxl-af-rlJ" secondAttribute="trailing" constant="24" id="eAl-fY-ocN"/>
+                                    <constraint firstItem="qlM-oB-hWQ" firstAttribute="leading" secondItem="Bhj-MJ-SUR" secondAttribute="trailing" constant="8" id="iqO-9a-xb0"/>
+                                    <constraint firstItem="flh-UP-kxR" firstAttribute="top" secondItem="xx9-5P-Zln" secondAttribute="top" constant="32" id="s8R-im-WY5"/>
+                                    <constraint firstItem="sJu-fJ-95E" firstAttribute="leading" secondItem="XEp-Bh-NPq" secondAttribute="trailing" constant="8" id="uSc-31-0b0"/>
+                                    <constraint firstItem="qlM-oB-hWQ" firstAttribute="top" secondItem="Q3J-fD-cbw" secondAttribute="bottom" constant="4" id="uXK-zG-FBz"/>
+                                    <constraint firstItem="LQP-55-Has" firstAttribute="leading" secondItem="XEp-Bh-NPq" secondAttribute="trailing" constant="8" id="ybi-95-zhj"/>
+                                    <constraint firstItem="zFt-QR-txK" firstAttribute="top" secondItem="XEp-Bh-NPq" secondAttribute="bottom" constant="64" id="zpO-JP-b6N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xx9-5P-Zln" secondAttribute="bottom" constant="128" id="799-Ed-aPx"/>
+                            <constraint firstItem="xx9-5P-Zln" firstAttribute="top" secondItem="RUp-te-JGr" secondAttribute="top" constant="128" id="SLe-ad-dtm"/>
+                            <constraint firstItem="xx9-5P-Zln" firstAttribute="leading" secondItem="RUp-te-JGr" secondAttribute="leading" constant="16" id="bwF-tc-83O"/>
+                            <constraint firstAttribute="trailing" secondItem="xx9-5P-Zln" secondAttribute="trailing" constant="16" id="qHj-mt-Khu"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IYA-t8-ZbZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YnL-8n-SoW"/>
+                <constraint firstItem="IYA-t8-ZbZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ei7-py-oSF"/>
+                <constraint firstItem="IYA-t8-ZbZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pYK-It-gW7"/>
+                <constraint firstAttribute="bottom" secondItem="IYA-t8-ZbZ" secondAttribute="bottom" id="xft-ee-mvV"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="First">
+            <color red="0.18799999356269836" green="0.83499997854232788" blue="0.7839999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TabBar">
+            <color red="0.10199999809265137" green="0.76899999380111694" blue="0.71399998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
