@@ -412,7 +412,7 @@
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="power" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X64-tk-XQU">
                                 <rect key="frame" x="377" y="117.5" width="21" height="20.5"/>
-                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" name="TabBar"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="YCM-xi-bdl"/>
                                     <constraint firstAttribute="width" constant="21" id="jEM-hu-f3r"/>
@@ -517,7 +517,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="12" width="32" height="22.5"/>
+        <image name="12" width="228" height="235.5"/>
         <image name="12-1" width="24" height="20"/>
         <image name="BackGround" width="424" height="932"/>
         <image name="Caracter" width="203" height="407"/>

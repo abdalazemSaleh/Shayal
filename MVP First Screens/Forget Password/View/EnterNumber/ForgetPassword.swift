@@ -11,7 +11,10 @@ class ForgetPassword: UIViewController {
     
     // MARK: - Variables
     var presnter: ForgetPasswordPresenter!
-
+    let attributes = [
+        NSAttributedString.Key.foregroundColor : UIColor.white ,
+        NSAttributedString.Key.font : UIFont(name: "Almarai-Bold", size: 12)!
+    ]
     // MARK: - IBOutlet
     @IBOutlet var textFieldView: UIView!
     @IBOutlet var phoneNumberTF: UITextField!
@@ -29,38 +32,16 @@ class ForgetPassword: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         handelView()
+        handleTF()
         presnter = ForgetPasswordPresenter(view: self)
         title = "Forget Password"
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
     // MARK: - Handel View
     func handelView() {
-        // handel phone number label
-        phoneNumberLabel.isHidden = true
-        // handel text filed
-        phoneNumberTF.delegate = self
-        textFieldView.layer.cornerRadius = 8
-        phoneNumberTF.layer.cornerRadius = 8
         // handel button
         nectOutlet.layer.masksToBounds = true
         nectOutlet.layer.cornerRadius = 24
         HandelGradient.HandelButtonGradient(button: nectOutlet)
     }
 }
-// MARK: - Text Field Extention
-extension ForgetPassword: UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        textFieldView.backgroundColor = UIColor(named: "First")
-    }
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        textFieldView.backgroundColor = UIColor(named: "TF")
-    }
-}
-// MARK: - Protocol Extention
-extension ForgetPassword: handelVerification {
-    func dismis() {
-        let VC = EnterCode()
-        navigationController?.pushViewController(VC, animated: true)
-    }
-}
-

@@ -13,7 +13,6 @@ class AddNewOrder: UIViewController {
         NSAttributedString.Key.foregroundColor : UIColor(named: "TabBar") ,
         NSAttributedString.Key.font : UIFont(name: "Almarai-Bold", size: 12)!
     ]
-
     // MARK: - IBOutlet
     @IBOutlet var send: UIButton!
     // from

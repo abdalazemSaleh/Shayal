@@ -9,6 +9,11 @@ import UIKit
 
 class EnterNewPassword: UIViewController {
     
+    // MARK: - Variables
+    let attributes = [
+        NSAttributedString.Key.foregroundColor : UIColor.white ,
+        NSAttributedString.Key.font : UIFont(name: "Almarai-Bold", size: 12)!
+    ]
     // MARK: - IBOutlet
     @IBOutlet var newPasswordView: UIView!
     @IBOutlet var newPasswordTF: UITextField!

@@ -21,6 +21,8 @@ class Home: UIViewController {
         navigationController?.pushViewController(VC, animated: true)
     }
     @IBAction func notification(_ sender: UIButton) {
+        let VC = Notification()
+        navigationController?.pushViewController(VC, animated: true)
     }
     // MARK: - View Did Load
     override func viewDidLoad() {

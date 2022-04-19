@@ -9,6 +9,11 @@ import UIKit
 
 class SginUP: UIViewController {
     
+    // MARK: - Variables
+    let attributes = [
+        NSAttributedString.Key.foregroundColor : UIColor.white ,
+        NSAttributedString.Key.font : UIFont(name: "Almarai-Bold", size: 12)!
+    ]
     // MARK: - IBOutlet
     @IBOutlet var nameView: UIView!
     @IBOutlet var nameTF: UITextField!
@@ -30,21 +35,34 @@ class SginUP: UIViewController {
         let VC = Login()
         navigationController?.pushViewController(VC, animated: true)
     }
+    
+
+
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+
+
+    
     // MARK: - View Did Load
     override func viewDidLoad() {
+
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         super.viewDidLoad()
         title = "SginUP"
         handelView()
-        handelTFDelegation()
-    }
-    // MARK: - Handel TF Delegate
-    func handelTFDelegation() {
-        nameTF.delegate = self
-        phoneTF.delegate = self
-        countryTF.delegate = self
-        cityTF.delegate = self
-        passwordTF.delegate = self
-        passwordConfirmationTF.delegate = self
+        handelTF()
     }
     // MARK: - Handel View
     func handelView() {
@@ -52,19 +70,6 @@ class SginUP: UIViewController {
         sginUp.layer.masksToBounds = true
         sginUp.layer.cornerRadius = 24
         HandelGradient.HandelButtonGradient(button: sginUp)
-        // handel view & TF corner radius
-        nameView.layer.cornerRadius = 4
-        nameTF.layer.cornerRadius = 4
-        phoneView.layer.cornerRadius = 4
-        phoneTF.layer.cornerRadius = 4
-        countryView.layer.cornerRadius = 4
-        countryTF.layer.cornerRadius = 4
-        cityView.layer.cornerRadius = 4
-        cityTF.layer.cornerRadius = 4
-        passwordView.layer.cornerRadius = 4
-        passwordTF.layer.cornerRadius = 4
-        passwordConfrirmationView.layer.cornerRadius = 4
-        passwordConfirmationTF.layer.cornerRadius = 4
     }
     
 }

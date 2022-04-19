@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,10 +19,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Login" customModule="Shayal" customModuleProvider="target">
             <connections>
                 <outlet property="login" destination="K4w-3K-Kxs" id="FhY-tC-n0M"/>
-                <outlet property="password" destination="WUy-Vt-sic" id="xsp-kP-hat"/>
-                <outlet property="passwordLabel" destination="b4v-sj-7bJ" id="Mhg-EG-Qog"/>
+                <outlet property="password" destination="LuP-gW-qER" id="Ppt-Dz-ErF"/>
+                <outlet property="passwordLabel" destination="M1m-Er-HUF" id="cdc-q5-7x0"/>
+                <outlet property="passwordView" destination="Ja0-Gu-ETQ" id="bPZ-vy-zdl"/>
                 <outlet property="phoneNumber" destination="m2s-jf-mKs" id="pmO-a1-k6k"/>
                 <outlet property="phoneNumberLabel" destination="a70-2y-5cj" id="hWN-9B-YWh"/>
+                <outlet property="phoneNumberView" destination="RdK-Xg-HMh" id="0FK-QX-boO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -53,16 +55,26 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="blT-YK-Da8">
                                             <rect key="frame" x="0.0" y="0.0" width="382" height="61"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2s-jf-mKs">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdK-Xg-HMh">
                                                     <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
-                                                    <color key="backgroundColor" red="0.1960784314" green="0.23529411759999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2s-jf-mKs">
+                                                            <rect key="frame" x="8" y="0.0" width="374" height="48"/>
+                                                            <color key="backgroundColor" name="TF"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="TF"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="48" id="8MP-ge-O4k"/>
+                                                        <constraint firstAttribute="height" constant="48" id="2la-VS-Ld4"/>
+                                                        <constraint firstItem="m2s-jf-mKs" firstAttribute="top" secondItem="RdK-Xg-HMh" secondAttribute="top" id="XSF-CC-gQY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="m2s-jf-mKs" secondAttribute="bottom" id="jwU-vJ-NAP"/>
+                                                        <constraint firstAttribute="trailing" secondItem="m2s-jf-mKs" secondAttribute="trailing" id="k0K-cd-v6g"/>
+                                                        <constraint firstItem="m2s-jf-mKs" firstAttribute="leading" secondItem="RdK-Xg-HMh" secondAttribute="leading" constant="8" id="ov7-Ch-a1z"/>
                                                     </constraints>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The number you entered is incorrect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a70-2y-5cj">
                                                     <rect key="frame" x="0.0" y="52" width="134.5" height="9"/>
                                                     <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="8"/>
@@ -71,23 +83,33 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="m2s-jf-mKs" secondAttribute="trailing" id="cGw-tb-RVt"/>
+                                                <constraint firstAttribute="trailing" secondItem="RdK-Xg-HMh" secondAttribute="trailing" id="1GL-ZP-pgR"/>
                                             </constraints>
                                         </stackView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8GZ-1K-ikX">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8kV-cL-JgA">
                                             <rect key="frame" x="0.0" y="77" width="382" height="61"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WUy-Vt-sic">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ja0-Gu-ETQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
-                                                    <color key="backgroundColor" red="0.1960784314" green="0.23529411759999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LuP-gW-qER">
+                                                            <rect key="frame" x="8" y="0.0" width="374" height="48"/>
+                                                            <color key="backgroundColor" name="TF"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="TF"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="48" id="nNo-Ip-Md8"/>
+                                                        <constraint firstItem="LuP-gW-qER" firstAttribute="leading" secondItem="Ja0-Gu-ETQ" secondAttribute="leading" constant="8" id="4oU-Ax-fwg"/>
+                                                        <constraint firstItem="LuP-gW-qER" firstAttribute="top" secondItem="Ja0-Gu-ETQ" secondAttribute="top" id="EVT-C8-yvC"/>
+                                                        <constraint firstAttribute="bottom" secondItem="LuP-gW-qER" secondAttribute="bottom" id="HUI-aO-44B"/>
+                                                        <constraint firstAttribute="trailing" secondItem="LuP-gW-qER" secondAttribute="trailing" id="OdO-WT-Me0"/>
+                                                        <constraint firstAttribute="height" constant="48" id="PTY-kg-Pjk"/>
                                                     </constraints>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Password you entered is incorrect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4v-sj-7bJ">
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Password you entered is incorrect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1m-Er-HUF">
                                                     <rect key="frame" x="0.0" y="52" width="142.5" height="9"/>
                                                     <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="8"/>
                                                     <color key="textColor" red="0.96470588239999999" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
@@ -95,7 +117,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="WUy-Vt-sic" secondAttribute="trailing" id="cIr-bF-5SN"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ja0-Gu-ETQ" secondAttribute="trailing" id="fjV-ut-q1Y"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
@@ -246,6 +268,9 @@
         </namedColor>
         <namedColor name="Main">
             <color red="0.086000002920627594" green="0.14100000262260437" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TF">
+            <color red="0.19599999487400055" green="0.23499999940395355" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

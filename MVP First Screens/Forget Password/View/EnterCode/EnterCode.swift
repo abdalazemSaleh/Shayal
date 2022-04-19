@@ -8,7 +8,12 @@
 import UIKit
 
 class EnterCode: UIViewController {
-    // MARK: - Variables
+    // MARK: -Variables
+    let attributes = [
+        NSAttributedString.Key.foregroundColor : UIColor.white ,
+        NSAttributedString.Key.font : UIFont(name: "Almarai-Bold", size: 24)!
+    ]
+    // MARK: - IBOutlet
     @IBOutlet var firstTF: UITextField!
     @IBOutlet var secoundTF: UITextField!
     @IBOutlet var thirdTF: UITextField!
@@ -29,15 +34,6 @@ class EnterCode: UIViewController {
         handelTF()
         title = "Return code"
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
-    }
-    // MARK: - Handel Text Field Delegate
-    func handelTF() {
-        firstTF.delegate = self
-        secoundTF.delegate = self
-        thirdTF.delegate = self
-        fourthTF.delegate = self
-        fivethTF.delegate = self
-        sixthTF.delegate = self
     }
     // MARK: - Handel View
     func handelView() {

@@ -69,9 +69,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Llk-Gg-Sm8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
-                                                    <color key="backgroundColor" name="TF"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="8" y="0.0" width="374" height="48"/>
+                                                    <color key="backgroundColor" red="0.19607843137254902" green="0.23529411764705882" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
@@ -79,64 +80,67 @@
                                             <constraints>
                                                 <constraint firstItem="Llk-Gg-Sm8" firstAttribute="top" secondItem="huY-2I-qAk" secondAttribute="top" id="3bb-ju-gD7"/>
                                                 <constraint firstAttribute="height" constant="48" id="EJS-8a-CVS"/>
-                                                <constraint firstAttribute="trailing" secondItem="Llk-Gg-Sm8" secondAttribute="trailing" constant="8" id="Kwx-2x-Ch6"/>
+                                                <constraint firstAttribute="trailing" secondItem="Llk-Gg-Sm8" secondAttribute="trailing" id="Kwx-2x-Ch6"/>
                                                 <constraint firstAttribute="bottom" secondItem="Llk-Gg-Sm8" secondAttribute="bottom" id="hix-qj-Yen"/>
-                                                <constraint firstItem="Llk-Gg-Sm8" firstAttribute="leading" secondItem="huY-2I-qAk" secondAttribute="leading" id="hzg-Nh-gCd"/>
+                                                <constraint firstItem="Llk-Gg-Sm8" firstAttribute="leading" secondItem="huY-2I-qAk" secondAttribute="leading" constant="8" id="hzg-Nh-gCd"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEG-kN-E0o">
                                             <rect key="frame" x="0.0" y="76" width="382" height="48"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cr8-gb-Cd6">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                    <rect key="frame" x="8" y="0.0" width="374" height="48"/>
                                                     <color key="backgroundColor" name="TF"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" name="TF"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Cr8-gb-Cd6" secondAttribute="trailing" constant="8" id="87e-ko-Q26"/>
+                                                <constraint firstAttribute="trailing" secondItem="Cr8-gb-Cd6" secondAttribute="trailing" id="87e-ko-Q26"/>
                                                 <constraint firstItem="Cr8-gb-Cd6" firstAttribute="top" secondItem="VEG-kN-E0o" secondAttribute="top" id="U3u-sT-BLm"/>
                                                 <constraint firstAttribute="bottom" secondItem="Cr8-gb-Cd6" secondAttribute="bottom" id="hGI-pn-pcY"/>
                                                 <constraint firstAttribute="height" constant="48" id="krQ-x8-Dn6"/>
-                                                <constraint firstItem="Cr8-gb-Cd6" firstAttribute="leading" secondItem="VEG-kN-E0o" secondAttribute="leading" id="qWd-az-QaL"/>
+                                                <constraint firstItem="Cr8-gb-Cd6" firstAttribute="leading" secondItem="VEG-kN-E0o" secondAttribute="leading" constant="8" id="qWd-az-QaL"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUK-F7-9Cr">
                                             <rect key="frame" x="0.0" y="152" width="382" height="48"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2e-P7-2yv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                    <rect key="frame" x="8" y="0.0" width="374" height="48"/>
                                                     <color key="backgroundColor" name="TF"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" name="TF"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="f2e-P7-2yv" secondAttribute="trailing" constant="8" id="QD0-or-hbp"/>
+                                                <constraint firstAttribute="trailing" secondItem="f2e-P7-2yv" secondAttribute="trailing" id="QD0-or-hbp"/>
                                                 <constraint firstItem="f2e-P7-2yv" firstAttribute="top" secondItem="OUK-F7-9Cr" secondAttribute="top" id="XyP-3J-DrL"/>
                                                 <constraint firstAttribute="height" constant="48" id="ZEm-td-adP"/>
                                                 <constraint firstAttribute="bottom" secondItem="f2e-P7-2yv" secondAttribute="bottom" id="dDO-MC-BEb"/>
-                                                <constraint firstItem="f2e-P7-2yv" firstAttribute="leading" secondItem="OUK-F7-9Cr" secondAttribute="leading" id="mbR-25-LFA"/>
+                                                <constraint firstItem="f2e-P7-2yv" firstAttribute="leading" secondItem="OUK-F7-9Cr" secondAttribute="leading" constant="8" id="mbR-25-LFA"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKL-lj-bBl">
                                             <rect key="frame" x="0.0" y="228" width="382" height="48"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yeq-uh-4hm">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                    <rect key="frame" x="8" y="0.0" width="374" height="48"/>
                                                     <color key="backgroundColor" name="TF"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" name="TF"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Yeq-uh-4hm" secondAttribute="trailing" constant="8" id="77X-1Q-Men"/>
+                                                <constraint firstAttribute="trailing" secondItem="Yeq-uh-4hm" secondAttribute="trailing" id="77X-1Q-Men"/>
                                                 <constraint firstAttribute="height" constant="48" id="IVm-JA-tCH"/>
-                                                <constraint firstItem="Yeq-uh-4hm" firstAttribute="leading" secondItem="UKL-lj-bBl" secondAttribute="leading" id="Ihs-ZN-hVk"/>
+                                                <constraint firstItem="Yeq-uh-4hm" firstAttribute="leading" secondItem="UKL-lj-bBl" secondAttribute="leading" constant="8" id="Ihs-ZN-hVk"/>
                                                 <constraint firstAttribute="bottom" secondItem="Yeq-uh-4hm" secondAttribute="bottom" id="kGi-al-L4z"/>
                                                 <constraint firstItem="Yeq-uh-4hm" firstAttribute="top" secondItem="UKL-lj-bBl" secondAttribute="top" id="taV-ut-xE7"/>
                                             </constraints>
@@ -145,18 +149,19 @@
                                             <rect key="frame" x="0.0" y="304" width="382" height="48"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Re9-q4-bDB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                    <rect key="frame" x="8" y="0.0" width="374" height="48"/>
                                                     <color key="backgroundColor" name="TF"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" name="TF"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="Re9-q4-bDB" secondAttribute="bottom" id="2ow-60-4j5"/>
                                                 <constraint firstAttribute="height" constant="48" id="DL4-kZ-UKf"/>
-                                                <constraint firstItem="Re9-q4-bDB" firstAttribute="leading" secondItem="25m-gg-0yg" secondAttribute="leading" id="GJz-Eq-tWY"/>
-                                                <constraint firstAttribute="trailing" secondItem="Re9-q4-bDB" secondAttribute="trailing" constant="8" id="JYh-gd-jos"/>
+                                                <constraint firstItem="Re9-q4-bDB" firstAttribute="leading" secondItem="25m-gg-0yg" secondAttribute="leading" constant="8" id="GJz-Eq-tWY"/>
+                                                <constraint firstAttribute="trailing" secondItem="Re9-q4-bDB" secondAttribute="trailing" id="JYh-gd-jos"/>
                                                 <constraint firstItem="Re9-q4-bDB" firstAttribute="top" secondItem="25m-gg-0yg" secondAttribute="top" id="h9T-zV-XM6"/>
                                             </constraints>
                                         </view>
@@ -164,18 +169,19 @@
                                             <rect key="frame" x="0.0" y="380" width="382" height="48"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password Confirmation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k2L-xI-sbt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                    <rect key="frame" x="8" y="0.0" width="374" height="48"/>
                                                     <color key="backgroundColor" name="TF"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" name="TF"/>
                                             <constraints>
                                                 <constraint firstItem="k2L-xI-sbt" firstAttribute="top" secondItem="Hjq-Od-b2W" secondAttribute="top" id="8a0-v2-0u5"/>
-                                                <constraint firstItem="k2L-xI-sbt" firstAttribute="leading" secondItem="Hjq-Od-b2W" secondAttribute="leading" id="Rnw-vE-0X0"/>
+                                                <constraint firstItem="k2L-xI-sbt" firstAttribute="leading" secondItem="Hjq-Od-b2W" secondAttribute="leading" constant="8" id="Rnw-vE-0X0"/>
                                                 <constraint firstAttribute="height" constant="48" id="a5o-vu-EBc"/>
-                                                <constraint firstAttribute="trailing" secondItem="k2L-xI-sbt" secondAttribute="trailing" constant="8" id="rjb-2z-NQp"/>
+                                                <constraint firstAttribute="trailing" secondItem="k2L-xI-sbt" secondAttribute="trailing" id="rjb-2z-NQp"/>
                                                 <constraint firstAttribute="bottom" secondItem="k2L-xI-sbt" secondAttribute="bottom" id="zDc-qT-sE8"/>
                                             </constraints>
                                         </view>
