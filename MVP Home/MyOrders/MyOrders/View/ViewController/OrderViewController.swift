@@ -11,6 +11,14 @@ class OrderViewController: UIViewController {
     // MARK: - Variables
     var presenter: OrdersPresenter!
     var myCell = "pending"
+    let constant = Constant()
+    // MARK: - View Did Load
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter = OrdersPresenter(view: self)
+        handelView()
+        handelTbaleView()
+    }
     // MARK: - IBOutlet
     @IBOutlet var mySegment: UISegmentedControl!
     @IBOutlet var ordersTableView: UITableView!
@@ -31,13 +39,6 @@ class OrderViewController: UIViewController {
             myCell = "expired"
             presenter.handelSegment(status: .expired)
         }
-    }
-    // MARK: - View Did Load
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        presenter = OrdersPresenter(view: self)
-        handelView()
-        handelTbaleView()
     }
     // MARK: - Handel View
     func handelView() {

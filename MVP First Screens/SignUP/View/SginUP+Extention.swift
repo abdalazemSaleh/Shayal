@@ -21,66 +21,43 @@ extension SginUP: UITextFieldDelegate {
         passwordTF.delegate = self
         passwordConfirmationTF.delegate = self
         // handel view & TF corner radius
-        nameView.layer.cornerRadius = 4
-        nameTF.layer.cornerRadius = 4
-        nameTF.attributedPlaceholder = NSAttributedString(string: "Name", attributes: attributes)
-        TF.handelTFSpace(textfeild: nameTF)
-        
-        phoneView.layer.cornerRadius = 4
-        phoneTF.layer.cornerRadius = 4
-        phoneTF.attributedPlaceholder = NSAttributedString(string: "Phone Number", attributes: attributes)
-        TF.handelTFSpace(textfeild: phoneTF)
-        
-        countryView.layer.cornerRadius = 4
-        countryTF.layer.cornerRadius = 4
-        countryTF.attributedPlaceholder = NSAttributedString(string: "Country", attributes: attributes)
-        TF.handelTFSpace(textfeild: countryTF)
-        
-        cityView.layer.cornerRadius = 4
-        cityTF.layer.cornerRadius = 4
-        cityTF.attributedPlaceholder = NSAttributedString(string: "City", attributes: attributes)
-        TF.handelTFSpace(textfeild: cityTF)
-        
-        passwordView.layer.cornerRadius = 4
-        passwordTF.layer.cornerRadius = 4
-        passwordTF.attributedPlaceholder = NSAttributedString(string: "Password", attributes: attributes)
-        TF.handelTFSpace(textfeild: passwordTF)
-        
-        passwordConfrirmationView.layer.cornerRadius = 4
-        passwordConfirmationTF.layer.cornerRadius = 4
-        passwordConfirmationTF.attributedPlaceholder = NSAttributedString(string: "Password Confirmation", attributes: attributes)
-        TF.handelTFSpace(textfeild: passwordConfirmationTF)
+        nameTF.handeltextFieldView(view: nameView, string: "Name")
+        phoneTF.handeltextFieldView(view: phoneView, string: "Phone Number")
+        countryTF.handeltextFieldView(view: countryView, string: "Country")
+        cityTF.handeltextFieldView(view: cityView, string: "City")
+        passwordTF.handeltextFieldView(view: passwordView, string: "Password")
+        passwordConfirmationTF.handeltextFieldView(view: passwordConfrirmationView, string: "Password Confiramtion")
     }
     // MARK: - Handel Text Field Extention
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == nameTF) {
-            nameView.backgroundColor = UIColor(named: "First")
+            nameView.backgroundColor = UIColor(named: constant.textFeildView)
         } else if (textField == phoneTF) {
-            phoneView.backgroundColor = UIColor(named: "First")
+            phoneView.backgroundColor = UIColor(named: constant.textFeildView)
         } else if ( textField == countryTF) {
-            countryView.backgroundColor = UIColor(named: "First")
+            countryView.backgroundColor = UIColor(named: constant.textFeildView)
         } else if ( textField == cityTF) {
-            cityView.backgroundColor = UIColor(named: "First")
+            cityView.backgroundColor = UIColor(named: constant.textFeildView)
         } else if ( textField == passwordTF) {
-            passwordView.backgroundColor = UIColor(named: "First")
+            passwordView.backgroundColor = UIColor(named: constant.textFeildView)
         } else {
-            passwordConfrirmationView.backgroundColor = UIColor(named: "First")
+            passwordConfrirmationView.backgroundColor = UIColor(named: constant.textFeildView)
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField == nameTF) {
-            nameView.backgroundColor = UIColor(named: "TF")
+            nameView.backgroundColor = UIColor(named: constant.textFeildColor)
         } else if (textField == phoneTF) {
-            phoneView.backgroundColor = UIColor(named: "TF")
+            phoneView.backgroundColor = UIColor(named: constant.textFeildColor)
         } else if ( textField == countryTF) {
-            countryView.backgroundColor = UIColor(named: "TF")
+            countryView.backgroundColor = UIColor(named: constant.textFeildColor)
         } else if ( textField == cityTF) {
-            cityView.backgroundColor = UIColor(named: "TF")
+            cityView.backgroundColor = UIColor(named: constant.textFeildColor)
         } else if ( textField == passwordTF) {
-            passwordView.backgroundColor = UIColor(named: "TF")
+            passwordView.backgroundColor = UIColor(named: constant.textFeildColor)
         } else {
-            passwordConfrirmationView.backgroundColor = UIColor(named: "TF")
+            passwordConfrirmationView.backgroundColor = UIColor(named: constant.textFeildColor)
         }
     }
 }

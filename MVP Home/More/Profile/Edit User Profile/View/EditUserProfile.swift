@@ -43,7 +43,7 @@ class EditUserProfile: UIViewController {
         title = "Edit profile"
         handelTF()
         handelView()
-        HandelGradient.HandelButtonGradient(button: save)
+        save.HandelButtonGradient()
     }
     // MARK: - Handel View
     func handelView() {

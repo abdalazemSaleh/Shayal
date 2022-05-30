@@ -9,17 +9,16 @@ import UIKit
 
 class Notification: UIViewController {
 
-    // MARK: - Variables
-    
-    // MARK: - IBOutlet
-    @IBOutlet var notificationTV: UITableView!
-    
-    // MARK: - IBAction
-    
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Notification"
         handelTableView()
     }
+    // MARK: - Variables
+    let constant = Constant()
+    // MARK: - IBOutlet
+    @IBOutlet var notificationTV: UITableView!
+    // MARK: - IBAction
+    
 }

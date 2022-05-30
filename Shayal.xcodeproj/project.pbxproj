@@ -29,6 +29,7 @@
 		7F04BEB2280D9A6E00B260E6 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F04BEB0280D9A6E00B260E6 /* NotificationCell.xib */; };
 		7F04BEBA280D9DDC00B260E6 /* OfferPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04BEB8280D9DDC00B260E6 /* OfferPrice.swift */; };
 		7F04BEBB280D9DDC00B260E6 /* OfferPrice.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F04BEB9280D9DDC00B260E6 /* OfferPrice.xib */; };
+		7F2A6E02283A60770059D10D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A6E01283A60770059D10D /* Constant.swift */; };
 		7F7E8DEB27F1BE4000FACB7C /* Intro1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DE927F1BE4000FACB7C /* Intro1.swift */; };
 		7F7E8DEC27F1BE4000FACB7C /* Intro1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */; };
 		7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E8DEE27F1C61900FACB7C /* Intro2.swift */; };
@@ -117,6 +118,7 @@
 		7FE79E5327F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FE79E5027F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf */; };
 		7FE79E5427F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FE79E5127F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf */; };
 		7FE79E5527F0EFD0003D0F3B /* Almarai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FE79E5227F0EFD0003D0F3B /* Almarai-Regular.ttf */; };
+		7FEF170328438CB4007640D0 /* HandelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF170228438CB4007640D0 /* HandelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +162,7 @@
 		7F04BEB0280D9A6E00B260E6 /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
 		7F04BEB8280D9DDC00B260E6 /* OfferPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferPrice.swift; sourceTree = "<group>"; };
 		7F04BEB9280D9DDC00B260E6 /* OfferPrice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferPrice.xib; sourceTree = "<group>"; };
+		7F2A6E01283A60770059D10D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7F7E8DE927F1BE4000FACB7C /* Intro1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro1.swift; sourceTree = "<group>"; };
 		7F7E8DEA27F1BE4000FACB7C /* Intro1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro1.xib; sourceTree = "<group>"; };
 		7F7E8DEE27F1C61900FACB7C /* Intro2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro2.swift; sourceTree = "<group>"; };
@@ -252,6 +255,7 @@
 		7FE79E5027F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Almarai-Light.ttf"; sourceTree = "<group>"; };
 		7FE79E5127F0EFD0003D0F3B /* ArbFONTS-Almarai-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Almarai-Bold.ttf"; sourceTree = "<group>"; };
 		7FE79E5227F0EFD0003D0F3B /* Almarai-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Regular.ttf"; sourceTree = "<group>"; };
+		7FEF170228438CB4007640D0 /* HandelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandelView.swift; sourceTree = "<group>"; };
 		CB4BA1975F408CC73B3F4BBE /* libPods-Shayal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shayal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -473,6 +477,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7F2A6E00283A60650059D10D /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				7F2A6E01283A60770059D10D /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		7F7E8DE327F1AA7D00FACB7C /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,6 +623,7 @@
 		7F826D3427FA608000B2D50E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7FEF170128438C94007640D0 /* Handel View */,
 				7F99CEA8280AF602003BD226 /* Handel TF */,
 				7F04377127FB928700CB5976 /* Handel Shaow */,
 				7F04375927FB759600CB5976 /* Handel Spiner */,
@@ -855,9 +868,9 @@
 		7F99CE87280A127E003BD226 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7F99CE89280A128C003BD226 /* Orders+Protocol.swift */,
-				7F99CE88280A128C003BD226 /* Orders+TableExtention.swift */,
 				7F99CE8A280A128D003BD226 /* OrderViewController.swift */,
+				7F99CE88280A128C003BD226 /* Orders+TableExtention.swift */,
+				7F99CE89280A128C003BD226 /* Orders+Protocol.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1005,6 +1018,7 @@
 		7FAB713027F0CAB700477373 = {
 			isa = PBXGroup;
 			children = (
+				7F2A6E00283A60650059D10D /* Constant */,
 				7F826D3B27FA66EC00B2D50E /* Main */,
 				7FE79E3F27F0DE37003D0F3B /* MVP First Screens */,
 				7F04376827FB8FB200CB5976 /* MVP Home */,
@@ -1169,6 +1183,14 @@
 				7FE79E5027F0EFD0003D0F3B /* ArbFONTS-Almarai-Light.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		7FEF170128438C94007640D0 /* Handel View */ = {
+			isa = PBXGroup;
+			children = (
+				7FEF170228438CB4007640D0 /* HandelView.swift */,
+			);
+			path = "Handel View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1369,6 +1391,7 @@
 				7FAB714127F0CAB700477373 /* ViewController.swift in Sources */,
 				7F99CE9C280A12CE003BD226 /* PendingOrders.swift in Sources */,
 				7FE0E7FB27F77C0A003FB8BF /* ForgetPassword.swift in Sources */,
+				7F2A6E02283A60770059D10D /* Constant.swift in Sources */,
 				7FE0E81427F87C79003FB8BF /* EnterCode.swift in Sources */,
 				7F04BEA9280D97C600B260E6 /* Notification.swift in Sources */,
 				7F826D3927FA63AE00B2D50E /* EnterNewPassword+Extention.swift in Sources */,
@@ -1377,6 +1400,7 @@
 				7FAB713D27F0CAB700477373 /* AppDelegate.swift in Sources */,
 				7F99CE8D280A128D003BD226 /* OrderViewController.swift in Sources */,
 				7FE0E7F527F7537B003FB8BF /* loginPresenter.swift in Sources */,
+				7FEF170328438CB4007640D0 /* HandelView.swift in Sources */,
 				7F99CE49280A0DE0003BD226 /* Complaints.swift in Sources */,
 				7F7E8DEB27F1BE4000FACB7C /* Intro1.swift in Sources */,
 				7F04BEB1280D9A6E00B260E6 /* NotificationCell.swift in Sources */,

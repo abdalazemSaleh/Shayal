@@ -8,9 +8,14 @@
 import UIKit
 
 class OfferPrice: UIViewController {
-
-    // MARK: - Variables
     
+    // MARK: - Variables
+    let constant = Constant()
+    // MARK: - View Did Load
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        handelView()
+    }
     // MARK: - IBOutlet
     @IBOutlet var mainView: UIView!
     @IBOutlet var userImage: UIImageView!
@@ -39,43 +44,23 @@ class OfferPrice: UIViewController {
     func handelView() {
         // handel main view
         mainView.layer.cornerRadius = 32
-        Shadow.handelShadow(view: mainView)
+        mainView.handelShadow()
         // handel user image
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
         userImage.clipsToBounds = true
         // handel images views
-        previousRateView.layer.borderWidth = 2
-        previousRateView.layer.borderColor = UIColor(named: "light")?.cgColor
-        previousRateView.layer.cornerRadius = 8
-        
-        priceView.layer.borderWidth = 2
-        priceView.layer.borderColor = UIColor(named: "light")?.cgColor
-        priceView.layer.cornerRadius = 8
-
-        deliveryTimeView.layer.borderWidth = 2
-        deliveryTimeView.layer.borderColor = UIColor(named: "light")?.cgColor
-        deliveryTimeView.layer.cornerRadius = 8
-
-        distanceView.layer.borderWidth = 2
-        distanceView.layer.borderColor = UIColor(named: "light")?.cgColor
-        distanceView.layer.cornerRadius = 8
+        previousRateView.handelOfferPriceIcons()
+        priceView.handelOfferPriceIcons()
+        deliveryTimeView.handelOfferPriceIcons()
+        distanceView.handelOfferPriceIcons()
         // handel agree button
         agreeButton.layer.masksToBounds = true
         agreeButton.layer.cornerRadius = 24
-        HandelGradient.HandelButtonGradient(button: agreeButton)
+        agreeButton.HandelButtonGradient()
         // handle refused button
         refusedButton.layer.masksToBounds = true
         refusedButton.layer.cornerRadius = 24
         refusedButton.layer.borderWidth = 2
         refusedButton.layer.borderColor = UIColor(named: "TabBar")?.cgColor
-
-        
     }
-    // MARK: - View Did Load
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        handelView()
-    }
-    
-
 }

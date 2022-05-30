@@ -7,16 +7,16 @@
 
 import UIKit
 
-class HandelGradient {
-    static func HandelButtonGradient(button: UIButton){
+extension UIButton {
+     func HandelButtonGradient(){
         let first = UIColor(named: "First")
         let secound = UIColor(named: "Secound")
         let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = button.bounds
+         gradientLayer.frame = self.bounds
         gradientLayer.colors = [secound!.cgColor, first!.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
         gradientLayer.locations = [0.0, 1.0]
-        button.layer.insertSublayer(gradientLayer, at: 0)
+         self.layer.insertSublayer(gradientLayer, at: 0)
     }
 }

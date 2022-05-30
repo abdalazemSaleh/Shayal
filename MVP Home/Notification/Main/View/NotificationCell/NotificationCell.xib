@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -26,20 +26,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 535" translatesAutoresizingMaskIntoConstraints="NO" id="6Sc-lU-Jec">
-                        <rect key="frame" x="16" y="8" width="64" height="64"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="64" id="EoF-HN-83g"/>
-                            <constraint firstAttribute="height" constant="64" id="ZJe-VB-CgP"/>
-                        </constraints>
+                        <rect key="frame" x="16" y="8" width="61" height="64"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abdalazem Saleh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3e-zW-hc8">
-                        <rect key="frame" x="88" y="22" width="112.5" height="16"/>
+                        <rect key="frame" x="85" y="22" width="112.66666666666669" height="16"/>
                         <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text is example of ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPY-Th-fON">
-                        <rect key="frame" x="88" y="40" width="123" height="14"/>
+                        <rect key="frame" x="85" y="40" width="123" height="14"/>
                         <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
                         <color key="textColor" name="label"/>
                         <nil key="highlightedColor"/>
@@ -52,6 +48,8 @@
                     <constraint firstItem="a3e-zW-hc8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="Osa-QT-xOm"/>
                     <constraint firstItem="WPY-Th-fON" firstAttribute="leading" secondItem="6Sc-lU-Jec" secondAttribute="trailing" constant="8" id="QeS-c8-jq9"/>
                     <constraint firstItem="a3e-zW-hc8" firstAttribute="leading" secondItem="6Sc-lU-Jec" secondAttribute="trailing" constant="8" id="Vcp-GK-7aH"/>
+                    <constraint firstAttribute="bottom" secondItem="6Sc-lU-Jec" secondAttribute="bottom" constant="8" id="YtY-OQ-e5w"/>
+                    <constraint firstItem="6Sc-lU-Jec" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="bEf-mm-oPC"/>
                     <constraint firstItem="6Sc-lU-Jec" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="e1p-Nz-EW6"/>
                 </constraints>
             </tableViewCellContentView>

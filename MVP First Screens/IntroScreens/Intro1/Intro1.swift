@@ -12,7 +12,6 @@ class Intro1: UIViewController {
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello world")
         handelNavigationItem()
     }
     // MARK: - Hnadel navigatio item

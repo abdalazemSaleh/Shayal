@@ -16,7 +16,7 @@ extension Notification: UITableViewDelegate, UITableViewDataSource {
         notificationTV.delegate = self
         notificationTV.dataSource = self
         // call cell
-        notificationTV.register(UINib(nibName: "NotificationCell", bundle: nil), forCellReuseIdentifier: "NotificationCell")
+        notificationTV.register(UINib(nibName: constant.notificationCell, bundle: nil), forCellReuseIdentifier: constant.notificationCell)
     }
     // MARK: - Handel Table View Extention
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -26,7 +26,7 @@ extension Notification: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = notificationTV.dequeueReusableCell(withIdentifier: "NotificationCell", for: indexPath) as! NotificationCell
+        let cell = notificationTV.dequeueReusableCell(withIdentifier: constant.notificationCell, for: indexPath) as! NotificationCell
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

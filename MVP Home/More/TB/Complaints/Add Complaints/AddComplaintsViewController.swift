@@ -30,9 +30,9 @@ class AddComplaintsViewController: UIViewController {
     func handelView() {
         // main view
         mainView.layer.cornerRadius = 32
-        Shadow.handelShadow(view: mainView)
+        mainView.handelShadow()
         // handel send
-        HandelGradient.HandelButtonGradient(button: send)
+        send.HandelButtonGradient()
         // handel name view
         nameView.layer.cornerRadius = 4
         // handel TV

@@ -11,6 +11,12 @@ import Lottie
 class PaymentMethod: UIViewController {
     // MARK: - Variables
     var delegate: paymentPr?
+    let constant = Constant()
+    // MARK: - View Did Load
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        handelView()
+    }
     // MARK: - IBOutlet
     @IBOutlet var mainView: UIView!
     @IBOutlet var animationView: AnimationView!
@@ -26,14 +32,14 @@ class PaymentMethod: UIViewController {
     func handelView() {
         // main view
         mainView.layer.cornerRadius = 12
-        Shadow.handelShadow(view: mainView)
+        mainView.handelShadow()
         // handel animation
         animationView.animationSpeed = 1
         animationView.play()
         // handel next button
         nextButton.layer.masksToBounds = true
         nextButton.layer.cornerRadius = 24
-        HandelGradient.HandelButtonGradient(button: nextButton)
+        nextButton.HandelButtonGradient()
         // handel elctronic & cash payment
         electronicPayment.layer.cornerRadius = electronicPayment.frame.size.width / 2
         cashPayment.layer.cornerRadius = cashPayment.frame.size.width / 2
@@ -41,10 +47,5 @@ class PaymentMethod: UIViewController {
         cashPayment.layer.borderWidth = 2
         electronicPayment.layer.borderColor = UIColor(named: "TabBar")?.cgColor
         cashPayment.layer.borderColor = UIColor(named: "TabBar")?.cgColor
-    }
-    // MARK: - View Did Load
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        handelView()
     }
 }

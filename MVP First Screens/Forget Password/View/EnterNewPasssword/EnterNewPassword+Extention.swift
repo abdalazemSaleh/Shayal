@@ -11,16 +11,16 @@ import UIKit
 extension EnterNewPassword: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == newPasswordTF){
-            newPasswordView.backgroundColor = UIColor(named: "First")
+            newPasswordView.backgroundColor = UIColor(named: constant.textFeildView)
         } else {
-            passwordConfirmationView.backgroundColor = UIColor(named: "First")
+            passwordConfirmationView.backgroundColor = UIColor(named: constant.textFeildView)
         }
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField == newPasswordTF){
-            newPasswordView.backgroundColor = UIColor(named: "TF")
+            newPasswordView.backgroundColor = UIColor(named: constant.textFeildColor)
         } else {
-            passwordConfirmationView.backgroundColor = UIColor(named: "TF")
+            passwordConfirmationView.backgroundColor = UIColor(named: constant.textFeildColor)
         }
     }
 }

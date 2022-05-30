@@ -14,13 +14,14 @@ extension Login: LoginView {
         if phoneNumber.text?.isEmpty == true{
             phoneNumberLabel.isHidden = false
             phoneNumberLabel.text = message
-            phoneNumber.backgroundColor = UIColor(named: "checkTF")
+            phoneNumber.backgroundColor = UIColor(named: constant.wrongPsColor)
         }
         if password.text?.isEmpty == true{
             passwordLabel.isHidden = false
             passwordLabel.text = message
-            password.backgroundColor = UIColor(named: "checkTF")
+            password.backgroundColor = UIColor(named: constant.wrongPsColor)
         }
+        
     }
 }
 

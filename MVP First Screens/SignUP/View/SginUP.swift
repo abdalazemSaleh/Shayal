@@ -10,10 +10,37 @@ import UIKit
 class SginUP: UIViewController {
     
     // MARK: - Variables
-    let attributes = [
-        NSAttributedString.Key.foregroundColor : UIColor.white ,
-        NSAttributedString.Key.font : UIFont(name: "Almarai-Bold", size: 12)!
-    ]
+    let constant = Constant()
+    // MARK: - View Did Load
+    override func viewDidLoad() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        super.viewDidLoad()
+        title = "SginUP"
+        handelView()
+        handelTF()
+    }
+    // MARK: - IBAction
+    @IBAction func sginUp(_ sender: UIButton) {
+    }
+    @IBAction func sginIn(_ sender: UIButton) {
+        let VC = Login()
+        navigationController?.pushViewController(VC, animated: true)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
     // MARK: - IBOutlet
     @IBOutlet var nameView: UIView!
     @IBOutlet var nameTF: UITextField!
@@ -28,48 +55,11 @@ class SginUP: UIViewController {
     @IBOutlet var passwordConfrirmationView: UIView!
     @IBOutlet var passwordConfirmationTF: UITextField!
     @IBOutlet var sginUp: UIButton!
-    // MARK: - IBAction
-    @IBAction func sginUp(_ sender: UIButton) {
-    }
-    @IBAction func sginIn(_ sender: UIButton) {
-        let VC = Login()
-        navigationController?.pushViewController(VC, animated: true)
-    }
-    
-
-
-    @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height
-            }
-        }
-    }
-
-    @objc func keyboardWillHide(notification: NSNotification) {
-        if self.view.frame.origin.y != 0 {
-            self.view.frame.origin.y = 0
-        }
-    }
-
-
-    
-    // MARK: - View Did Load
-    override func viewDidLoad() {
-
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-        super.viewDidLoad()
-        title = "SginUP"
-        handelView()
-        handelTF()
-    }
     // MARK: - Handel View
     func handelView() {
         // handel Sginup butotn
         sginUp.layer.masksToBounds = true
         sginUp.layer.cornerRadius = 24
-        HandelGradient.HandelButtonGradient(button: sginUp)
+        sginUp.HandelButtonGradient()
     }
-    
 }

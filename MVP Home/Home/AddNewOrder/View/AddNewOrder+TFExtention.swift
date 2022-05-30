@@ -9,40 +9,20 @@ import UIKit
 
 
 extension AddNewOrder: UITextFieldDelegate {
-    
-
     // handel TF courner radius & delegation
     func handelTF() {
         couponTF.layer.borderWidth = 1
         couponTF.layer.borderColor = UIColor(named: "TabBar")?.cgColor
         couponTF.layer.cornerRadius = 8
-        couponTF.attributedPlaceholder = NSAttributedString(string: "Coupon", attributes: attributes as [NSAttributedString.Key : Any])
+        couponTF.attributedPlaceholder = NSAttributedString(string: "Coupon", attributes: constant.attributes)
         // handel courner radius
-        fromView.layer.cornerRadius = 4
-        TF.handelTFSpace(textfeild: fromTF)
-        TF.addImage(tettfeild: fromTF, image: "Location")
-        
-        toView.layer.cornerRadius = 4
-        TF.handelTFSpace(textfeild: toTF)
-        TF.addImage(tettfeild: toTF, image: "Location")
-        
-        payloadView.layer.cornerRadius = 4
-        TF.handelTFSpace(textfeild: payloadTF)
-        TF.addImage(tettfeild: payloadTF, image: "Polygon")
-
-        vehicleModelView.layer.cornerRadius = 4
-        TF.handelTFSpace(textfeild: vehicleModelTF)
-        TF.addImage(tettfeild: vehicleModelTF, image: "Polygon")
-
-        weightView.layer.cornerRadius = 4
-        TF.handelTFSpace(textfeild: weightTF)
-        TF.addImage(tettfeild: weightTF, image: "Kg")
-
-        vehicleTypeView.layer.cornerRadius = 4
-        TF.handelTFSpace(textfeild: vehicleTypeTF)
-        TF.addImage(tettfeild: vehicleTypeTF, image: "Polygon")
-
-        TF.handelTFSpace(textfeild: couponTF)
+        fromTF.handeltextFieldView(view: fromView, string: "Location")
+        toTF.handelAddImage(view: toView, string: "Location")
+        payloadTF.handelAddImage(view: payloadView, string: "Polygon")
+        vehicleModelTF.handelAddImage(view: vehicleModelView, string: "Polygon")
+        weightTF.handelAddImage(view: weightView, string: "Kg")
+        vehicleTypeTF.handelAddImage(view: vehicleTypeTF, string: "Polygon")
+        couponTF.handelTFSpace()
         // handel delegation
         fromTF.delegate = self
         toTF.delegate = self
@@ -54,17 +34,17 @@ extension AddNewOrder: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == fromTF) {
-            fromView.backgroundColor = UIColor(named: "First")
+            fromView.backgroundColor = UIColor(named: constant.textFeildView)
         } else if (textField == toTF) {
-            toView.backgroundColor = UIColor(named: "First")
+            toView.backgroundColor = UIColor(named: constant.textFeildView)
         } else if ( textField == payloadTF) {
-            payloadView.backgroundColor = UIColor(named: "First")
+            payloadView.backgroundColor = UIColor(named: constant.textFeildView)
         } else if ( textField == vehicleModelTF) {
-            vehicleModelView.backgroundColor = UIColor(named: "First")
+            vehicleModelView.backgroundColor = UIColor(named: constant.textFeildView)
         } else if ( textField == weightTF) {
-            weightView.backgroundColor = UIColor(named: "First")
+            weightView.backgroundColor = UIColor(named: constant.textFeildView)
         } else if ( textField == vehicleTypeTF) {
-            vehicleTypeTF.backgroundColor = UIColor(named: "First")
+            vehicleTypeTF.backgroundColor = UIColor(named: constant.textFeildView)
         }
     }
     

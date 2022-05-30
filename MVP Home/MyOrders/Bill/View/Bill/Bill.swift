@@ -9,6 +9,12 @@ import UIKit
 
 class Bill: UIViewController {
 
+    // MARK: - View Did Load
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Bill"
+        handelView()
+    }
     // MARK: - IBOutlet
     @IBOutlet var userImage: UIImageView!
     @IBOutlet var userName: UILabel!
@@ -34,14 +40,8 @@ class Bill: UIViewController {
         // handel next button
         nextButton.layer.masksToBounds = true
         nextButton.layer.cornerRadius = 24
-        HandelGradient.HandelButtonGradient(button: nextButton)
+        nextButton.HandelButtonGradient()
     }
     
-    // MARK: - View Did Load
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "Bill"
-        handelView()
-    }
 
 }

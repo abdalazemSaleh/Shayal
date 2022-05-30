@@ -18,17 +18,17 @@ extension EnterCode: UITextFieldDelegate {
         fivethTF.delegate = self
         sixthTF.delegate = self
         // handel courner radius and view
-        firstTF.attributedPlaceholder = NSAttributedString(string: "", attributes: attributes)
+        firstTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
         
-        secoundTF.attributedPlaceholder = NSAttributedString(string: "", attributes: attributes)
+        secoundTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
         
-        thirdTF.attributedPlaceholder = NSAttributedString(string: "", attributes: attributes)
+        thirdTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
         
-        fourthTF.attributedPlaceholder = NSAttributedString(string: "", attributes: attributes)
+        fourthTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
         
-        fivethTF.attributedPlaceholder = NSAttributedString(string: "", attributes: attributes)
+        fivethTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
         
-        sixthTF.attributedPlaceholder = NSAttributedString(string: "", attributes: attributes)
+        sixthTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
     }
     // MARK: - Handel Text Field Extention
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -52,8 +52,6 @@ extension EnterCode: UITextFieldDelegate {
             if(textField == fivethTF){
                 sixthTF.becomeFirstResponder()
             }
-
-
             textField.text = string
             return false
         }

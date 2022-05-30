@@ -8,11 +8,20 @@
 import UIKit
 
 class AddNewOrder: UIViewController {
-    // MARK: - Variables
-    let attributes = [
-        NSAttributedString.Key.foregroundColor : UIColor(named: "TabBar") ,
-        NSAttributedString.Key.font : UIFont(name: "Almarai-Bold", size: 12)!
-    ]
+    
+    let constant = Constant()
+    
+    // MARK: - View Did Load
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Add New Order"
+        // handel buttom
+        send.layer.masksToBounds = true
+        send.layer.cornerRadius = 24
+        send.HandelButtonGradient()
+        // handel TF
+        handelTF()
+    }
     // MARK: - IBOutlet
     @IBOutlet var send: UIButton!
     // from
@@ -29,7 +38,7 @@ class AddNewOrder: UIViewController {
     @IBOutlet var vehicleModelTF: UITextField!
     // weight
     @IBOutlet var weightView: UIView!
-        @IBOutlet var weightTF: UITextField!
+    @IBOutlet var weightTF: UITextField!
     // vehicle type
     @IBOutlet var vehicleTypeView: UIView!
     @IBOutlet var vehicleTypeTF: UITextField!
@@ -39,16 +48,5 @@ class AddNewOrder: UIViewController {
     // MARK: - IBAction
     @IBAction func send(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
-    }
-    // MARK: - View Did Load
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "Add New Order"
-        // handel buttom
-        send.layer.masksToBounds = true
-        send.layer.cornerRadius = 24
-        HandelGradient.HandelButtonGradient(button: send)
-        // handel TF
-        handelTF()
     }
 }

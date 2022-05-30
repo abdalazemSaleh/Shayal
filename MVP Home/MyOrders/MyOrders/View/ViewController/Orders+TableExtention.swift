@@ -13,9 +13,9 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
         ordersTableView.delegate = self
         ordersTableView.dataSource = self
         ordersTableView.separatorStyle = .none
-        ordersTableView.register(UINib(nibName: "PendingOrders", bundle: nil), forCellReuseIdentifier: "PendingOrders")
-        ordersTableView.register(UINib(nibName: "ActiveOrders", bundle: nil), forCellReuseIdentifier: "ActiveOrders")
-        ordersTableView.register(UINib(nibName: "ExpiredOrders", bundle: nil), forCellReuseIdentifier: "ExpiredOrders")
+        ordersTableView.register(UINib(nibName: constant.pending, bundle: nil), forCellReuseIdentifier: constant.pending)
+        ordersTableView.register(UINib(nibName: constant.active, bundle: nil), forCellReuseIdentifier: constant.active)
+        ordersTableView.register(UINib(nibName: constant.expired, bundle: nil), forCellReuseIdentifier: constant.expired)
     }
     // set up table view
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -69,5 +69,4 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0
     }
-    
 }

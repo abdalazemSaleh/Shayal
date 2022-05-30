@@ -10,14 +10,16 @@ import UIKit
 let ai = UIActivityIndicatorView(style: .large)
 
 class Spiner {
-    // MARK: - Show Spiner
-    static func showSpiner(view: UIView) {
-        ai.center = view.center
-        view.addSubview(ai)
-        ai.startAnimating()
-    }
     // MARK: - Remove Spiner
      static func removeSpiner() {
          ai.stopAnimating()
+    }
+}
+
+extension UIView {
+    func showSpiner() {
+        ai.center = self.center
+        self.addSubview(ai)
+        ai.startAnimating()
     }
 }
