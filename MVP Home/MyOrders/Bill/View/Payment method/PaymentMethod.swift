@@ -32,7 +32,7 @@ class PaymentMethod: UIViewController {
     func handelView() {
         // main view
         mainView.layer.cornerRadius = 12
-        mainView.handelShadow()
+        mainView.addShadow()
         // handel animation
         animationView.animationSpeed = 1
         animationView.play()

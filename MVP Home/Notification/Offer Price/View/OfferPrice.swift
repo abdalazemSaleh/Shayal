@@ -44,15 +44,15 @@ class OfferPrice: UIViewController {
     func handelView() {
         // handel main view
         mainView.layer.cornerRadius = 32
-        mainView.handelShadow()
+        mainView.addShadow()
         // handel user image
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
         userImage.clipsToBounds = true
         // handel images views
-        previousRateView.handelOfferPriceIcons()
-        priceView.handelOfferPriceIcons()
-        deliveryTimeView.handelOfferPriceIcons()
-        distanceView.handelOfferPriceIcons()
+        previousRateView.handel_offerPriceIcon()
+        priceView.handel_offerPriceIcon()
+        deliveryTimeView.handel_offerPriceIcon()
+        distanceView.handel_offerPriceIcon()
         // handel agree button
         agreeButton.layer.masksToBounds = true
         agreeButton.layer.cornerRadius = 24

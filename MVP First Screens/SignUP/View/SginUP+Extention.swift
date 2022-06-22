@@ -31,33 +31,33 @@ extension SginUP: UITextFieldDelegate {
     // MARK: - Handel Text Field Extention
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == nameTF) {
-            nameView.backgroundColor = UIColor(named: constant.textFeildView)
+            nameView.backgroundColor = UIColor(named: constant.set_selectedTextFielddColorToView)
         } else if (textField == phoneTF) {
-            phoneView.backgroundColor = UIColor(named: constant.textFeildView)
+            phoneView.backgroundColor = UIColor(named: constant.set_selectedTextFielddColorToView)
         } else if ( textField == countryTF) {
-            countryView.backgroundColor = UIColor(named: constant.textFeildView)
+            countryView.backgroundColor = UIColor(named: constant.set_selectedTextFielddColorToView)
         } else if ( textField == cityTF) {
-            cityView.backgroundColor = UIColor(named: constant.textFeildView)
+            cityView.backgroundColor = UIColor(named: constant.set_selectedTextFielddColorToView)
         } else if ( textField == passwordTF) {
-            passwordView.backgroundColor = UIColor(named: constant.textFeildView)
+            passwordView.backgroundColor = UIColor(named: constant.set_selectedTextFielddColorToView)
         } else {
-            passwordConfrirmationView.backgroundColor = UIColor(named: constant.textFeildView)
+            passwordConfrirmationView.backgroundColor = UIColor(named: constant.set_selectedTextFielddColorToView)
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField == nameTF) {
-            nameView.backgroundColor = UIColor(named: constant.textFeildColor)
+            nameView.backgroundColor = UIColor(named: constant.set_orginalColerToView)
         } else if (textField == phoneTF) {
-            phoneView.backgroundColor = UIColor(named: constant.textFeildColor)
+            phoneView.backgroundColor = UIColor(named: constant.set_orginalColerToView)
         } else if ( textField == countryTF) {
-            countryView.backgroundColor = UIColor(named: constant.textFeildColor)
+            countryView.backgroundColor = UIColor(named: constant.set_orginalColerToView)
         } else if ( textField == cityTF) {
-            cityView.backgroundColor = UIColor(named: constant.textFeildColor)
+            cityView.backgroundColor = UIColor(named: constant.set_orginalColerToView)
         } else if ( textField == passwordTF) {
-            passwordView.backgroundColor = UIColor(named: constant.textFeildColor)
+            passwordView.backgroundColor = UIColor(named: constant.set_orginalColerToView)
         } else {
-            passwordConfrirmationView.backgroundColor = UIColor(named: constant.textFeildColor)
+            passwordConfrirmationView.backgroundColor = UIColor(named: constant.set_orginalColerToView)
         }
     }
 }

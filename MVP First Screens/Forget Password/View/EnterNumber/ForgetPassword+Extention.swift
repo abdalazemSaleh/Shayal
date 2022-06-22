@@ -18,14 +18,14 @@ extension ForgetPassword: UITextFieldDelegate {
         textFieldView.layer.cornerRadius = 4
         phoneNumberTF.layer.cornerRadius = 4
         phoneNumberTF.attributedPlaceholder = NSAttributedString(string: "Phone Number", attributes: constant.attributes)
-        phoneNumberTF.handelTFSpace()
+        phoneNumberTF.handelTextFieldSpacer()
     }
     // MARK: - Handel Text Field Extention
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textFieldView.backgroundColor = UIColor(named: constant.textFeildView)
+        textFieldView.backgroundColor = UIColor(named: constant.set_selectedTextFielddColorToView)
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        textFieldView.backgroundColor = UIColor(named: constant.textFeildColor)
+        textFieldView.backgroundColor = UIColor(named: constant.set_orginalColerToView)
     }
 }
 // MARK: - Protocol Extention

@@ -31,7 +31,7 @@ class Language: UIViewController {
     func handelView() {
         // handel main view
         mainView.layer.cornerRadius = 32
-        mainView.handelShadow()
+        mainView.addShadow()
         // handel save button
         save.HandelButtonGradient()
         // handel english view

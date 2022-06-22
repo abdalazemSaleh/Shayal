@@ -13,9 +13,9 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
         ordersTableView.delegate = self
         ordersTableView.dataSource = self
         ordersTableView.separatorStyle = .none
-        ordersTableView.register(UINib(nibName: constant.pending, bundle: nil), forCellReuseIdentifier: constant.pending)
-        ordersTableView.register(UINib(nibName: constant.active, bundle: nil), forCellReuseIdentifier: constant.active)
-        ordersTableView.register(UINib(nibName: constant.expired, bundle: nil), forCellReuseIdentifier: constant.expired)
+        ordersTableView.register(UINib(nibName: constant.pending_orders, bundle: nil), forCellReuseIdentifier: constant.pending_orders)
+        ordersTableView.register(UINib(nibName: constant.active_oreders, bundle: nil), forCellReuseIdentifier: constant.active_oreders)
+        ordersTableView.register(UINib(nibName: constant.expired_orders, bundle: nil), forCellReuseIdentifier: constant.expired_orders)
     }
     // set up table view
     func numberOfSections(in tableView: UITableView) -> Int {

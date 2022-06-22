@@ -33,9 +33,9 @@ class Home: UIViewController {
     func handelView() {
         // handel corner view
         cornerView.layer.cornerRadius = 4
-        cornerView.handelShadow()
+        cornerView.addShadow()
         // handel offer view
         offerView.layer.cornerRadius = 4
-        offerView.handelShadow()
+        offerView.addShadow()
     }
 }

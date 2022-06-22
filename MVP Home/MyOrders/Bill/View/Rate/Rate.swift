@@ -41,7 +41,7 @@ class Rate: UIViewController {
         rateButton.HandelButtonGradient()
         // handel view
         mainView.layer.cornerRadius = 32
-        mainView.handelShadow()
+        mainView.addShadow()
         // handel user image
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
         // handel text view

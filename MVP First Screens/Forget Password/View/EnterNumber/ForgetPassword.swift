@@ -19,7 +19,7 @@ class ForgetPassword: UIViewController {
         presnter = ForgetPasswordPresenter(view: self)
         title = "Forget Password"
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
-        self.phoneNumberTF.handelTFSpace()
+        self.phoneNumberTF.handelTextFieldSpacer()
     }
     // MARK: - IBAction
     @IBAction func next(_ sender: UIButton) {

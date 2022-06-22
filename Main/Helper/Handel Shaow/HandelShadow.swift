@@ -9,7 +9,7 @@ import UIKit
 
 
 extension UIView {
-     func handelShadow() {
+     func addShadow() {
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 0.4
         self.layer.shadowRadius = 3.0

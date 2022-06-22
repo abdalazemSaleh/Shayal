@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func handelOfferPriceIcons(){
+    func handel_offerPriceIcon(){
         self.layer.borderWidth = 2
         self.layer.borderColor = UIColor(named: "light")?.cgColor
         self.layer.cornerRadius = 8
