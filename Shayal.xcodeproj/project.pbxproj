@@ -50,6 +50,8 @@
 		7F826D4127FA67D900B2D50E /* SginUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D3F27FA67D900B2D50E /* SginUP.swift */; };
 		7F826D4227FA67D900B2D50E /* SginUP.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F826D4027FA67D900B2D50E /* SginUP.xib */; };
 		7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D4327FA773600B2D50E /* SginUP+Extention.swift */; };
+		7F99055D286A02D2000E07F3 /* orderViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99055C286A02D2000E07F3 /* orderViewProtocol.swift */; };
+		7F99055F286A08BB000E07F3 /* orderPresenter+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99055E286A08BB000E07F3 /* orderPresenter+TableView.swift */; };
 		7F99CE47280A0DE0003BD226 /* Complaints+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE44280A0DE0003BD226 /* Complaints+TableView.swift */; };
 		7F99CE48280A0DE0003BD226 /* Complaints.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE45280A0DE0003BD226 /* Complaints.xib */; };
 		7F99CE49280A0DE0003BD226 /* Complaints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE46280A0DE0003BD226 /* Complaints.swift */; };
@@ -183,6 +185,8 @@
 		7F826D3F27FA67D900B2D50E /* SginUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginUP.swift; sourceTree = "<group>"; };
 		7F826D4027FA67D900B2D50E /* SginUP.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SginUP.xib; sourceTree = "<group>"; };
 		7F826D4327FA773600B2D50E /* SginUP+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SginUP+Extention.swift"; sourceTree = "<group>"; };
+		7F99055C286A02D2000E07F3 /* orderViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderViewProtocol.swift; sourceTree = "<group>"; };
+		7F99055E286A08BB000E07F3 /* orderPresenter+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "orderPresenter+TableView.swift"; sourceTree = "<group>"; };
 		7F99CE44280A0DE0003BD226 /* Complaints+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Complaints+TableView.swift"; sourceTree = "<group>"; };
 		7F99CE45280A0DE0003BD226 /* Complaints.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Complaints.xib; sourceTree = "<group>"; };
 		7F99CE46280A0DE0003BD226 /* Complaints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complaints.swift; sourceTree = "<group>"; };
@@ -842,6 +846,8 @@
 			isa = PBXGroup;
 			children = (
 				7F99CE84280A1270003BD226 /* OrdersPresenter.swift */,
+				7F99055E286A08BB000E07F3 /* orderPresenter+TableView.swift */,
+				7F99055C286A02D2000E07F3 /* orderViewProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -1389,6 +1395,7 @@
 				7F99CF6D280B5946003BD226 /* PaymentMethod.swift in Sources */,
 				7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */,
 				7FAB714127F0CAB700477373 /* ViewController.swift in Sources */,
+				7F99055F286A08BB000E07F3 /* orderPresenter+TableView.swift in Sources */,
 				7F99CE9C280A12CE003BD226 /* PendingOrders.swift in Sources */,
 				7FE0E7FB27F77C0A003FB8BF /* ForgetPassword.swift in Sources */,
 				7F2A6E02283A60770059D10D /* Constant.swift in Sources */,
@@ -1427,6 +1434,7 @@
 				7F99CE47280A0DE0003BD226 /* Complaints+TableView.swift in Sources */,
 				7FB096AA280CA9E7003DEB85 /* Rate.swift in Sources */,
 				7F826D2F27FA5C4500B2D50E /* EnterNewPassword.swift in Sources */,
+				7F99055D286A02D2000E07F3 /* orderViewProtocol.swift in Sources */,
 				7F99CE85280A1270003BD226 /* OrdersPresenter.swift in Sources */,
 				7F04378127FBA24D00CB5976 /* More+Protocol.swift in Sources */,
 				7F99CE59280A0EAB003BD226 /* Language.swift in Sources */,

@@ -6,10 +6,7 @@
 //
 
 import Foundation
-// MARK: - Protocol
-protocol OrdersView: AnyObject {
-    func relodTableView()
-}
+import UIKit
 // MARK: Presnter
 class OrdersPresenter {
     // MARK: - About init & delegation
@@ -37,5 +34,4 @@ class OrdersPresenter {
             view?.relodTableView()
         }
     }
-    
 }

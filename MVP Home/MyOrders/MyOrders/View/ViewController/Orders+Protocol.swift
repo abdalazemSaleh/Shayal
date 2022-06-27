@@ -7,9 +7,12 @@
 
 import UIKit
 
-extension OrderViewController: OrdersView {
+extension OrderViewController: OrdersView{
     func relodTableView() {
         print("Relode done")
         ordersTableView.reloadData()
     }
 }
+
+
+

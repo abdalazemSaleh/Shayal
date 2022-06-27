@@ -10,14 +10,16 @@ import UIKit
 class OrderViewController: UIViewController {
     // MARK: - Variables
     var presenter: OrdersPresenter!
-    var myCell = "pending"
     let constant = Constant()
+    var myCell = "pending"
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = OrdersPresenter(view: self)
-        handelView()
-        handelTbaleView()
+        handelSegmentViewCornerRadius()
+        TableViewDelegateAndDataSource()
+        registerTableViewCell()
+        tableViewStyle()
     }
     // MARK: - IBOutlet
     @IBOutlet var mySegment: UISegmentedControl!
@@ -28,23 +30,33 @@ class OrderViewController: UIViewController {
     // MARK: - IBaction
     @IBAction func mySegment(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            myCell = "pending"
-            presenter.handelSegment(status: .pending)
+            sendAlertToPresenterCasePending()
         }
         else if sender.selectedSegmentIndex == 1 {
-            myCell = "active"
-            presenter.handelSegment(status: .active)
+            sendAlertToPresenterCaseActive()
         }
         else if sender.selectedSegmentIndex == 2 {
-            myCell = "expired"
-            presenter.handelSegment(status: .expired)
+            sendAlertToPresenterCaseExpired()
         }
     }
+    // handel segament
+    func sendAlertToPresenterCasePending() {
+        myCell = constant.pending
+        presenter.handelSegment(status: .pending)
+    }
+    func sendAlertToPresenterCaseActive() {
+        myCell = constant.active
+        presenter.handelSegment(status: .active)
+    }
+    func sendAlertToPresenterCaseExpired() {
+        myCell = constant.expired
+        presenter.handelSegment(status: .expired)
+    }
+
     // MARK: - Handel View
-    func handelView() {
+    func handelSegmentViewCornerRadius() {
         mySegment.layer.cornerRadius = 24
         mySegment.layer.masksToBounds = true
         mySegment.backgroundColor = UIColor.white
     }
-    
 }

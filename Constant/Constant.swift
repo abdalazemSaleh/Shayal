@@ -23,5 +23,9 @@ class Constant {
     let pending_orders = "PendingOrders"
     let active_oreders = "ActiveOrders"
     let expired_orders = "ExpiredOrders"
+    // cell
+    var pending = "pending"
+    var active = "active"
+    var expired = "expired"
 }
 
