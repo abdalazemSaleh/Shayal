@@ -15,6 +15,10 @@ class OfferPrice: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         handelView()
+        hanelUserImage()
+        handelImageView()
+        handelAgreeButton()
+        handelRefusedButton()
     }
     // MARK: - IBOutlet
     @IBOutlet var mainView: UIView!
@@ -42,22 +46,31 @@ class OfferPrice: UIViewController {
     }
     // MARK: - Handel View
     func handelView() {
-        // handel main view
         mainView.layer.cornerRadius = 32
         mainView.addShadow()
-        // handel user image
+    }
+    
+    // Handel User Image
+    func hanelUserImage() {
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
         userImage.clipsToBounds = true
-        // handel images views
+    }
+    
+    // Handel Image View
+    func handelImageView() {
         previousRateView.handel_offerPriceIcon()
         priceView.handel_offerPriceIcon()
         deliveryTimeView.handel_offerPriceIcon()
         distanceView.handel_offerPriceIcon()
-        // handel agree button
+    }
+    // Handel Agree Button
+    func handelAgreeButton() {
         agreeButton.layer.masksToBounds = true
         agreeButton.layer.cornerRadius = 24
         agreeButton.HandelButtonGradient()
-        // handle refused button
+    }
+    // Handel Refused Button
+    func handelRefusedButton() {
         refusedButton.layer.masksToBounds = true
         refusedButton.layer.cornerRadius = 24
         refusedButton.layer.borderWidth = 2

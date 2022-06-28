@@ -30,11 +30,11 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     // MARK: - Number OF Sections
     func numberOfSections(in tableView: UITableView) -> Int {
         if myCell == constant.active {
-            return 4
+            return presenter.activeCellCounter()
         } else if myCell == constant.expired {
-            return 5
+            return presenter.expiredCellCounter()
         } else if myCell == constant.pending {
-            return 3
+            return presenter.pendingCellCounter()
         }
         return 0
     }
@@ -62,10 +62,14 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - View For Header
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return headerForSection()
+    }
+    func headerForSection() -> UIView {
         let headerView = UIView()
         headerView.backgroundColor = UIColor.clear
         return headerView
     }
+    
     
     // MARK: - Hight For Header
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

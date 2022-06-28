@@ -8,7 +8,7 @@
 import UIKit
 
 
-extension Bill: paymentPr {
+extension Bill: paymentProtocol {
     func payment() {
         let VC = Rate()
         VC.modalPresentationStyle = .overFullScreen

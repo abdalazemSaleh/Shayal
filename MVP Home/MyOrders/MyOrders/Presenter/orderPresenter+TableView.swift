@@ -8,6 +8,22 @@
 import UIKit
 
 extension OrdersPresenter {
+    
+    // MARK: - Number Of Sections
+    // Expired Cell Counter
+    func expiredCellCounter() -> Int {
+        return 5
+    }
+    // Active Cell Counter
+    func activeCellCounter() -> Int {
+        return 4
+    }
+    // Pending Cell Counter
+    func pendingCellCounter() -> Int {
+        return 3
+    }
+    
+    // MARK: - Cell For Row
     // Set Expired Cell
     func setExpiredCell(tableView: UITableView, atIndexPath indexPath: IndexPath) -> UITableViewCell {
                     let cell = tableView.dequeueReusableCell(withIdentifier: "ExpiredOrders", for: indexPath) as! ExpiredOrders

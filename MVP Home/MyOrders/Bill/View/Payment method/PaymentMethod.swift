@@ -10,12 +10,16 @@ import Lottie
 
 class PaymentMethod: UIViewController {
     // MARK: - Variables
-    var delegate: paymentPr?
+    var delegate: paymentProtocol?
     let constant = Constant()
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         handelView()
+        handelAnimation()
+        handelNextButton()
+        handelElctronic()
+        handelCashPayment()
     }
     // MARK: - IBOutlet
     @IBOutlet var mainView: UIView!
@@ -29,23 +33,36 @@ class PaymentMethod: UIViewController {
         delegate?.payment()
     }
     // MARK: - Handel View
+    // Handel View
     func handelView() {
-        // main view
         mainView.layer.cornerRadius = 12
         mainView.addShadow()
-        // handel animation
+    }
+    
+    // Handel Animation
+    func handelAnimation() {
         animationView.animationSpeed = 1
         animationView.play()
-        // handel next button
+    }
+    
+    // Handel Next Button
+    func handelNextButton() {
         nextButton.layer.masksToBounds = true
         nextButton.layer.cornerRadius = 24
         nextButton.HandelButtonGradient()
-        // handel elctronic & cash payment
+    }
+    
+    // Handel Elctronic
+    func handelElctronic() {
         electronicPayment.layer.cornerRadius = electronicPayment.frame.size.width / 2
-        cashPayment.layer.cornerRadius = cashPayment.frame.size.width / 2
         electronicPayment.layer.borderWidth = 2
-        cashPayment.layer.borderWidth = 2
         electronicPayment.layer.borderColor = UIColor(named: "TabBar")?.cgColor
+    }
+    
+    // Handel Cash Paymnet
+    func handelCashPayment() {
+        cashPayment.layer.cornerRadius = cashPayment.frame.size.width / 2
+        cashPayment.layer.borderWidth = 2
         cashPayment.layer.borderColor = UIColor(named: "TabBar")?.cgColor
     }
 }

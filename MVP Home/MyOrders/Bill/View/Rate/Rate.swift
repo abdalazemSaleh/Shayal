@@ -15,6 +15,10 @@ class Rate: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         handelView()
+        handelRateView()
+        handelTextView()
+        handelUserImage()
+        handelRateButton()
     }
     // MARK: - IBOutlet
     @IBOutlet var rateView: CosmosView!
@@ -31,21 +35,28 @@ class Rate: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     // MARK: - Handel View
-    func handelView() {
-        // handel rate view
+    // Handel Rate View
+    func handelRateView() {
         rateView.settings.emptyImage = UIImage(named: "star")
         print(rateView.rating)
-        // handel Rate Button
+    }
+    // Handel Rate Button
+    func handelRateButton() {
         rateButton.layer.cornerRadius = 24
         rateButton.layer.masksToBounds = true
         rateButton.HandelButtonGradient()
-        // handel view
+    }
+    // Handel View
+    func handelView() {
         mainView.layer.cornerRadius = 32
         mainView.addShadow()
-        // handel user image
+    }
+    // Handel User Image
+    func handelUserImage() {
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
-        // handel text view
+    }
+    // Handel Text View
+    func handelTextView() {
         rateTV.layer.cornerRadius = 8
-        
     }
 }

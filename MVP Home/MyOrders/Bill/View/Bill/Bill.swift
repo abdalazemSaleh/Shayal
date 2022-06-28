@@ -13,7 +13,9 @@ class Bill: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Bill"
-        handelView()
+        handelUserImage()
+        handelNextButton()
+        handelMonyView()
     }
     // MARK: - IBOutlet
     @IBOutlet var userImage: UIImageView!
@@ -29,19 +31,23 @@ class Bill: UIViewController {
         self.present(VC, animated: true, completion: nil)
     }
     // MARK: - Handel View
-    func handelView(){
-        // handel user image
+    func handelUserImage(){
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
         userImage.clipsToBounds = true
-        // handel mony view
+    }
+    
+    // Handel Mony View
+    func handelMonyView() {
         monyView.layer.borderWidth = 2
         monyView.layer.borderColor = UIColor(named: "light")?.cgColor
         monyView.layer.cornerRadius = 8
-        // handel next button
+    }
+    
+    // Handel Next Button
+    func handelNextButton() {
         nextButton.layer.masksToBounds = true
         nextButton.layer.cornerRadius = 24
         nextButton.HandelButtonGradient()
     }
-    
 
 }

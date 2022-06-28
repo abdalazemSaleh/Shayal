@@ -8,16 +8,18 @@
 import UIKit
 
 class Chat: UIViewController {
-    // MARK: - IBOutlet
-    @IBOutlet var chatTableView: UITableView!
     
-    // MARK: - IBAction
-
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTabelView()
     }
+
+    // MARK: - IBOutlet
+    @IBOutlet var chatTableView: UITableView!
+    
+    // MARK: - IBAction
+
     
 
 

@@ -8,6 +8,6 @@
 import Foundation
 
 
-protocol paymentPr {
+protocol paymentProtocol {
     func payment()
 }

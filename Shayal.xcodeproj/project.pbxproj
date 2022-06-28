@@ -52,6 +52,10 @@
 		7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826D4327FA773600B2D50E /* SginUP+Extention.swift */; };
 		7F99055D286A02D2000E07F3 /* orderViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99055C286A02D2000E07F3 /* orderViewProtocol.swift */; };
 		7F99055F286A08BB000E07F3 /* orderPresenter+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99055E286A08BB000E07F3 /* orderPresenter+TableView.swift */; };
+		7F990561286B1D31000E07F3 /* NotificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F990560286B1D31000E07F3 /* NotificationPresenter.swift */; };
+		7F990563286B1DB7000E07F3 /* NotificationViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F990562286B1DB7000E07F3 /* NotificationViewProtocol.swift */; };
+		7F990565286B1F69000E07F3 /* Notification+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F990564286B1F69000E07F3 /* Notification+Protocol.swift */; };
+		7F990567286B207A000E07F3 /* NotficationPresenter+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F990566286B207A000E07F3 /* NotficationPresenter+TableView.swift */; };
 		7F99CE47280A0DE0003BD226 /* Complaints+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE44280A0DE0003BD226 /* Complaints+TableView.swift */; };
 		7F99CE48280A0DE0003BD226 /* Complaints.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE45280A0DE0003BD226 /* Complaints.xib */; };
 		7F99CE49280A0DE0003BD226 /* Complaints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE46280A0DE0003BD226 /* Complaints.swift */; };
@@ -187,6 +191,10 @@
 		7F826D4327FA773600B2D50E /* SginUP+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SginUP+Extention.swift"; sourceTree = "<group>"; };
 		7F99055C286A02D2000E07F3 /* orderViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderViewProtocol.swift; sourceTree = "<group>"; };
 		7F99055E286A08BB000E07F3 /* orderPresenter+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "orderPresenter+TableView.swift"; sourceTree = "<group>"; };
+		7F990560286B1D31000E07F3 /* NotificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenter.swift; sourceTree = "<group>"; };
+		7F990562286B1DB7000E07F3 /* NotificationViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewProtocol.swift; sourceTree = "<group>"; };
+		7F990564286B1F69000E07F3 /* Notification+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Protocol.swift"; sourceTree = "<group>"; };
+		7F990566286B207A000E07F3 /* NotficationPresenter+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotficationPresenter+TableView.swift"; sourceTree = "<group>"; };
 		7F99CE44280A0DE0003BD226 /* Complaints+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Complaints+TableView.swift"; sourceTree = "<group>"; };
 		7F99CE45280A0DE0003BD226 /* Complaints.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Complaints.xib; sourceTree = "<group>"; };
 		7F99CE46280A0DE0003BD226 /* Complaints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complaints.swift; sourceTree = "<group>"; };
@@ -399,6 +407,9 @@
 		7F04BEA4280D979700B260E6 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				7F990560286B1D31000E07F3 /* NotificationPresenter.swift */,
+				7F990566286B207A000E07F3 /* NotficationPresenter+TableView.swift */,
+				7F990562286B1DB7000E07F3 /* NotificationViewProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -424,6 +435,7 @@
 			children = (
 				7F04BEA7280D97C600B260E6 /* Notification.swift */,
 				7F04BEAB280D996300B260E6 /* Notification+Extention.swift */,
+				7F990564286B1F69000E07F3 /* Notification+Protocol.swift */,
 				7F04BEA8280D97C600B260E6 /* Notification.xib */,
 			);
 			path = "Notification Table View";
@@ -1399,6 +1411,7 @@
 				7F99CE9C280A12CE003BD226 /* PendingOrders.swift in Sources */,
 				7FE0E7FB27F77C0A003FB8BF /* ForgetPassword.swift in Sources */,
 				7F2A6E02283A60770059D10D /* Constant.swift in Sources */,
+				7F990563286B1DB7000E07F3 /* NotificationViewProtocol.swift in Sources */,
 				7FE0E81427F87C79003FB8BF /* EnterCode.swift in Sources */,
 				7F04BEA9280D97C600B260E6 /* Notification.swift in Sources */,
 				7F826D3927FA63AE00B2D50E /* EnterNewPassword+Extention.swift in Sources */,
@@ -1439,6 +1452,7 @@
 				7F04378127FBA24D00CB5976 /* More+Protocol.swift in Sources */,
 				7F99CE59280A0EAB003BD226 /* Language.swift in Sources */,
 				7F04377927FB976300CB5976 /* More.swift in Sources */,
+				7F990561286B1D31000E07F3 /* NotificationPresenter.swift in Sources */,
 				7F826D2827FA465B00B2D50E /* APICall.swift in Sources */,
 				7F99CE7D280A11CB003BD226 /* Chat+TableExtention.swift in Sources */,
 				7F99CE4E280A0E1D003BD226 /* TableViewCell.swift in Sources */,
@@ -1448,12 +1462,14 @@
 				7F99CE6B280A0FAC003BD226 /* EditUserProfile.swift in Sources */,
 				7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */,
 				7F04377D27FB989200CB5976 /* MoreCell.swift in Sources */,
+				7F990567286B207A000E07F3 /* NotficationPresenter+TableView.swift in Sources */,
 				7FAB713F27F0CAB700477373 /* SceneDelegate.swift in Sources */,
 				7F04BEAC280D996300B260E6 /* Notification+Extention.swift in Sources */,
 				7F04BE5F280CC67F00B260E6 /* Rate+Extention.swift in Sources */,
 				7FE0E7F727F7675A003FB8BF /* LoginVC+Protocol.swift in Sources */,
 				7F04377027FB901A00CB5976 /* Home.swift in Sources */,
 				7F99CE62280A0EC9003BD226 /* WhoAreWe.swift in Sources */,
+				7F990565286B1F69000E07F3 /* Notification+Protocol.swift in Sources */,
 				7F04377F27FB9D4D00CB5976 /* MorePresenter.swift in Sources */,
 				7F99CE7C280A11CB003BD226 /* ChatCell.swift in Sources */,
 				7F04377327FB92B000CB5976 /* HandelShadow.swift in Sources */,
