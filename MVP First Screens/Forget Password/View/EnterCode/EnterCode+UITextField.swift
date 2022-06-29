@@ -8,16 +8,9 @@
 import UIKit
 
 extension EnterCode: UITextFieldDelegate {
-    // MARK: - Handel Text Field Delegate
-    func handelTF() {
-        // handel delegation
-        firstTF.delegate = self
-        secoundTF.delegate = self
-        thirdTF.delegate = self
-        fourthTF.delegate = self
-        fivethTF.delegate = self
-        sixthTF.delegate = self
-        // handel courner radius and view
+    // MARK: - Handel Text Field
+    // Set Text Field Attribute
+    func setAttributeForTextField() {
         firstTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
         
         secoundTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
@@ -29,6 +22,15 @@ extension EnterCode: UITextFieldDelegate {
         fivethTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
         
         sixthTF.attributedPlaceholder = NSAttributedString(string: "", attributes: constant.attributes)
+    }
+    // Text Field Delegate
+    func textFieldDelegate() {
+        firstTF.delegate = self
+        secoundTF.delegate = self
+        thirdTF.delegate = self
+        fourthTF.delegate = self
+        fivethTF.delegate = self
+        sixthTF.delegate = self
     }
     // MARK: - Handel Text Field Extention
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

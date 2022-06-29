@@ -9,18 +9,17 @@ import UIKit
 
 class AddNewOrder: UIViewController {
     
+    // MARK: - Variables
     let constant = Constant()
     
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Add New Order"
-        // handel buttom
-        send.layer.masksToBounds = true
-        send.layer.cornerRadius = 24
-        send.HandelButtonGradient()
-        // handel TF
-        handelTF()
+        handelButton()
+        TextFieldDelegate()
+        addImageToTextField()
+        handelCouponTextField()
     }
     // MARK: - IBOutlet
     @IBOutlet var send: UIButton!
@@ -48,5 +47,12 @@ class AddNewOrder: UIViewController {
     // MARK: - IBAction
     @IBAction func send(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+    }
+    // MARK: - Handel View
+    // handel Button
+    func handelButton() {
+        send.layer.masksToBounds = true
+        send.layer.cornerRadius = 24
+        send.HandelButtonGradient()
     }
 }

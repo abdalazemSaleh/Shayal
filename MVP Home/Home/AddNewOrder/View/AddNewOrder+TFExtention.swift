@@ -9,13 +9,15 @@ import UIKit
 
 
 extension AddNewOrder: UITextFieldDelegate {
-    // handel TF courner radius & delegation
-    func handelTF() {
+    // MARK: -  Handel TextFiled
+    func handelCouponTextField() {
         couponTF.layer.borderWidth = 1
         couponTF.layer.borderColor = UIColor(named: "TabBar")?.cgColor
         couponTF.layer.cornerRadius = 8
         couponTF.attributedPlaceholder = NSAttributedString(string: "Coupon", attributes: constant.attributes)
-        // handel courner radius
+    }
+    
+    func addImageToTextField() {
         fromTF.handeltextFieldView(view: fromView, string: "Location")
         toTF.addImageToTextField(view: toView, string: "Location")
         payloadTF.addImageToTextField(view: payloadView, string: "Polygon")
@@ -23,7 +25,10 @@ extension AddNewOrder: UITextFieldDelegate {
         weightTF.addImageToTextField(view: weightView, string: "Kg")
         vehicleTypeTF.addImageToTextField(view: vehicleTypeTF, string: "Polygon")
         couponTF.handelTextFieldSpacer()
-        // handel delegation
+    }
+    
+    // Text Field Delegate
+    func TextFieldDelegate() {
         fromTF.delegate = self
         toTF.delegate = self
         payloadTF.delegate = self
@@ -32,6 +37,7 @@ extension AddNewOrder: UITextFieldDelegate {
         vehicleTypeTF.delegate = self
     }
     
+    // MARK: - TextField Did Being Editing
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == fromTF) {
             fromView.backgroundColor = UIColor(named: constant.set_selectedTextFielddColorToView)
@@ -48,6 +54,7 @@ extension AddNewOrder: UITextFieldDelegate {
         }
     }
     
+    // MARK: - TextField Did End Editing
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField == fromTF) {
             fromView.backgroundColor = UIColor(named: "light")

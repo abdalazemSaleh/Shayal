@@ -13,13 +13,13 @@ class VerificationSuccess: UIViewController {
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        handelDismis()
+        dismisVC()
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
     // MARK: - IBOutlet
     @IBOutlet var myView: UIView!
     // MARK: - Handel Dismis
-    func handelDismis() {
+    func dismisVC() {
         myView.layer.cornerRadius = 8
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { [self] Timer in
             self.dismiss(animated: true, completion: nil)

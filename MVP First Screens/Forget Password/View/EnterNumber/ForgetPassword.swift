@@ -14,15 +14,25 @@ class ForgetPassword: UIViewController {
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        handelView()
-        handleTF()
-        presnter = ForgetPasswordPresenter(view: self)
         title = "Forget Password"
+        presnter = ForgetPasswordPresenter(view: self)
+        
+        handelView()
+        hidePhoneNumberLable()
+        textFeildDelegate()
+        HandeltextFieldView()
+        textFeildStyle()
+        textFeildHandelSpacer()
+        
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         self.phoneNumberTF.handelTextFieldSpacer()
     }
     // MARK: - IBAction
     @IBAction func next(_ sender: UIButton) {
+        goToVerificationSuccessVcAndCheckIfPhoneIsImpty()
+    }
+    
+    func goToVerificationSuccessVcAndCheckIfPhoneIsImpty() {
         presnter.next(phone: phoneNumberTF.text ?? "")
         let VC = VerificationSuccess()
         VC.delegate = self
@@ -36,7 +46,6 @@ class ForgetPassword: UIViewController {
     @IBOutlet var nectOutlet: UIButton!
     // MARK: - Handel View
     func handelView() {
-        // handel button
         nectOutlet.layer.masksToBounds = true
         nectOutlet.layer.cornerRadius = 24
         nectOutlet.HandelButtonGradient()

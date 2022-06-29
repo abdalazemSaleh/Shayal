@@ -13,9 +13,10 @@ class EnterCode: UIViewController {
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        handelView()
-        handelTF()
         title = "Return code"
+        nextButtonView()
+        textFieldDelegate()
+        setAttributeForTextField()
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
     // MARK: - IBAction
@@ -32,7 +33,7 @@ class EnterCode: UIViewController {
     @IBOutlet var sixthTF: UITextField!
     @IBOutlet var nextButton: UIButton!
     // MARK: - Handel View
-    func handelView() {
+    func nextButtonView() {
         // handel next button
         nextButton.layer.masksToBounds = true
         nextButton.layer.cornerRadius = 24

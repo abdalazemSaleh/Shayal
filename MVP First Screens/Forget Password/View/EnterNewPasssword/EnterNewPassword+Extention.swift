@@ -9,6 +9,15 @@ import Foundation
 import UIKit
 
 extension EnterNewPassword: UITextFieldDelegate {
+    
+    // MARK: - Handel Text Field
+    // Text Field Delegate
+    func textFieldDelegate() {
+        newPasswordTF.delegate = self
+        confirmationPasswordTF.delegate = self
+    }
+    
+    // MARK: - Text Field Extention
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == newPasswordTF){
             newPasswordView.backgroundColor = UIColor(named: constant.set_selectedTextFielddColorToView)

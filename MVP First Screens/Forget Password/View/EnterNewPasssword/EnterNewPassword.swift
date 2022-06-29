@@ -15,9 +15,9 @@ class EnterNewPassword: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Enter New Password"
-        handelView()
-        newPasswordTF.delegate = self
-        confirmationPasswordTF.delegate = self
+        saveButtonStyle()
+        newPasswordStyle()
+        passwordConfirmationStyle()
     }
     // MARK: - IBAction
     @IBAction func saveButton(_ sender: UIButton) {
@@ -29,15 +29,21 @@ class EnterNewPassword: UIViewController {
     @IBOutlet var confirmationPasswordTF: UITextField!
     @IBOutlet var saveButton: UIButton!
     // MARK: - Handel View
-    func handelView() {
+    func saveButtonStyle() {
         // handel save button
         saveButton.layer.masksToBounds = true
         saveButton.layer.cornerRadius = 24
         saveButton.HandelButtonGradient()
-        // handel view
+    }
+    // New Paswword View
+    func newPasswordStyle() {
         newPasswordView.layer.cornerRadius = 4
         newPasswordTF.layer.cornerRadius = 4
+    }
+    // Password Confirmation View
+    func passwordConfirmationStyle() {
         passwordConfirmationView.layer.cornerRadius = 4
         confirmationPasswordTF.layer.cornerRadius = 4
     }
+    
 }
