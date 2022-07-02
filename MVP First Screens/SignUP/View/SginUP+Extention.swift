@@ -12,15 +12,19 @@ import UIKit
 extension SginUP: UITextFieldDelegate {
     
     // MARK: - Handel Text Field
-    func handelTF() {
-        // handel delegation
+    
+    // Text Field Delegate
+    func textFieldDelegate() {
         nameTF.delegate = self
         phoneTF.delegate = self
         countryTF.delegate = self
         cityTF.delegate = self
         passwordTF.delegate = self
         passwordConfirmationTF.delegate = self
-        // handel view & TF corner radius
+    }
+    
+    // Text Field Style
+    func textFeildStyle() {
         nameTF.handeltextFieldView(view: nameView, string: "Name")
         phoneTF.handeltextFieldView(view: phoneView, string: "Phone Number")
         countryTF.handeltextFieldView(view: countryView, string: "Country")
@@ -28,6 +32,7 @@ extension SginUP: UITextFieldDelegate {
         passwordTF.handeltextFieldView(view: passwordView, string: "Password")
         passwordConfirmationTF.handeltextFieldView(view: passwordConfrirmationView, string: "Password Confiramtion")
     }
+    
     // MARK: - Handel Text Field Extention
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == nameTF) {

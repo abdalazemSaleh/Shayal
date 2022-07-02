@@ -27,5 +27,11 @@ class Constant {
     var pending = "pending"
     var active = "active"
     var expired = "expired"
+    // Set Up StoryBoard
+    func setUpStoryboard(name: String) -> UIStoryboard {
+        let storyBoard = UIStoryboard.init(name: name, bundle: Bundle.main)
+        return storyBoard
+    }
+    
 }
-
+    

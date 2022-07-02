@@ -11,37 +11,41 @@ class SginUP: UIViewController {
     
     // MARK: - Variables
     let constant = Constant()
+    
     // MARK: - View Did Load
     override func viewDidLoad() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         super.viewDidLoad()
         title = "SginUP"
-        handelView()
-        handelTF()
-    }
-    // MARK: - IBAction
-    @IBAction func sginUp(_ sender: UIButton) {
-    }
-    @IBAction func sginIn(_ sender: UIButton) {
-        let VC = Login()
-        navigationController?.pushViewController(VC, animated: true)
+        sginUpButtonStyle()
+        textFieldDelegate()
+        textFeildStyle()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardApper), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDisApper), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
     }
     
-    @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height
-            }
+    
+    
+    var isExpend: Bool = false
+    @objc func keyboardApper() {
+        print("cell")
+        
+        if !isExpend {
+            print("cell = excute")
+            self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.scrollView.frame.height + 400)
+            isExpend = true
         }
+        
     }
-
-    @objc func keyboardWillHide(notification: NSNotification) {
-        if self.view.frame.origin.y != 0 {
-            self.view.frame.origin.y = 0
+    
+    @objc func keyboardDisApper() {
+        if isExpend {
+            self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.scrollView.frame.height - 400)
+            self.isExpend = false
         }
     }
     // MARK: - IBOutlet
+    @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var nameView: UIView!
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var phoneView: UIView!
@@ -55,8 +59,18 @@ class SginUP: UIViewController {
     @IBOutlet var passwordConfrirmationView: UIView!
     @IBOutlet var passwordConfirmationTF: UITextField!
     @IBOutlet var sginUp: UIButton!
+    
+    
+    // MARK: - IBAction
+    @IBAction func sginUp(_ sender: UIButton) {
+    }
+    @IBAction func sginIn(_ sender: UIButton) {
+        let VC = Login()
+        navigationController?.pushViewController(VC, animated: true)
+    }
+    
     // MARK: - Handel View
-    func handelView() {
+    func sginUpButtonStyle() {
         // handel Sginup butotn
         sginUp.layer.masksToBounds = true
         sginUp.layer.cornerRadius = 24

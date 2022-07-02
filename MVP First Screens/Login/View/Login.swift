@@ -17,17 +17,23 @@ class Login: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUPNavigation()
-        handelTF()
-        handelView()
+        textFieldDelegate()
+        handelTextFieldLable()
+        phoneNumberStyle()
+        passwordStyle()
+        textFieldSpacer()
+        loginButtonStyle()
         presnter = LoginPresenter(view: self)
     }
     // MARK: - IBAction
     @IBAction func Login(_ sender: UIButton) {
+        goToHomeScreen()
+    }
+    
+    func goToHomeScreen() {
         self.presnter.login(phone: self.phoneNumber.text ?? "", password: self.password.text ?? "")
-        let storyBoard = UIStoryboard.init(name: "Home", bundle: Bundle.main)
-        let moreVC = storyBoard.instantiateViewController(identifier: "tabBarScreen")
-        moreVC.modalPresentationStyle = .overFullScreen
-        moreVC.modalTransitionStyle = .crossDissolve
+        let moreVC = constant.setUpStoryboard(name: "Home").instantiateViewController(identifier: "tabBarScreen")
+        moreVC.fullScreenNavigation()
         self.present(moreVC, animated: true, completion: nil)
     }
     
@@ -49,7 +55,7 @@ class Login: UIViewController {
     @IBOutlet var passwordLabel: UILabel!
     @IBOutlet var login: UIButton!
     // MARK: - Hnadle View
-    func handelView() {
+    func loginButtonStyle() {
         // handel login button gradient
         login.layer.masksToBounds = true
         login.layer.cornerRadius = 24

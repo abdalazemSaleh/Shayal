@@ -31,6 +31,7 @@
                 <outlet property="passwordView" destination="25m-gg-0yg" id="Wjx-FI-o1h"/>
                 <outlet property="phoneTF" destination="Cr8-gb-Cd6" id="p5J-eC-7yq"/>
                 <outlet property="phoneView" destination="VEG-kN-E0o" id="RS9-al-NDb"/>
+                <outlet property="scrollView" destination="FLu-lS-0jt" id="tPL-oW-Fet"/>
                 <outlet property="sginUp" destination="rhn-Sq-6f3" id="Ilg-na-d1w"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

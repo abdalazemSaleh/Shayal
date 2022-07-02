@@ -19,11 +19,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentMethod" customModule="Shayal" customModuleProvider="target">
             <connections>
-                <outlet property="animationView" destination="cxl-af-rlJ" id="6sn-H4-Qm7"/>
-                <outlet property="cashPayment" destination="XEp-Bh-NPq" id="s1v-o3-PCr"/>
-                <outlet property="electronicPayment" destination="Bhj-MJ-SUR" id="0Yd-wv-5Ks"/>
+                <outlet property="animationView" destination="0OP-Od-8Ji" id="U6M-yc-8p3"/>
+                <outlet property="cashPayment" destination="kkQ-zJ-fsh" id="pgd-6O-lNn"/>
+                <outlet property="electronicPayment" destination="DOU-Qo-2El" id="4uD-OG-JxS"/>
                 <outlet property="mainView" destination="xx9-5P-Zln" id="j2P-0r-uc2"/>
-                <outlet property="nextButton" destination="zFt-QR-txK" id="X7e-Q6-6LB"/>
+                <outlet property="nextButton" destination="SoG-g7-pJS" id="WzD-TV-9D8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -41,102 +41,129 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xx9-5P-Zln">
                                 <rect key="frame" x="16" y="128" width="382" height="640"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flh-UP-kxR">
-                                        <rect key="frame" x="143" y="32" width="96" height="13.5"/>
-                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
-                                        <color key="textColor" name="TabBar"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxl-af-rlJ" customClass="AnimationView" customModule="Lottie">
-                                        <rect key="frame" x="24" y="77.5" width="334" height="160"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSu-hQ-cMS">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="640"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8h-IF-5rq">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="569.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0OP-Od-8Ji" customClass="AnimationView" customModule="Lottie">
+                                                        <rect key="frame" x="24" y="77.5" width="334" height="160"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="160" id="IKS-iZ-kmH"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="lf30_editor_gcptrbo2"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOU-Qo-2El">
+                                                        <rect key="frame" x="24" y="331.5" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="1f7-V0-SKd"/>
+                                                            <constraint firstAttribute="height" constant="24" id="Rig-nl-bdA"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cH-zi-GaN">
+                                                        <rect key="frame" x="56" y="327.5" width="41" height="9"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
+                                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="electronic payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2x-gs-7oA">
+                                                        <rect key="frame" x="56" y="340.5" width="108.5" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                                        <color key="textColor" red="0.086274509799999996" green="0.14117647059999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkQ-zJ-fsh">
+                                                        <rect key="frame" x="24" y="403.5" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="5wt-13-hcj"/>
+                                                            <constraint firstAttribute="height" constant="24" id="ncM-hQ-gfn"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cash payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XG-Wh-KPe">
+                                                        <rect key="frame" x="56" y="411.5" width="78.5" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                                        <color key="textColor" red="0.086274509799999996" green="0.14117647059999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7Q-Sd-F8i">
+                                                        <rect key="frame" x="56" y="398.5" width="41" height="9"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
+                                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoG-g7-pJS">
+                                                        <rect key="frame" x="58.5" y="489.5" width="265" height="48"/>
+                                                        <color key="backgroundColor" name="First"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="egd-uH-2Yi"/>
+                                                            <constraint firstAttribute="width" constant="265" id="wGo-Fp-SP6"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Next">
+                                                            <fontDescription key="titleFontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="nextButton:" destination="-1" eventType="touchUpInside" id="iOr-hq-Vm9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qm-5a-ogJ">
+                                                        <rect key="frame" x="143" y="32" width="96" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                                        <color key="textColor" name="TabBar"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="9XG-Wh-KPe" firstAttribute="top" secondItem="n7Q-Sd-F8i" secondAttribute="bottom" constant="4" id="0E1-Hw-IIQ"/>
+                                                    <constraint firstItem="5Qm-5a-ogJ" firstAttribute="top" secondItem="j8h-IF-5rq" secondAttribute="top" constant="32" id="Aak-Hu-FEO"/>
+                                                    <constraint firstItem="n7Q-Sd-F8i" firstAttribute="top" secondItem="O2x-gs-7oA" secondAttribute="bottom" constant="44" id="Bxl-ot-nZB"/>
+                                                    <constraint firstItem="6cH-zi-GaN" firstAttribute="leading" secondItem="DOU-Qo-2El" secondAttribute="trailing" constant="8" id="FKQ-kB-lZO"/>
+                                                    <constraint firstItem="SoG-g7-pJS" firstAttribute="centerX" secondItem="0OP-Od-8Ji" secondAttribute="centerX" id="FX6-Zb-Whb"/>
+                                                    <constraint firstItem="SoG-g7-pJS" firstAttribute="top" secondItem="9XG-Wh-KPe" secondAttribute="bottom" constant="64" id="Q4J-Ty-ClG"/>
+                                                    <constraint firstItem="DOU-Qo-2El" firstAttribute="top" secondItem="0OP-Od-8Ji" secondAttribute="bottom" constant="94" id="Qsm-BM-URZ"/>
+                                                    <constraint firstItem="0OP-Od-8Ji" firstAttribute="leading" secondItem="j8h-IF-5rq" secondAttribute="leading" constant="24" id="R3w-pc-Dp7"/>
+                                                    <constraint firstItem="O2x-gs-7oA" firstAttribute="top" secondItem="6cH-zi-GaN" secondAttribute="bottom" constant="4" id="S6J-0u-GSG"/>
+                                                    <constraint firstItem="5Qm-5a-ogJ" firstAttribute="centerX" secondItem="0OP-Od-8Ji" secondAttribute="centerX" id="UJI-Qd-fvV"/>
+                                                    <constraint firstItem="0OP-Od-8Ji" firstAttribute="top" secondItem="5Qm-5a-ogJ" secondAttribute="bottom" constant="32" id="XvW-1f-unL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0OP-Od-8Ji" secondAttribute="trailing" constant="24" id="acg-gw-Umh"/>
+                                                    <constraint firstItem="DOU-Qo-2El" firstAttribute="leading" secondItem="j8h-IF-5rq" secondAttribute="leading" constant="24" id="cWD-NS-VkF"/>
+                                                    <constraint firstItem="O2x-gs-7oA" firstAttribute="leading" secondItem="DOU-Qo-2El" secondAttribute="trailing" constant="8" id="ccO-pu-q0i"/>
+                                                    <constraint firstItem="9XG-Wh-KPe" firstAttribute="leading" secondItem="kkQ-zJ-fsh" secondAttribute="trailing" constant="8" id="diB-ac-x9G"/>
+                                                    <constraint firstItem="n7Q-Sd-F8i" firstAttribute="leading" secondItem="kkQ-zJ-fsh" secondAttribute="trailing" constant="8" id="iMn-6A-Ewv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="SoG-g7-pJS" secondAttribute="bottom" constant="32" id="rX8-Rt-pSs"/>
+                                                    <constraint firstItem="6cH-zi-GaN" firstAttribute="top" secondItem="0OP-Od-8Ji" secondAttribute="bottom" constant="90" id="tts-Tq-B8z"/>
+                                                    <constraint firstItem="kkQ-zJ-fsh" firstAttribute="leading" secondItem="j8h-IF-5rq" secondAttribute="leading" constant="24" id="tum-YF-ipr"/>
+                                                    <constraint firstItem="kkQ-zJ-fsh" firstAttribute="top" secondItem="DOU-Qo-2El" secondAttribute="bottom" constant="48" id="vzA-KS-enT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="160" id="Npm-bB-0GT"/>
+                                            <constraint firstItem="j8h-IF-5rq" firstAttribute="leading" secondItem="vSu-hQ-cMS" secondAttribute="leading" id="Aij-NZ-jIY"/>
+                                            <constraint firstAttribute="trailing" secondItem="j8h-IF-5rq" secondAttribute="trailing" id="ECB-Tr-wAz"/>
+                                            <constraint firstAttribute="bottom" secondItem="j8h-IF-5rq" secondAttribute="bottom" id="KYo-7a-lQz"/>
+                                            <constraint firstItem="j8h-IF-5rq" firstAttribute="width" secondItem="vSu-hQ-cMS" secondAttribute="width" id="NmP-6g-oPD"/>
+                                            <constraint firstItem="j8h-IF-5rq" firstAttribute="top" secondItem="vSu-hQ-cMS" secondAttribute="top" id="S3Y-Ih-oks"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="lf30_editor_gcptrbo2"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-MJ-SUR">
-                                        <rect key="frame" x="24" y="331.5" width="24" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="24" id="KsW-IR-1se"/>
-                                            <constraint firstAttribute="height" constant="24" id="fca-Og-tD1"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEp-Bh-NPq">
-                                        <rect key="frame" x="24" y="403.5" width="24" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="B8R-gi-oEZ"/>
-                                            <constraint firstAttribute="width" constant="24" id="FiQ-kb-zXX"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3J-fD-cbw">
-                                        <rect key="frame" x="56" y="327.5" width="41" height="9"/>
-                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
-                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="electronic payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlM-oB-hWQ">
-                                        <rect key="frame" x="56" y="340.5" width="108.5" height="14"/>
-                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
-                                        <color key="textColor" red="0.086274509803921567" green="0.14117647058823529" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cash payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJu-fJ-95E">
-                                        <rect key="frame" x="56" y="411.5" width="78.5" height="14"/>
-                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
-                                        <color key="textColor" red="0.086274509799999996" green="0.14117647059999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQP-55-Has">
-                                        <rect key="frame" x="56" y="398.5" width="41" height="9"/>
-                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
-                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFt-QR-txK">
-                                        <rect key="frame" x="58.5" y="491.5" width="265" height="48"/>
-                                        <color key="backgroundColor" name="First"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="iWX-OE-PpK"/>
-                                            <constraint firstAttribute="width" constant="265" id="taw-h5-GOk"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Next">
-                                            <fontDescription key="titleFontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="nextButton:" destination="-1" eventType="touchUpInside" id="ymx-BV-Oo7"/>
-                                        </connections>
-                                    </button>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="BSh-h5-r37"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="etU-xl-YjE"/>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="zFt-QR-txK" firstAttribute="centerX" secondItem="xx9-5P-Zln" secondAttribute="centerX" id="3sP-ob-TLG"/>
-                                    <constraint firstItem="cxl-af-rlJ" firstAttribute="leading" secondItem="xx9-5P-Zln" secondAttribute="leading" constant="24" id="6rA-aB-IhJ"/>
-                                    <constraint firstItem="XEp-Bh-NPq" firstAttribute="top" secondItem="Bhj-MJ-SUR" secondAttribute="bottom" constant="48" id="8Gs-2d-keG"/>
-                                    <constraint firstItem="cxl-af-rlJ" firstAttribute="top" secondItem="flh-UP-kxR" secondAttribute="bottom" constant="32" id="9OB-2Q-shY"/>
-                                    <constraint firstItem="LQP-55-Has" firstAttribute="top" secondItem="qlM-oB-hWQ" secondAttribute="bottom" constant="44" id="Dux-Ez-dwx"/>
-                                    <constraint firstItem="Q3J-fD-cbw" firstAttribute="top" secondItem="cxl-af-rlJ" secondAttribute="bottom" constant="90" id="Lww-o5-80k"/>
-                                    <constraint firstItem="XEp-Bh-NPq" firstAttribute="leading" secondItem="xx9-5P-Zln" secondAttribute="leading" constant="24" id="M4C-Lr-J0a"/>
-                                    <constraint firstItem="sJu-fJ-95E" firstAttribute="top" secondItem="LQP-55-Has" secondAttribute="bottom" constant="4" id="ORZ-uJ-Coq"/>
-                                    <constraint firstItem="flh-UP-kxR" firstAttribute="centerX" secondItem="xx9-5P-Zln" secondAttribute="centerX" id="Tq6-pA-dBZ"/>
-                                    <constraint firstItem="Q3J-fD-cbw" firstAttribute="leading" secondItem="Bhj-MJ-SUR" secondAttribute="trailing" constant="8" id="XqZ-l5-lRi"/>
-                                    <constraint firstItem="Bhj-MJ-SUR" firstAttribute="leading" secondItem="xx9-5P-Zln" secondAttribute="leading" constant="24" id="aGC-WE-3eG"/>
-                                    <constraint firstItem="Bhj-MJ-SUR" firstAttribute="top" secondItem="cxl-af-rlJ" secondAttribute="bottom" constant="94" id="anD-zG-pTG"/>
-                                    <constraint firstAttribute="trailing" secondItem="cxl-af-rlJ" secondAttribute="trailing" constant="24" id="eAl-fY-ocN"/>
-                                    <constraint firstItem="qlM-oB-hWQ" firstAttribute="leading" secondItem="Bhj-MJ-SUR" secondAttribute="trailing" constant="8" id="iqO-9a-xb0"/>
-                                    <constraint firstItem="flh-UP-kxR" firstAttribute="top" secondItem="xx9-5P-Zln" secondAttribute="top" constant="32" id="s8R-im-WY5"/>
-                                    <constraint firstItem="sJu-fJ-95E" firstAttribute="leading" secondItem="XEp-Bh-NPq" secondAttribute="trailing" constant="8" id="uSc-31-0b0"/>
-                                    <constraint firstItem="qlM-oB-hWQ" firstAttribute="top" secondItem="Q3J-fD-cbw" secondAttribute="bottom" constant="4" id="uXK-zG-FBz"/>
-                                    <constraint firstItem="LQP-55-Has" firstAttribute="leading" secondItem="XEp-Bh-NPq" secondAttribute="trailing" constant="8" id="ybi-95-zhj"/>
-                                    <constraint firstItem="zFt-QR-txK" firstAttribute="top" secondItem="XEp-Bh-NPq" secondAttribute="bottom" constant="64" id="zpO-JP-b6N"/>
+                                    <constraint firstAttribute="bottom" secondItem="vSu-hQ-cMS" secondAttribute="bottom" id="D6t-Uu-uZI"/>
+                                    <constraint firstAttribute="trailing" secondItem="vSu-hQ-cMS" secondAttribute="trailing" id="ILS-SJ-gio"/>
+                                    <constraint firstItem="vSu-hQ-cMS" firstAttribute="leading" secondItem="xx9-5P-Zln" secondAttribute="leading" id="VnC-hl-jq8"/>
+                                    <constraint firstItem="vSu-hQ-cMS" firstAttribute="top" secondItem="xx9-5P-Zln" secondAttribute="top" id="sJH-zb-jd9"/>
                                 </constraints>
                             </view>
                         </subviews>

@@ -61,7 +61,7 @@
                                 <color key="textColor" name="TabBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Madina El Monawara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbJ-pz-Jlm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Madina El Monawara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="lbJ-pz-Jlm">
                                 <rect key="frame" x="269" y="52" width="109" height="14"/>
                                 <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
                                 <color key="textColor" name="TabBar"/>
@@ -132,6 +132,7 @@
                         <constraints>
                             <constraint firstItem="bzE-9o-4is" firstAttribute="leading" secondItem="aLl-dI-Gq1" secondAttribute="trailing" constant="8" id="1xi-DK-xTS"/>
                             <constraint firstItem="gKy-E4-s1M" firstAttribute="leading" secondItem="W9w-fh-Y6L" secondAttribute="trailing" constant="8" id="Azr-hg-u2c"/>
+                            <constraint firstAttribute="trailing" secondItem="lbJ-pz-Jlm" secondAttribute="trailing" constant="8" id="Ghs-Th-2Wj"/>
                             <constraint firstItem="R2K-g8-DpT" firstAttribute="centerY" secondItem="ImU-tF-i3A" secondAttribute="centerY" id="Kgq-I3-MgI"/>
                             <constraint firstItem="Ab8-w1-wqe" firstAttribute="centerY" secondItem="r8V-5g-oLP" secondAttribute="centerY" id="LWW-sA-BNj"/>
                             <constraint firstItem="U3e-UZ-gLJ" firstAttribute="leading" secondItem="r8V-5g-oLP" secondAttribute="trailing" constant="8" id="NVh-kx-TdI"/>

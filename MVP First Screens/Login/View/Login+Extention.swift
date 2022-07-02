@@ -8,23 +8,32 @@
 import UIKit
 
 extension Login: UITextFieldDelegate {
-    // MARK: -  handel text field
-    func handelTF() {
-        // handel text field delegation
+    // MARK: -  Handel Text Field
+    // Text Field Delegate
+    func textFieldDelegate() {
         phoneNumber.delegate = self
         password.delegate = self
-        // handel text field label
+    }
+    // Handel Text Lable
+    func handelTextFieldLable() {
         phoneNumberLabel.isHidden = true
         passwordLabel.isHidden = true
-        // handel text field view
+    }
+    // Phone Number View
+    func phoneNumberStyle() {
         phoneNumber.layer.cornerRadius = 4
         phoneNumberView.layer.cornerRadius = 4
         phoneNumber.attributedPlaceholder = NSAttributedString(string: "PhoneNumber", attributes: constant.attributes)
-        phoneNumber.handelTextFieldSpacer()
-        
+    }
+    // PasswordStyle
+    func passwordStyle() {
         password.layer.cornerRadius = 4
         passwordView.layer.cornerRadius = 4
         password.attributedPlaceholder = NSAttributedString(string: "Password", attributes: constant.attributes)
+    }
+    // Text Filed Spacer
+    func textFieldSpacer() {
+        phoneNumber.handelTextFieldSpacer()
         password.handelTextFieldSpacer()
     }
     // MARK: - handel text  field extention
