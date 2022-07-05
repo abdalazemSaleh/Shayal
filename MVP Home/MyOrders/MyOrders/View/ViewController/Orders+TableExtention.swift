@@ -46,20 +46,35 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - Cell For Row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if myCell == constant.expired {
+        if isExpired() {
             return presenter.setExpiredCell(tableView: tableView, atIndexPath: indexPath)
         }
-        else if myCell == constant.active {
+        else if isActive() {
             return presenter.setActiveCell(tableView: tableView, atIndexPath: indexPath)
         }
         return presenter.setPendingCell(tableView: tableView, atIndexPath: indexPath)
     }
+    // Check Cell Status
+    func isExpired() -> Bool {
+        if myCell == constant.expired {
+            return true
+        }
+        return false
+    }
+    
+    func isActive() -> Bool {
+        if myCell == constant.active {
+            return true
+        }
+        return false
+    }
+     
     // MARK: - Did Select Row
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let VC = Bill()
         self.navigationController?.pushViewController(VC, animated: true)
     }
-    
+
     // MARK: - View For Header
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return headerForSection()
@@ -69,13 +84,13 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
         headerView.backgroundColor = UIColor.clear
         return headerView
     }
-    
-    
+
+
     // MARK: - Hight For Header
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0
     }
-    
+
     // MARK: - Hight For Row
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if myCell == "active" {
@@ -87,6 +102,8 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return 0
     }
-    
+
     
 }
+
+

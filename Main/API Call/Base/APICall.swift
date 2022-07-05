@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class APICall {
-    static func APICall<T: Codable>(model: T.Type, url: String, Parms: [String: Any]?, method: HTTPMethod, view: UIView, completion: @escaping ( _ error: Error?, _ success: Bool)->Void){
+     func APIcallbb<T: Codable>(model: T.Type, url: String, Parms: [String: Any]?, method: HTTPMethod, view: UIView, completion: @escaping ( _ error: Error?, _ success: Bool)->Void){
         view.showSpiner()
         Alamofire.request(url, method: method, parameters: Parms, headers: nil).responseJSON { (response) in
             guard let data = response.data else { return }
@@ -35,7 +35,4 @@ class APICall {
             }
         }
     }
-    
-    
-    
 }

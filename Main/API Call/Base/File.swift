@@ -17,14 +17,13 @@ struct profileData: Codable {
 
 // MARK: - DataClass
 struct thisData: Codable {
+    let id: Int?
     let name: String?
     let email: String?
     let phone: String?
     let image: String?
     let token: String?
-    let balance: Double?
-    let bank_name: String?
-    let acc_number: String?
-    let code: Int?
+    let type: String?
+    let is_provider: Bool?
 }
 
