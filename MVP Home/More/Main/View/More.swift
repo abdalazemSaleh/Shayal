@@ -11,16 +11,6 @@ class More: UIViewController {
     var nameArr = [String]()
     // MARK: - Variables
     var presenter: MorePresenter!
-    // MARK: - IBOutlet
-    @IBOutlet var userImage: UIImageView!
-    @IBOutlet var userName: UILabel!
-    @IBOutlet var myTable: UITableView!
-    // MARK: - IBAction
-    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
-    {
-        let newVC = UserProfile()
-        self.navigationController?.pushViewController(newVC, animated: true)
-    }
     
     // MARK: - View Did Load
     override func viewDidLoad() {
@@ -30,6 +20,16 @@ class More: UIViewController {
         handelImageClick()
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
         userImage.clipsToBounds = true
+    }
+    // MARK: - IBOutlet
+    @IBOutlet var userImage: UIImageView!
+    @IBOutlet var userName: UILabel!
+    @IBOutlet var myTable: UITableView!
+    // MARK: - IBAction
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let newVC = UserProfile()
+        self.navigationController?.pushViewController(newVC, animated: true)
     }
     // MARK: - Handel Image Clic
     func handelImageClick() {

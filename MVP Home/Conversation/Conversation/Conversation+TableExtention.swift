@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension Chat: UITableViewDelegate, UITableViewDataSource {
+extension Conversation: UITableViewDelegate, UITableViewDataSource {
     // set up table view
     func setUpTabelView() {
         chatTableView.separatorStyle = .none
@@ -26,7 +26,8 @@ extension Chat: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("DONE")
+        let vc = Chat()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()

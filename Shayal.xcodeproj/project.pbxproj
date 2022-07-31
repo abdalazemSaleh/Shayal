@@ -76,9 +76,9 @@
 		7F99CE6C280A0FAC003BD226 /* EditUserProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE69280A0FAC003BD226 /* EditUserProfile.xib */; };
 		7F99CE70280A0FC0003BD226 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE6E280A0FC0003BD226 /* UserProfile.swift */; };
 		7F99CE71280A0FC0003BD226 /* UserProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F99CE6F280A0FC0003BD226 /* UserProfile.xib */; };
-		7F99CE7C280A11CB003BD226 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE79280A11CB003BD226 /* ChatCell.swift */; };
-		7F99CE7D280A11CB003BD226 /* Chat+TableExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE7A280A11CB003BD226 /* Chat+TableExtention.swift */; };
-		7F99CE7E280A11CB003BD226 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE7B280A11CB003BD226 /* Chat.swift */; };
+		7F99CE7C280A11CB003BD226 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE79280A11CB003BD226 /* ConversationCell.swift */; };
+		7F99CE7D280A11CB003BD226 /* Conversation+TableExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE7A280A11CB003BD226 /* Conversation+TableExtention.swift */; };
+		7F99CE7E280A11CB003BD226 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE7B280A11CB003BD226 /* Conversation.swift */; };
 		7F99CE85280A1270003BD226 /* OrdersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE84280A1270003BD226 /* OrdersPresenter.swift */; };
 		7F99CE8B280A128D003BD226 /* Orders+TableExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE88280A128C003BD226 /* Orders+TableExtention.swift */; };
 		7F99CE8C280A128D003BD226 /* Orders+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99CE89280A128C003BD226 /* Orders+Protocol.swift */; };
@@ -109,6 +109,8 @@
 		7FB096A6280B5EAB003DEB85 /* lf30_editor_gcptrbo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FB096A5280B5EAB003DEB85 /* lf30_editor_gcptrbo2.json */; };
 		7FB096AA280CA9E7003DEB85 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB096A8280CA9E7003DEB85 /* Rate.swift */; };
 		7FB096AB280CA9E7003DEB85 /* Rate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FB096A9280CA9E7003DEB85 /* Rate.xib */; };
+		7FB40D602895C9B5006D144F /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB40D5F2895C9B5006D144F /* Chat.swift */; };
+		7FB40D622895D13F006D144F /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB40D612895D13F006D144F /* MessageModel.swift */; };
 		7FDFDFF2286C73AD006BD5B1 /* ViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFDFF1286C73AD006BD5B1 /* ViewControllerExtention.swift */; };
 		7FE0E7F527F7537B003FB8BF /* loginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E7F427F7537B003FB8BF /* loginPresenter.swift */; };
 		7FE0E7F727F7675A003FB8BF /* LoginVC+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0E7F627F7675A003FB8BF /* LoginVC+Protocol.swift */; };
@@ -216,9 +218,9 @@
 		7F99CE69280A0FAC003BD226 /* EditUserProfile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditUserProfile.xib; sourceTree = "<group>"; };
 		7F99CE6E280A0FC0003BD226 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		7F99CE6F280A0FC0003BD226 /* UserProfile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserProfile.xib; sourceTree = "<group>"; };
-		7F99CE79280A11CB003BD226 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
-		7F99CE7A280A11CB003BD226 /* Chat+TableExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Chat+TableExtention.swift"; sourceTree = "<group>"; };
-		7F99CE7B280A11CB003BD226 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		7F99CE79280A11CB003BD226 /* ConversationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		7F99CE7A280A11CB003BD226 /* Conversation+TableExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conversation+TableExtention.swift"; sourceTree = "<group>"; };
+		7F99CE7B280A11CB003BD226 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		7F99CE84280A1270003BD226 /* OrdersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersPresenter.swift; sourceTree = "<group>"; };
 		7F99CE88280A128C003BD226 /* Orders+TableExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Orders+TableExtention.swift"; sourceTree = "<group>"; };
 		7F99CE89280A128C003BD226 /* Orders+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Orders+Protocol.swift"; sourceTree = "<group>"; };
@@ -253,6 +255,8 @@
 		7FB096A5280B5EAB003DEB85 /* lf30_editor_gcptrbo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_gcptrbo2.json; sourceTree = "<group>"; };
 		7FB096A8280CA9E7003DEB85 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		7FB096A9280CA9E7003DEB85 /* Rate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Rate.xib; sourceTree = "<group>"; };
+		7FB40D5F2895C9B5006D144F /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		7FB40D612895D13F006D144F /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		7FDFDFF1286C73AD006BD5B1 /* ViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtention.swift; sourceTree = "<group>"; };
 		7FE0E7F427F7537B003FB8BF /* loginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPresenter.swift; sourceTree = "<group>"; };
 		7FE0E7F627F7675A003FB8BF /* LoginVC+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Protocol.swift"; sourceTree = "<group>"; };
@@ -329,7 +333,7 @@
 			children = (
 				7F04BEA3280D979000B260E6 /* Notification */,
 				7F99CE81280A121E003BD226 /* MyOrders */,
-				7F99CE75280A11B5003BD226 /* Chat */,
+				7F99CE75280A11B5003BD226 /* Conversation */,
 				7F04376927FB8FBD00CB5976 /* Home */,
 				7F04377427FB973200CB5976 /* More */,
 			);
@@ -390,11 +394,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7F04BE60280CC98200B260E6 /* Chat */ = {
+		7F04BE60280CC98200B260E6 /* Chat Screen */ = {
 			isa = PBXGroup;
 			children = (
+				7FB40D5C2895C946006D144F /* Model */,
+				7FB40D5D2895C94C006D144F /* View */,
+				7FB40D5E2895C950006D144F /* Presenter */,
 			);
-			path = Chat;
+			path = "Chat Screen";
 			sourceTree = "<group>";
 		};
 		7F04BEA3280D979000B260E6 /* Notification */ = {
@@ -829,23 +836,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7F99CE75280A11B5003BD226 /* Chat */ = {
+		7F99CE75280A11B5003BD226 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
-				7F04BE60280CC98200B260E6 /* Chat */,
-				7F99CE78280A11C2003BD226 /* Main */,
+				7F04BE60280CC98200B260E6 /* Chat Screen */,
+				7F99CE78280A11C2003BD226 /* Conversation */,
 			);
-			path = Chat;
+			path = Conversation;
 			sourceTree = "<group>";
 		};
-		7F99CE78280A11C2003BD226 /* Main */ = {
+		7F99CE78280A11C2003BD226 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
-				7F99CE7B280A11CB003BD226 /* Chat.swift */,
-				7F99CE7A280A11CB003BD226 /* Chat+TableExtention.swift */,
-				7F99CE79280A11CB003BD226 /* ChatCell.swift */,
+				7F99CE7B280A11CB003BD226 /* Conversation.swift */,
+				7F99CE7A280A11CB003BD226 /* Conversation+TableExtention.swift */,
+				7F99CE79280A11CB003BD226 /* ConversationCell.swift */,
 			);
-			path = Main;
+			path = Conversation;
 			sourceTree = "<group>";
 		};
 		7F99CE81280A121E003BD226 /* MyOrders */ = {
@@ -1109,6 +1116,29 @@
 			path = Rate;
 			sourceTree = "<group>";
 		};
+		7FB40D5C2895C946006D144F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FB40D612895D13F006D144F /* MessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FB40D5D2895C94C006D144F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FB40D5F2895C9B5006D144F /* Chat.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FB40D5E2895C950006D144F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		7FDFDFF0286C7393006BD5B1 /* ViewControllerExtention */ = {
 			isa = PBXGroup;
 			children = (
@@ -1233,6 +1263,7 @@
 				7FAB713527F0CAB700477373 /* Sources */,
 				7FAB713627F0CAB700477373 /* Frameworks */,
 				7FAB713727F0CAB700477373 /* Resources */,
+				C74CE53FA13D21F64B52CE3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1406,6 +1437,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C74CE53FA13D21F64B52CE3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shayal/Pods-Shayal-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shayal/Pods-Shayal-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shayal/Pods-Shayal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1415,6 +1463,7 @@
 			files = (
 				7F99CE8B280A128D003BD226 /* Orders+TableExtention.swift in Sources */,
 				7F99CE55280A0E9F003BD226 /* ContactWithUs.swift in Sources */,
+				7FB40D602895C9B5006D144F /* Chat.swift in Sources */,
 				7F99CF6D280B5946003BD226 /* PaymentMethod.swift in Sources */,
 				7F7E8DF027F1C61900FACB7C /* Intro2.swift in Sources */,
 				7FAB714127F0CAB700477373 /* ViewController.swift in Sources */,
@@ -1447,6 +1496,7 @@
 				7FE0E80827F85B51003FB8BF /* VerificationSuccess.swift in Sources */,
 				7FE0E81027F87C4D003FB8BF /* EnterCodePresenter.swift in Sources */,
 				7F826D3727FA609900B2D50E /* HandelButton.swift in Sources */,
+				7FB40D622895D13F006D144F /* MessageModel.swift in Sources */,
 				7F99CE70280A0FC0003BD226 /* UserProfile.swift in Sources */,
 				7F04BEA2280D88C900B260E6 /* ForgetPassword+Extention.swift in Sources */,
 				7FE0E80327F783C5003FB8BF /* ForgetPassword+Delegate.swift in Sources */,
@@ -1465,10 +1515,10 @@
 				7F04377927FB976300CB5976 /* More.swift in Sources */,
 				7F990561286B1D31000E07F3 /* NotificationPresenter.swift in Sources */,
 				7F826D2827FA465B00B2D50E /* APICall.swift in Sources */,
-				7F99CE7D280A11CB003BD226 /* Chat+TableExtention.swift in Sources */,
+				7F99CE7D280A11CB003BD226 /* Conversation+TableExtention.swift in Sources */,
 				7F99CE4E280A0E1D003BD226 /* TableViewCell.swift in Sources */,
 				7F7E8DF527F1E7F000FACB7C /* Intro3.swift in Sources */,
-				7F99CE7E280A11CB003BD226 /* Chat.swift in Sources */,
+				7F99CE7E280A11CB003BD226 /* Conversation.swift in Sources */,
 				7F7E8DFA27F1ECC300FACB7C /* Intro4.swift in Sources */,
 				7F99CE6B280A0FAC003BD226 /* EditUserProfile.swift in Sources */,
 				7F826D4427FA773600B2D50E /* SginUP+Extention.swift in Sources */,
@@ -1483,7 +1533,7 @@
 				7F99CE62280A0EC9003BD226 /* WhoAreWe.swift in Sources */,
 				7F990565286B1F69000E07F3 /* Notification+Protocol.swift in Sources */,
 				7F04377F27FB9D4D00CB5976 /* MorePresenter.swift in Sources */,
-				7F99CE7C280A11CB003BD226 /* ChatCell.swift in Sources */,
+				7F99CE7C280A11CB003BD226 /* ConversationCell.swift in Sources */,
 				7F04377327FB92B000CB5976 /* HandelShadow.swift in Sources */,
 				7F826D2A27FA49BD00B2D50E /* File.swift in Sources */,
 				7F04377B27FB979900CB5976 /* More+TableView.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Chat: UIViewController {
+class Conversation: UIViewController {
     
     // MARK: - View Did Load
     override func viewDidLoad() {

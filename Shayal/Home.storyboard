@@ -257,7 +257,7 @@
         <!--Chat-->
         <scene sceneID="q2N-Ha-zyd">
             <objects>
-                <viewController restorationIdentifier="Chat" storyboardIdentifier="Chat" id="Jmm-Eh-PPV" customClass="Chat" customModule="Shayal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Conversation" storyboardIdentifier="Conversation" id="Jmm-Eh-PPV" customClass="Conversation" customModule="Shayal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pe0-zw-AKF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
