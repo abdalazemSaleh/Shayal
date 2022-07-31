@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Alamofire
+import TransitionButton
 
 class Login: UIViewController {
     
@@ -26,8 +26,12 @@ class Login: UIViewController {
         presnter = LoginPresenter(view: self)
     }
     // MARK: - IBAction
-    @IBAction func Login(_ sender: UIButton) {
-        goToHomeScreen()
+    @IBAction func Login(_ sender: TransitionButton) {
+        login.startAnimation()
+        DispatchQueue.main.asyncAfter(deadline: .now()+4) {
+            self.login.startAnimation()
+            self.goToHomeScreen()
+        }
     }
     
     func goToHomeScreen() {
@@ -53,7 +57,7 @@ class Login: UIViewController {
     @IBOutlet var passwordView: UIView!
     @IBOutlet var password: UITextField!
     @IBOutlet var passwordLabel: UILabel!
-    @IBOutlet var login: UIButton!
+    @IBOutlet var login: TransitionButton!
     // MARK: - Hnadle View
     func loginButtonStyle() {
         // handel login button gradient

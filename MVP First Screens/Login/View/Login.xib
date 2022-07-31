@@ -18,7 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Login" customModule="Shayal" customModuleProvider="target">
             <connections>
-                <outlet property="login" destination="K4w-3K-Kxs" id="FhY-tC-n0M"/>
+                <outlet property="login" destination="K4w-3K-Kxs" id="pGc-GZ-nsD"/>
                 <outlet property="password" destination="LuP-gW-qER" id="Ppt-Dz-ErF"/>
                 <outlet property="passwordLabel" destination="M1m-Er-HUF" id="cdc-q5-7x0"/>
                 <outlet property="passwordView" destination="Ja0-Gu-ETQ" id="bPZ-vy-zdl"/>
@@ -133,7 +133,7 @@
                                         <action selector="forgetPassword:" destination="-1" eventType="touchUpInside" id="Xez-fA-hCD"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4w-3K-Kxs">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4w-3K-Kxs" customClass="TransitionButton" customModule="TransitionButton">
                                     <rect key="frame" x="74.5" y="317" width="265" height="48"/>
                                     <color key="backgroundColor" name="First"/>
                                     <constraints>
@@ -145,8 +145,19 @@
                                         <fontDescription key="titleFontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                            <color key="value" name="Color-3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                            <color key="value" name="checkTF"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="30"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                     <connections>
-                                        <action selector="Login:" destination="-1" eventType="touchUpInside" id="FKP-0c-Ucu"/>
+                                        <action selector="Login:" destination="-1" eventType="touchUpInside" id="0qk-dk-por"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-kY-vs0">
@@ -263,6 +274,9 @@
         <image name="Group 21" width="51" height="51"/>
         <image name="Group 23" width="51" height="51"/>
         <image name="Group 530" width="51" height="51"/>
+        <namedColor name="Color-3">
+            <color red="0.44299998879432678" green="0.93300002813339233" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="First">
             <color red="0.18799999356269836" green="0.83499997854232788" blue="0.7839999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -271,6 +285,9 @@
         </namedColor>
         <namedColor name="TF">
             <color red="0.19599999487400055" green="0.23499999940395355" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="checkTF">
+            <color red="0.9649999737739563" green="0.34099999070167542" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
