@@ -21,7 +21,6 @@ class SginUP: UIViewController {
         textFeildStyle()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardApper), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardDisApper), name: UIResponder.keyboardWillHideNotification, object: nil)
-        
     }
     
     

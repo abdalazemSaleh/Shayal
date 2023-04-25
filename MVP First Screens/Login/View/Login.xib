@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,10 +38,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cF-AV-Xxx">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUP-ih-YSX">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="695.5"/>
                             <subviews>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Sign in to save your research results, requests, and of course for more fun !" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5V-He-2yz">
                                     <rect key="frame" x="16" y="16" width="334" height="43"/>
@@ -201,16 +202,16 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAQ-Ix-jZ3">
-                                    <rect key="frame" x="101" y="629" width="212" height="31"/>
+                                    <rect key="frame" x="97.5" y="629" width="219.5" height="34.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQf-tP-Hxe">
-                                            <rect key="frame" x="0.0" y="0.0" width="144" height="31"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="34.5"/>
                                             <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrc-0w-jCG">
-                                            <rect key="frame" x="144" y="0.0" width="68" height="31"/>
+                                            <rect key="frame" x="144" y="0.0" width="75.5" height="34.5"/>
                                             <color key="tintColor" red="0.98431372549999996" green="0.67450980390000004" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="Sgin in"/>
@@ -269,6 +270,11 @@
             <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
         </view>
     </objects>
+    <designables>
+        <designable name="K4w-3K-Kxs">
+            <size key="intrinsicContentSize" width="66.5" height="32"/>
+        </designable>
+    </designables>
     <resources>
         <image name="BackGround" width="424" height="932"/>
         <image name="Group 21" width="51" height="51"/>

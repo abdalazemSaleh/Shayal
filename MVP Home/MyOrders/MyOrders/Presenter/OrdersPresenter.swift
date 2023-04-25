@@ -24,13 +24,10 @@ class OrdersPresenter {
     func handelSegment(status: checkSegment) {
         switch status {
         case .expired:
-            print("Expired")
             view?.relodTableView()
         case .active:
-            print("Active")
             view?.relodTableView()
         case .pending:
-            print("Pending")
             view?.relodTableView()
         }
     }
